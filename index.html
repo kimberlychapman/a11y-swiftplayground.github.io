@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>a11y Swift</title>
+      <link rel="stylesheet" href="styles.css">
+      <link href=”css/ipadP.css” rel=”stylesheet” media=”only screen and (min-device-width:  768px) and (max-device-width: 1024px) and (orientation: portrait)”>
+      <link href=”css/ipadL.css” rel=”stylesheet” media=”only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)”>  
+      <style>
+            @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap');
+      </style>
+      <script type="text/javascript" src="index.js"></script>
+      <script type = "text/javascript"
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+      
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+      </script>
+      
+      <script type = "text/javascript" language = "javascript">
+   
+         // $(document).ready(function() {
+
+         //    $("#button").click(function(){
+         //       $(".target").effect( "shake", {times:4}, 1000 );
+         //    });
+            
+         // });
+         $(document).ready(function() {
+
+            $("#button").click(function(){
+               $(".target").effect( "shake", {times:4}, 1000 );
+            });
+
+            });
+      </script>
+         <!-- <style>
+            p {background-color:#bca; width:200px; border:1px solid green;}
+            div{ width:100px; height:100px; background:red;}
+         </style> -->
+   </head>
+ 
+	<!-- <script type="text/javascript" src="index.js"></script> -->
+      <section>
+         <audio id="run" src="audio/run-code.m4a" type="audio/m4a"></audio>
+         <audio id="swipe-right" src="audio/swipe-right.m4a" type="audio/m4a"></audio>
+         <audio id="swipe-up" src="audio/swipe-up.m4a" type="audio/m4a"></audio>
+         <audio id="forward" src="audio/forward.m4a" type="audio/m4a"></audio>
+         <audio id="help" src="audio/code-bot.m4a" type="audio/m4a"></audio>
+         <audio id="rock" src="audio/rock.wav" type="audio/wav"></audio>
+         <audio id="wind" src="audio/windhowl.wav" type="audio/wav"></audio>
+         <audio id="gem" src="audio/gem.wav" type="audio/wav"></audio>
+         <audio id="collect" src="audio/collect.wav" type="audio/wav"></audio>
+         <audio id="toggle" src="audio/toggle.wav" type="audio/wav"></audio>
+         <audio id="here" src="audio/codebot_here.m4a" type="audio/m4a"></audio>
+         <audio id="listening" src="audio/codebot_listening.m4a" type="audio/m4a"></audio>
+         <audio id="codebot-run" src="audio/wi.m4a" type="audio/m4a"></audio>
+   </section>
+   <body onload="init()"> 
+       <div class="Main">
+         <section class="columns">
+               <div id="column-1">
+                  <div class="box3">
+                     <div id="sketchpadapp">
+                           <div class="rightside">
+                              <canvas id="sketchpad" height="650" width="300">
+                              </canvas>
+                              <div id="codebot">
+                                 <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('here').play()" ondblclick="document.getElementById('here').pause()">
+                              </div>
+                              <div id="hr-line"></div>
+                              <div id="hr-line2"></div>
+                              <div id="clear"><input type="submit" value="" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
+                           </div>   
+                     </div>
+                  </div>
+                  <div class="box">
+                     <div id="sky">
+                        <img id="cloud-guy" src="img/cloud-buddies.png">
+                     </div>
+                     <div id="cloud-button">
+                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                     </div>
+                  </div> 
+               </div>
+               <div id="column-2">
+                  <div class="rock-box">
+                     <div id="boulder">
+                        <img id="rock" src="img/rock.png">
+                     </div>
+                     <div id="crash-button">
+                        <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()"></button>
+                     </div>
+                  </div>
+                  <div class="box">
+                     <div id="sky">
+                        <img id="cloud-guy" src="img/cloud-buddies.png">
+                     </div>
+                     <div id="cloud-button">
+                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                     </div>
+                  </div>
+                  <div class="box4"></div>
+                  <div class="box">
+                     <div id="sky">
+                        <img id="cloud-guy" src="img/cloud-buddies.png">
+                     </div>
+                     <div id="cloud-button">
+                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                     </div>
+                  </div>
+               </div>
+               <div id="column-3">
+                  <div class="box">
+                     <div id="sky">
+                        <img id="cloud-guy" src="img/cloud-buddies.png">
+                     </div>
+                     <div id="cloud-button">
+                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                     </div>
+                  </div>
+                  <div class="box">
+                     <div id="sky">
+                        <img id="cloud-guy" src="img/cloud-buddies.png">
+                     </div>
+                     <div id="cloud-button">
+                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                     </div>
+                  </div>
+                  <div class="box1"><div id="gem"><img id="gem" src="img/collectGem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('collect').pause()"></div></div>
+                  <div class="box">
+                     <div id="sky">
+                        <img id="cloud-guy" src="img/cloud-buddies.png">
+                     </div>
+                     <div id="cloud-button">
+                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                     </div>
+                  </div>
+               </div>
+               <div id="column-4">
+                  <div class="rock-box">
+                     <div id="boulder"><img id="rock" src="img/rock.png">
+                     </div>
+                     <div id="crash-button">
+                        <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()"></button>
+                     </div>
+                  </div>
+                  <div class="box">
+                     <div id="sky">
+                        <img id="cloud-guy" src="img/cloud-buddies.png">
+                     </div>
+                     <div id="cloud-button">
+                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                     </div>
+                  </div>
+                  <div class="box4"></div>
+                  <div class="box">
+                     <div id="sky">
+                        <img id="cloud-guy" src="img/cloud-buddies.png">
+                     </div>
+                     <div id="cloud-button">
+                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                     </div>
+                  </div>
+               </div>
+               <div id="column-5">
+                  <div class="box1"><div id="toggle"><img id="toggle" src="img/toggleSwitch.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()"></div></div>
+                  <div class="box4"></div>
+                  <div class="box1"><div id="toggle"><img id="toggle" src="img/toggleSwitch.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()"></div></div>
+                  <div class="box">
+                     <div id="sky">
+                        <img id="cloud-guy" src="img/cloud-buddies.png">
+                     </div>
+                     <div id="cloud-button">
+                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                     </div>
+                  </div>
+               </div>
+         </section>
+         </div>
+   </body>
+</html>
+    <!-- <div class="grid-container"> -->
+        
+        <!-- </div> -->
+     
+            
+        
+      <!-- </div>
+    </div>
+    </body>     -->
+<!-- </html> -->
+
+
+<!-- <div id="sketchpadapp">
+    <div class="rightside">
+        <canvas id="sketchpad" height="110" width="150">
+        </canvas>
+    </div>
+    <div class="leftside">
+        <input type="submit" value="Clear Sketchpad" id="clearbutton" onclick="clearCanvas(canvas,ctx);">
+    </div>
+</div> -->
+
+<!-- <div class="Nav">
+            
+   <div id="commands">   
+       <div class="help">
+           <img id="speaker" src="images/speaker.png" onclick="document.getElementById('here').play()" ondblclick="document.getElementById('here').pause()">
+           <img id="siri" src="images/siri.png"><span id="action"><img id="voice" src="images/voice-command.png"><br>By embedding Siri— and training Siri to carry out game actions & to provide player support— the user can control game actions using voice commands (but instead of initiating Siri by saying the phrase "Hey Siri", users will say "Hey Codebot"). <br><br><img id="right" src="images/right.png"><br>The user can also control game actions by swiping.  To add a command to their code, the user swipes that command to the right.  It will make a swooshing noise if the user swipes right correctly.<br><br><img id="left" src="images/left.png"><br>To remove a command from their code, the user swipes that command to the left.  It will make a crumpling noise (the same noise it makes when you move an item on your computer into the trash) if the user swipes left correctly.</span>
+       </div>
+       <div class="blocks">
+           <div id="block1" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
+               <img id="move-forward" src="images/func_moveForward().png" draggable="true" ondragstart="dragThis(event)" id="drag1" width="120" height="180">
+           </div> 
+           <div id="block2" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
+               <img id="turn-left" src="images/func_turnLeft().png" draggable="true" ondragstart="dragThis(event)" id="drag1" width="120" height="180">
+           </div>                        
+           <div id="block3" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
+               <img id="turn-right" src="images/func_turnRight().png" draggable="true" ondragstart="dragThis(event)" id="drag1" width="120" height="180">
+           </div> 
+           <div id="block4" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
+               <img id="collect-gem" src="images/func_collectGem().png" draggable="true" ondragstart="dragThis(event)" id="drag1" width="120" height="180">
+           </div> 
+           <div id="block5" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
+               <img id="toggle-switch" src="images/func_toggleSwitch().png" draggable="true" ondragstart="dragThis(event)" id="drag1" width="120" height="100">
+           </div>
+       </div>
+   </div> 
+</div> -->
+
+
+<!-- 
+<div class="Header">
+   <div class="code-blocks">
+       <div class="top">
+           <div id="run-code">
+               <button id="run" onclick="document.getElementById('codebot-run').play()" ondblclick="document.getElementById('codebot-run').pause()">Run Code</button><span class="siri">
+           </div>
+           <h1>func winGame{ </h1>
+       </div>
+       <div id="commands">
+           <div class="drop">
+               <div id="block" ondrop="dropThis(event)" ondragover="allowDropThis(event)"></div>
+           </div>   
+           <div class="drop">
+               <div id="block" ondrop="dropThis(event)" ondragover="allowDropThis(event)"></div>
+           </div>  
+           <div class="drop">
+               <div id="block" ondrop="dropThis(event)" ondragover="allowDropThis(event)"></div>
+           </div>  
+           <div class="drop">
+               <div id="block" ondrop="dropThis(event)" ondragover="allowDropThis(event)"></div>
+           </div>   
+           <div class="drop">
+               <div id="block" ondrop="dropThis(event)" ondragover="allowDropThis(event)"></div>
+           </div> 
+       </div>             
+       <div class="bottom">
+           <h2>}<br>winGame()</h2>
+       </div>
+
+   </div>
+
+</div> -->
+
+
