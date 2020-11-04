@@ -18,7 +18,8 @@ div{ width:100px; height:100px; background:red;} */
   /* justify-content: center; */
   /* justify-items: center; */
   border: 1px solid  black;
-  background-image: url("img/sky.jpg");
+  background-color: white;
+  /* background-image: url("img/sky.jpg"); */
 }
 #tiles{
   display:flex;
@@ -30,7 +31,7 @@ div{ width:100px; height:100px; background:red;} */
   flex-direction: row;
 }
 #column-1{
-  width:20%;
+  width:100%;
   border: 2px solid limegreen;
   display:flex;
   flex-direction:column;
@@ -95,65 +96,11 @@ div{ width:100px; height:100px; background:red;} */
   border: black 1px solid;
 }
 
-.rock-box{
-  height:225px;
-  width:100%;
-  border: black 1px solid;
-  display:block;
-  background-color: green;
-}
-#boulder{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-}
-#kick-rock{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-#crash-button{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  
-}
-#crash{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  height:20px;
-  width: 50px;
-  background-color: transparent;
-  border:2px solid lightslategray;
-  border-radius:10%;
-  text-decoration: none;
-}
-#sky{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-#cloud-button{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  
-}
-#cloud{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  height:20px;
-  width: 50px;
-  background-color: transparent;
-  border:2px solid lightslategray;
-  border-radius: 10%;
-  text-decoration: none;
-}
-#cloud-guy{
-  margin-top:30px;
-}
+
+
+/* #cloud-guy{
+  /* margin-top:30px; */
+/* } */ 
 #toggle{
   display: flex;
   justify-content: center;
@@ -167,115 +114,15 @@ div{ width:100px; height:100px; background:red;} */
   justify-items: center;
   margin-top:25px;
 }
-#rock:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.5s;
 
-  /* When the animation is finished, start again */
-  animation-iteration-count: infinite;
-}
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-@-webkit-keyframes swing {
-  20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg);
+/* ********************************************************************************************************* */
+#codebot{
+    position:fixed;
+    top:2px;
+    left:2px;
   }
-
-  40% {
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-    transform: rotate3d(0, 0, 1, -10deg);
-  }
-
-  60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
-  }
-
-  80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);
-  }
-
-  to {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-  }
-}
-
-@keyframes swing {
-  20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg);
-  }
-
-  40% {
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
-    transform: rotate3d(0, 0, 1, -10deg);
-  }
-
-  60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
-  }
-
-  80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);
-  }
-
-  to {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
-    transform: rotate3d(0, 0, 1, 0deg);
-  }
-}
-#cloud-guy:hover {
-  -webkit-animation: bounce 0.7s ease-out;
-          animation: bounce 0.7s ease-out;
-}
-@keyframes bounce {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  25%, 45% {
-    -webkit-transform: translateY(-15px);
-            transform: translateY(-15px);
-  }
-  50% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  70% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
-  }
-  80% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  90% {
-    -webkit-transform: translateY(-8px);
-            transform: translateY(-8px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
+/* ********************************************************************************************************* */
 #sketchpadapp {
   /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
   /* position: relative; */
@@ -302,106 +149,409 @@ div{ width:100px; height:100px; background:red;} */
 }
 
 #sketchpad {
-  /* position: relative; */
+  position: relative;
   display: flex;
   justify-content: center;
-  height:650px;
-  width:300px;
+  height:100%;
+  width:100%;
   border-radius:4px;
   position:relative; /* Necessary for correct mouse co-ords in Firefox */
   cursor: pointer;
   background-color: tan;
 
 }
-#codebot{
-  position:fixed;
-  top:2px;
-  left:2px;
-}
-#hr-line{
-  position: absolute;
-  top:33.25%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  text-decoration: underline;
-  width:100%;
-  border-top: 2px solid black;
-}
-
-#hr-line2{
-  position: absolute;
-  top:66.75%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  text-decoration: underline;
-  width:100%;
-  border-top: 2px solid black;
-}
 
 #clear{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-}
-
-
+    position: fixed;
+    right:10px;
+    bottom:10px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    /* transform: translate(-50%, -50%); */
+    }
+    
+    
 #clearbutton {
-  /* width: 50%; */
-  width:50px;
-  height:20px;
-  /* font-size: 16px; */
-  -webkit-appearance: none;
-  background:tan;
-  border-radius: 10%;
-  border:2px solid lightslategray;
-  font-family: 'Trispace', sans-serif;
-  outline: none;
+    /* width: 50%; */
+    width:100px;
+    height:50px;
+    /* font-size: 16px; */
+    -webkit-appearance: none;
+    /* background:tan; */
+    border-radius: 10%;
+    border:2px solid lightslategray;
+    font-family: 'Trispace', sans-serif;
+    outline: none;
 }
 
+#hr-line{
+    position: absolute;
+    top:25%;
+    left:17.9%;
+    transform: translate(-50%, -50%);
+    text-decoration: underline;
+    width:260px;
+    border-top: 2px solid black;
+  }
+  #hr-line2{
+    position: absolute;
+    top:25%;
+    left:82.15%;
+    transform: translate(-50%, -50%);
+    text-decoration: underline;
+    width:260px;
+    border-top: 2px solid black;
+  }
+#hr-line3{
+    position: absolute;
+    top:50%;
+    left:17.9%;
+    transform: translate(-50%, -50%);
+    text-decoration: underline;
+    width:260px;
+    border-top: 2px solid black;
+    } 
+#hr-line4{
+    position: absolute;
+    top:50%;
+    left:82.15%;
+    transform: translate(-50%, -50%);
+    text-decoration: underline;
+    width:260px;
+    border-top: 2px solid black;
+    } 
+
 canvas.shake {
-  animation: shake 0.5s linear 1;
+    animation: shake 0.5s linear 1;
 }
 @keyframes shake {
-  10%,
-  90% {
+    10%,
+    90% {
     transform: translate3d(-1px, 0, 0);
-  }
-  20%,
-  80% {
+    }
+    20%,
+    80% {
     transform: translate3d(2px, 0, 0);
-  }
-  30%,
-  50%,
-  70% {
+    }
+    30%,
+    50%,
+    70% {
     transform: translate3d(-4px, 0, 0);
-  }
-  40%,
-  60% {
+    }
+    40%,
+    60% {
     transform: translate3d(4px, 0, 0);
-  }
+    }
 }
 canvas.shake {
-  animation: shake 0.5s linear 1;
+    animation: shake 0.5s linear 1;
 }
 @keyframes shake {
-  10%,
-  90% {
+    10%,
+    90% {
     transform: translate3d(-1px, 0, 0);
-  }
-  20%,
-  80% {
+    }
+    20%,
+    80% {
     transform: translate3d(2px, 0, 0);
-  }
-  30%,
-  50%,
-  70% {
+    }
+    30%,
+    50%,
+    70% {
     transform: translate3d(-4px, 0, 0);
-  }
-  40%,
-  60% {
+    }
+    40%,
+    60% {
     transform: translate3d(4px, 0, 0);
-  }
+    }
 }
+/* ********************************************************************************************************* */
+.rock-box1{
+position: absolute;
+top:0;
+left:26%;
+height:225px;
+width:260px;;
+border: black 2px solid;
+display:block;
+background-color: green;
+}
+.rock-box2{
+position: absolute;
+top:0;
+left:58%;
+height:225px;
+width:260px;;
+border: black 2px solid;
+display:block;
+background-color: green;
+}
+.rock-box{
+height:225px;
+width:100%;
+border: black 2px solid;
+display:block;
+background-color: green;
+}
+#boulder{
+display: flex;
+justify-content: center;
+justify-items: center;
+}
+#kick-rock{
+display: flex;
+justify-content: center;
+justify-items: center;
+}
+#crash-button{
+display: flex;
+justify-content: center;
+justify-items: center;
+
+}
+#crash{
+display: flex;
+justify-content: center;
+justify-items: center;
+height:20px;
+width: 50px;
+background-color: transparent;
+border:2px solid lightslategray;
+border-radius:10%;
+text-decoration: none;
+}
+
+#rock:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+    }
+    
+    @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+    
+    @-webkit-keyframes swing {
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+    
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+    
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+    
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
+    }
+    
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    }
+    
+    @keyframes swing {
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+    
+    40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+    
+    60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);
+    }
+    
+    80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
+    }
+    
+    to {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    }
+/* ********************************************************************************************************* */   
+.sky-box1{
+position: absolute;
+top:0;
+left:42%;
+height:225px;
+width:260px;;
+border: black 2px solid;
+display:block;
+background-color: lightskyblue;
+}
+.sky-box2{
+position: absolute;
+top:25%;
+left:26%;
+height:225px;
+width:260px;;
+border: black 2px solid;
+display:block;
+background-color: lightskyblue;
+}
+.sky-box3{
+position: absolute;
+top:25%;
+left:42%;
+height:225px;
+width:260px;;
+border: black 2px solid;
+display:block;
+background-color: lightskyblue;
+}
+.sky-box4{
+position: absolute;
+top:25%;
+left:58%;
+height:225px;
+width:260px;;
+border: black 2px solid;
+display:block;
+background-color: lightskyblue;
+}
+.sky-box5{
+position: absolute;
+bottom:0.5%;
+/* top:74.5%; */
+left:9.75%;
+height:225px;
+width:260px;;
+border: black 2px solid;
+display:block;
+background-color: lightskyblue;
+}
+.sky-box6{
+position: absolute;
+bottom:0.5%;
+left:26%;
+height:225px;
+width:260px;;
+border: black 2px solid;
+display:block;
+background-color: lightskyblue;
+}
+.sky-box7{
+position: absolute;
+bottom:0.5%;
+left:42%;
+height:225px;
+width:260px;;
+border: black 2px solid;
+display:block;
+background-color: lightskyblue;
+    }
+.sky-box8{
+position: absolute;
+bottom:0.5%;
+left:58%;
+height:225px;
+width:260px;;
+border: black 2px solid;
+display:block;
+background-color: lightskyblue;
+    }
+.sky-box9{
+position: absolute;
+bottom:0.5%;
+right:9.75%;
+height:225px;
+width:260px;;
+border: black 2px solid;
+display:block;
+background-color: lightskyblue;
+        }
+#sky{
+display: flex;
+justify-content: center;
+justify-items: center;
+}
+#cloud-button{
+display: flex;
+justify-content: center;
+justify-items: center;
+margin-top:25px;
+
+}
+#cloud{
+display: flex;
+justify-content: center;
+justify-items: center;
+height:20px;
+width: 50px;
+background-color: transparent;
+border:2px solid lightslategray;
+border-radius: 10%;
+text-decoration: none;
+}
+#cloud-guy{
+    margin-top:10px;
+}
+#cloud-guy:hover {
+    -webkit-animation: bounce 0.7s ease-out;
+            animation: bounce 0.7s ease-out;
+  }
+  @keyframes bounce {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    25%, 45% {
+      -webkit-transform: translateY(-15px);
+              transform: translateY(-15px);
+    }
+    50% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    70% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    80% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    90% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+
+
+
 /*-------------------------------------------------------------------------------------------------- */
 /* .Nav { grid-area: Nav; 
   border: 1px solid  black;}
