@@ -12,7 +12,7 @@ div{ width:100px; height:100px; background:red;} */
     "Nav Main Header";
 } */
 body{
-    background-color: black;
+ background-color: black;
 }
 .Main { 
   display:flex;
@@ -20,7 +20,7 @@ body{
   /* justify-content: center; */
   /* justify-items: center; */
   border: 1px solid  black;
-  background-color: black;
+  background-color:lightskyblue;
   /* background-image: url("img/sky.jpg"); */
 }
 #tiles{
@@ -166,7 +166,7 @@ body{
 #clear{
     position: fixed;
     right:10px;
-    bottom:10px;
+    top:10px;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -189,7 +189,7 @@ body{
 #vr-line{
  position: absolute;
  top:0;
- left:26%;
+ left:20%;
  /* bottom:10%; */
  height:1000px;
  border-left: 2px solid black;   
@@ -197,7 +197,7 @@ body{
 #vr-line2{
 position: absolute;
 top:0;
-left:58%;
+left:40%;
 /* bottom:10%; */
 height:1000px;
 border-left: 2px solid black;   
@@ -205,38 +205,48 @@ border-left: 2px solid black;
 #vr-line3{
 position: absolute;
 top:0;
-left:42%;
-/* bottom:10%; */
+left:60%; 
+/* bottom:10%;  */
 height:1000px;
 border-left: 2px solid black;   
 }
 #vr-line4{
 position: absolute;
 top:0;
-right:25.77%;
+left:80%;
 /* bottom:10%; */
-height:1000px;
+height:100%;
 border-left: 2px solid black;   
 }
 #hr-line{
 position: absolute;
 top:25%;
-left:5%;
+left:0%;
 /* transform: translate(-50%, -50%); */
 text-decoration: underline;
-width:1500px;
+width:100%;
 border-top: 2px solid black;
 }
 
 #hr-line2{
 position: absolute;
 top:50%;
-left:5%;
+left:0%;
 /* transform: translate(-50%, -50%); */
 text-decoration: underline;
-width:1500px;
+width:100%;
 border-top: 2px solid black;
 } 
+
+#hr-line3{
+  position: absolute;
+  top:75%;
+  left:0%;
+  /* transform: translate(-50%, -50%); */
+  text-decoration: underline;
+  width:100%;
+  border-top: 2px solid black;
+  } 
 
 
 canvas.shake {
@@ -287,9 +297,9 @@ canvas.shake {
 .rock-box1{
 position: absolute;
 top:0;
-left:26%;
+left:20%;
 height:225px;
-width:260px;;
+width:20%;
 border: black 2px solid;
 display:block;
 background-color: green;
@@ -297,20 +307,20 @@ background-color: green;
 .rock-box2{
 position: absolute;
 top:0;
-left:58%;
+left:60%;
 height:225px;
-width:260px;;
+width:20%;
 border: black 2px solid;
 display:block;
 background-color: green;
 }
-.rock-box{
+/* .rock-box{
 height:225px;
 width:100%;
 border: black 2px solid;
 display:block;
 background-color: green;
-}
+} */
 #boulder{
 display: flex;
 justify-content: center;
@@ -418,9 +428,9 @@ text-decoration: none;
 .sky-box1{
 position: absolute;
 top:0;
-left:42%;
+left:40%;
 height:225px;
-width:260px;;
+width:20%;
 border: black 2px solid;
 display:block;
 background-color: lightskyblue;
@@ -428,9 +438,9 @@ background-color: lightskyblue;
 .sky-box2{
 position: absolute;
 top:25%;
-left:26%;
+left:20%;
 height:225px;
-width:260px;;
+width:20%;
 border: black 2px solid;
 display:block;
 background-color: lightskyblue;
@@ -438,9 +448,9 @@ background-color: lightskyblue;
 .sky-box3{
 position: absolute;
 top:25%;
-left:42%;
+left:40%;
 height:225px;
-width:260px;;
+width:20%;
 border: black 2px solid;
 display:block;
 background-color: lightskyblue;
@@ -448,55 +458,65 @@ background-color: lightskyblue;
 .sky-box4{
 position: absolute;
 top:25%;
-left:58%;
+left:60%;
 height:225px;
-width:260px;;
+width:20%;
 border: black 2px solid;
 display:block;
 background-color: lightskyblue;
 }
 .sky-box5{
 position: absolute;
-bottom:0.5%;
+top:75%;
 /* top:74.5%; */
-left:9.75%;
+left:20%;
 height:225px;
-width:260px;;
+width:20%;
 border: black 2px solid;
 display:block;
 background-color: lightskyblue;
 }
 .sky-box6{
 position: absolute;
-bottom:0.5%;
-left:26%;
+top:75%;
+left:40%;
 height:225px;
-width:260px;;
+width:20%;
 border: black 2px solid;
 display:block;
 background-color: lightskyblue;
 }
 .sky-box7{
 position: absolute;
-bottom:0.5%;
-left:42%;
+top:75%;
+left:60%;
 height:225px;
-width:260px;;
+width:20%;
 border: black 2px solid;
 display:block;
 background-color: lightskyblue;
     }
-.sky-box8{
+.sky-box-mini-l{
 position: absolute;
-bottom:0.5%;
-left:58%;
+top:75%;
+left:0%;
 height:225px;
-width:260px;;
+width:20%;
 border: black 2px solid;
 display:block;
 background-color: lightskyblue;
     }
-.sky-box9{
+.sky-box-mini-r{
+  position: absolute;
+  top:75%;
+  left:80%;
+  height:225px;
+  width:20%;
+  border: black 2px solid;
+  display:block;
+  background-color: lightskyblue;
+      }
+/* .sky-box9{
 position: absolute;
 bottom:0.5%;
 right:9.55%;
@@ -505,7 +525,7 @@ width:260px;;
 border: black 2px solid;
 display:block;
 background-color: lightskyblue;
-        }
+        } */
 #sky{
 display: flex;
 justify-content: center;
@@ -518,6 +538,13 @@ justify-items: center;
 margin-top:25px;
 
 }
+#cloud-button-mini{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top:45px;
+  
+  }
 #cloud{
 display: flex;
 justify-content: center;
@@ -531,7 +558,13 @@ text-decoration: none;
 }
 #cloud-guy{
     margin-top:10px;
+    
 }
+
+#cloud-guy-mini{
+  margin-top:10px;
+}
+
 #cloud-guy:hover {
     -webkit-animation: bounce 0.7s ease-out;
             animation: bounce 0.7s ease-out;

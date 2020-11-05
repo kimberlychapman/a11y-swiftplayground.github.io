@@ -52,7 +52,7 @@
          <audio id="gem" src="audio/gem.wav" type="audio/wav"></audio>
          <audio id="collect" src="audio/collect.wav" type="audio/wav"></audio>
          <audio id="toggle" src="audio/toggle.wav" type="audio/wav"></audio>
-         <audio id="here" src="audio/codebot_here.m4a" type="audio/m4a"></audio>
+         <audio id="here" src="audio/codebot_here.wav" type="audio/wav"></audio>
          <audio id="listening" src="audio/codebot_listening.m4a" type="audio/m4a"></audio>
          <audio id="codebot-run" src="audio/wi.m4a" type="audio/m4a"></audio>
    </section>
@@ -63,7 +63,7 @@
                   <!-- <div class="box3"> -->
                      <div id="sketchpadapp">
                            <div class="rightside">
-                              <canvas id="sketchpad" height="900" width="1300">
+                              <canvas id="sketchpad" height="900" width="1500">
                               </canvas>
                               <div id="codebot">
                                  <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('here').play()" ondblclick="document.getElementById('here').pause()">
@@ -80,6 +80,22 @@
                                 </div>
                                 <div id="vr-line2"></div>
                                 <div id="hr-line2"></div>
+                                <div class="sky-box-mini-l">
+                                    <div id="sky">
+                                        <img id="cloud-guy-mini" src="img/cloud-family-mini.png">
+                                    </div>
+                                    <div id="cloud-button-mini">
+                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                                    </div>
+                                </div>
+                                <div class="sky-box-mini-r">
+                                    <div id="sky">
+                                        <img id="cloud-guy-mini" src="img/cloud-family-mini.png">
+                                    </div>
+                                    <div id="cloud-button-mini">
+                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                                    </div>
+                                </div>
                                 <div class="sky-box1">
                                     <div id="sky">
                                         <img id="cloud-guy" src="img/cloud-family.png">
@@ -87,7 +103,7 @@
                                     <div id="cloud-button">
                                         <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
                                     </div>
-                                </div> 
+                                </div>
                                 <div id="vr-line3"></div>
                                 <div class="rock-box2">
                                     <div id="boulder">
@@ -99,6 +115,7 @@
                                  </div>
                                 </div>
                                  <div id="hr-line3"></div>
+                                 <div id="hr-line4"></div>
                                 <div class="sky-box2">
                                     <div id="sky">
                                         <img id="cloud-guy" src="img/cloud-family.png">
@@ -107,6 +124,7 @@
                                         <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
                                     </div>
                                     </div>
+                                </div>
                                 <div class="sky-box3">
                                     <div id="sky">
                                         <img id="cloud-guy" src="img/cloud-family.png">
@@ -123,6 +141,7 @@
                                         <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
                                     </div>
                                 </div>
+                                
                                 <div class="sky-box5">
                                     <div id="sky">
                                         <img id="cloud-guy" src="img/cloud-family.png">
@@ -138,7 +157,7 @@
                                     <div id="cloud-button">
                                         <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
                                     </div>
-                                </div>
+                                </div> 
                                 <div class="sky-box7">
                                     <div id="sky">
                                         <img id="cloud-guy" src="img/cloud-family.png">
@@ -147,23 +166,7 @@
                                         <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
                                     </div>
                                 </div>
-                                <div class="sky-box8">
-                                    <div id="sky">
-                                        <img id="cloud-guy" src="img/cloud-family.png">
-                                    </div>
-                                    <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
-                                    </div>
-                                </div>
                                 <div id="vr-line4"></div>
-                                <div class="sky-box9">
-                                    <div id="sky">
-                                        <img id="cloud-guy" src="img/cloud-family.png">
-                                    </div>
-                                    <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
-                                    </div>
-                                </div>
                               
                               <div id="clear"><input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
                            </div>   
