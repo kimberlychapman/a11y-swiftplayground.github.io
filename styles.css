@@ -120,10 +120,62 @@ body{
 
 /* ********************************************************************************************************* */
 #codebot{
-    position:fixed;
-    top:2px;
-    left:2px;
+  position:fixed;
+  left:60px;
+  top:0px;
+  height:70px;
   }
+.pulldown1{
+  position:fixed;
+  top:2px;
+  left:2px;
+  width:100px;
+  border-radius:10px;
+  /* border:2px solid lightslategray; */
+}
+#commands{
+  display:flex;
+  justify-content:center;
+  justify-items: center;
+}
+/* #command-bar{
+  
+} */
+#two-finger1{
+  display:none;
+  font-family: 'Trispace', sans-serif;
+}
+/* h1{ */
+  /* font-family: 'Trispace', sans-serif;
+  font-size:16pt;
+  display:flex;
+  justify-content:right;
+  justify-items: right;
+  background-color: white; */
+/* } */
+.options{
+  display: flex;
+  flex-direction: row;
+}
+#add-commands{
+  background-color: white;
+}
+#command-options{
+  background-color: white;
+}
+.option1{
+  font-size:9pt;
+}
+#swipe-right{
+  height:40px;
+  width: 35px;
+}
+#commands:hover ~#two-finger1{
+  display:block;
+  font-family: 'Trispace', sans-serif;
+  background-color: white;
+}
+
 /* ********************************************************************************************************* */
 #sketchpadapp {
   /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
@@ -166,7 +218,7 @@ body{
 #clear{
     position: fixed;
     right:10px;
-    top:10px;
+    bottom:10px;
     display: flex;
     justify-content: center;
     justify-items: center;

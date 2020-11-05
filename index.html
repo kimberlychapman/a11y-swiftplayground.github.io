@@ -65,9 +65,23 @@
                            <div class="rightside">
                               <canvas id="sketchpad" height="900" width="1500">
                               </canvas>
-                              <div id="codebot">
-                                 <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('here').play()" ondblclick="document.getElementById('here').pause()">
-                              </div>
+                            <div id="codebot">
+                                <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('here').play()" ondblclick="document.getElementById('here').pause()">
+                            </div>
+                            <div class="pulldown1">
+                                <img id="commands" src="img/swift.png">
+                                <span id="two-finger1">
+                                    <div class="options">
+                                    <div id="add-commands"><img id="command-bar"src="img/command-boxes.png"></div>
+                                        <div id="command-options">
+                                            <div class="option1">Option 1:<br><img id="speaker" src="img/speaker.png"><br><br>"Hey Codebot, add [command]."<br>Codebot adds command to user’s code & uses Voice Back (i.e. “Adding [INSERT COMMAND].”).<br>
+                                                <br>Option 2:<br><img id="speaker" src="img/speaker.png">  <img id="swipe-right" src="img/swipe_right.png"><br>“Hey Codebot, select [COMMAND].”<br><br>1. Command selected & declared with Voice Back.
+                                                (i.e. “[INSERT COMMAND] selected.”).<br>2. User swipes right to add selected command to code & Voice Back confirms action (i.e. “Adding [INSERT COMMAND}.”).</div>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+
                               <div id="vr-line"></div>
                               <div id="vr-line2"></div>
                               <div id="vr-line3"></div>
