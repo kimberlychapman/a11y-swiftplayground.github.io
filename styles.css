@@ -38,7 +38,7 @@ body{
   display:flex;
   flex-direction:column;
 }
-#column-2{
+/* #column-2{
   width: 20%;
   border: 2px solid limegreen;
   display:flex;
@@ -49,8 +49,8 @@ body{
   width: 20%;
   border: 2px solid limegreen;
   flex-direction:column;
-}
-#column-4{
+} */
+/* #column-4{
   display:flex;
   width: 20%;
   border: 2px solid limegreen;
@@ -61,8 +61,8 @@ body{
   width: 20%;
   border: 2px solid limegreen;
   flex-direction:column;
-}
-.box{
+} */
+/* .box{
   height:225px;
   width:100%;
   border: black 1px solid;
@@ -96,7 +96,7 @@ body{
   height:225px;
   width:100%;
   border: black 1px solid;
-}
+} */
 
 
 
@@ -174,6 +174,35 @@ body{
 .options{
   display: flex;
   flex-direction: row;
+}
+#haptic-tech{
+  position:fixed;
+  top:2px;
+  left:250px;
+}
+.haptics{
+  position:absolute;
+  top:2px;
+  left:200px;
+}
+#haptic-feedback{
+  display:none;
+  width:500px;
+}
+#haptic-tech:hover~#haptic-feedback{
+  display:block;
+  font-family: 'Trispace', sans-serif;
+  background-color: white;
+  font-size:10pt;
+  width:400px;
+}
+
+.haptics:hover~#haptic-feedback{
+  display:block;
+  font-family: 'Trispace', sans-serif;
+  background-color: white;
+  font-size:10pt;
+  width:400px;
 }
 .options2{
   display:flex;
@@ -428,18 +457,20 @@ justify-items: center;
 display: flex;
 justify-content: center;
 justify-items: center;
+margin-top:-15px;
 
 }
 #crash{
 display: flex;
 justify-content: center;
 justify-items: center;
-height:20px;
-width: 50px;
+height:40px;
+width: 80px;
 background-color: transparent;
-border:2px solid lightslategray;
+border:2px solid black;
 border-radius:10%;
 text-decoration: none;
+font-family: 'Trispace', sans-serif;
 }
 
 #rock:hover {
@@ -628,26 +659,34 @@ justify-items: center;
 display: flex;
 justify-content: center;
 justify-items: center;
-margin-top:25px;
+margin-top:5px;
 
 }
 #cloud-button-mini{
   display: flex;
   justify-content: center;
   justify-items: center;
-  margin-top:45px;
+  margin-top:27.5px;
   
   }
 #cloud{
 display: flex;
 justify-content: center;
 justify-items: center;
-height:20px;
+height:40px;
+width: 80px;
+background-color: transparent;
+border:2px solid black;
+border-radius:10%;
+text-decoration: none;
+font-family: 'Trispace', sans-serif;
+
+/* height:20px;
 width: 50px;
 background-color: transparent;
 border:2px solid lightslategray;
 border-radius: 10%;
-text-decoration: none;
+text-decoration: none; */
 }
 #cloud-guy{
     margin-top:10px;
@@ -701,7 +740,7 @@ text-decoration: none;
 }
 .gem{
   margin-top:
-  70px;
+  50px;
 }
 
 #gem-button{
@@ -716,12 +755,19 @@ top:70%;
 left:80%;
 justify-content: center;
 justify-items: center;
-height:20px;
+height:40px;
+width: 80px;
+background-color: transparent;
+border:2px solid black;
+border-radius:10%;
+text-decoration: none;
+font-family: 'Trispace', sans-serif;
+/* height:20px;
 width: 50px;
 background-color: transparent;
 border:2px solid lightslategray;
 border-radius: 10%;
-text-decoration: none;
+text-decoration: none; */
 }
 .gem:hover {
   -webkit-animation: pulse 0.7s ease-out;
@@ -765,7 +811,7 @@ text-decoration: none;
   transform: translate(-50%, -50%);
 }
 .toggle{
-  margin-top:60px;
+  margin-top:40px;
 }
 #switch{
   display:absolute;
@@ -773,12 +819,19 @@ text-decoration: none;
   left:86%;
   justify-content: center;
   justify-items: center;
-  height:20px;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+  /* height:20px;
   width: 50px;
   background-color: transparent;
   border:2px solid lightslategray;
   border-radius: 10%;
-  text-decoration: none;
+  text-decoration: none; */
   }
 #toggle-switch-button{
   display: flex;
@@ -794,7 +847,7 @@ text-decoration: none;
     transform: translate(-50%, -50%);
   }
   .toggle2{
-    margin-top:70px;
+    margin-top:60px;
   }
   #switch2{
     display:absolute;
@@ -802,12 +855,19 @@ text-decoration: none;
     left:86%;
     justify-content: center;
     justify-items: center;
-    height:20px;
+    height:40px;
+    width: 80px;
+    background-color: transparent;
+    border:2px solid black;
+    border-radius:10%;
+    text-decoration: none;
+    font-family: 'Trispace', sans-serif;
+    /* height:20px;
     width: 50px;
     background-color: transparent;
     border:2px solid lightslategray;
     border-radius: 10%;
-    text-decoration: none;
+    text-decoration: none; */
     }
   #toggle-switch-button2{
     display: flex;

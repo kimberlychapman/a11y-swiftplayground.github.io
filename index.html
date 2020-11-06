@@ -77,12 +77,35 @@
                                     <div id="add-commands"><img id="command-bar"src="img/command-boxes.png"></div>
                                         <div id="command-options">
                                             <div class="option1">Option 1:<br><img id="speaker" src="img/speaker.png"><br><span id="text">"Hey Codebot, add [command]."</span><br>1. Codebot adds command to user’s code & provides verbal confirmation.<br>
-                                                <br><br>Option 2:<br><img id="speaker" src="img/speaker.png">  <img id="swipe-right" src="img/swipe_right.png"><br><span id="text">“Hey Codebot, select [COMMAND].”</span><br>1. Command is selected & Codebot provides verbal confirmation.
-                                               <br>2. User swipes right to add a command to the code & Codebot provides verbal confirmation when the command is added.</div>
+                                                <br><br>Option 2:<br><img id="speaker" src="img/speaker.png">  <img id="swipe-right" src="img/swipe_right.png"><br>
+                                                <span id="text">“Hey Codebot, select [COMMAND].”</span>
+                                                <br>1. Command is selected & Codebot provides verbal confirmation.
+                                               <br>2. User swipes right to add a command to the code & Codebot
+                                                provides verbal confirmation when the command is added.</div>
                                         </div>
                                     </div>
                                 </span>
                             </div>
+                            <div class="haptics"><img id="haptic-tech" src="img/haptics.png">
+                                <span id="haptic-feedback"><br><br>
+                                <br>I am wondering if<br>it
+                                is possible to <br>add some sort
+                                of <br>haptic feedback<br>
+                                (ex. different<br>vibration 
+                                patterns)<br>that occur when 
+                                <br>the user: goes off<br>of the 
+                                path while<br>tracing, and/or
+                                <br>when their bot<br>goes off 
+                                of the<br>path due to an<br>
+                                error in their<br>code. To model
+                                this<br>I've added a hover<br>effect 
+                                and a click<br>effect to squares
+                                <br>containing images.<br>If you hover
+                                over<br>the image, the<br>image shakes;
+                                and<br>if you click the<br>button,
+                                it <br>plays a sound<br>effect.
+                                </span></div>
+                               
                             <div class="pulldown2">
                                 <img id="func" src="img/coding.png" onclick="document.getElementById('run-code').play()" ondblclick="document.getElementById('run-code').pause()">
                                 <span id="two-finger2">
@@ -108,7 +131,7 @@
                                         <img id="rock" src="img/rock.png">
                                     </div>
                                     <div id="crash-button">
-                                        <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()"></button>
+                                        <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">Sound Effect</span></button>
                                     </div>
                                 </div>                              
                                 <div class="sky-box-mini-l">
@@ -116,7 +139,7 @@
                                         <img id="cloud-guy-mini" src="img/cloud-family-mini.png">
                                     </div>
                                     <div id="cloud-button-mini">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
                                     </div>
                                 </div>
                                 <div class="sky-box-mini-r">
@@ -124,7 +147,7 @@
                                         <img id="cloud-guy-mini" src="img/cloud-family-mini.png">
                                     </div>
                                     <div id="cloud-button-mini">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
                                     </div>
                                 </div>
                                 <div class="sky-box1">
@@ -132,7 +155,7 @@
                                         <img id="cloud-guy" src="img/cloud-family.png">
                                     </div>
                                     <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
                                     </div>
                                 </div>
                       
@@ -141,7 +164,7 @@
                                         <img id="rock" src="img/rock.png">
                                     </div>
                                     <div id="crash-button">
-                                        <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()"></button>
+                                        <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">Sound Effect</button>
                                     </div>
                                  </div>
                                 </div>
@@ -150,7 +173,7 @@
                                         <img class="toggle" src="img/toggleSwitch.png">
                                     </div>
                                     <div id="toggle-switch-button">
-                                        <button id="switch" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()"></button>
+                                        <button id="switch" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()">Sound Effect</button>
                                     </div>
                                 </div>
                                 <div class="sky-box2">
@@ -158,7 +181,7 @@
                                         <img id="cloud-guy" src="img/cloud-family.png">
                                     </div>
                                     <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
                                     </div>
                                     </div>
                                 </div>
@@ -167,7 +190,7 @@
                                         <img id="cloud-guy" src="img/cloud-family.png">
                                     </div>
                                     <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
                                     </div>
                                 </div>
                                 <div class="sky-box4">
@@ -175,7 +198,7 @@
                                         <img id="cloud-guy" src="img/cloud-family.png">
                                     </div>
                                     <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
                                     </div>
                                 </div>
                                 <div id="collect-gem">
@@ -183,7 +206,7 @@
                                         <img class="gem" src="img/collectGem.png">
                                     </div>
                                     <div id="gem-button">
-                                        <button id="collect" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('collect').pause()"></button>
+                                        <button id="collect" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('collect').pause()">Sound Effect</button>
                                     </div>
                                 </div>
                                 <div id="toggle-switch2">
@@ -191,7 +214,7 @@
                                         <img class="toggle2" src="img/toggleSwitch.png">
                                     </div>
                                     <div id="toggle-switch-button2">
-                                        <button id="switch2" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()"></button>
+                                        <button id="switch2" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()">Sound Effect</button>
                                     </div>
                                 </div>
                                 <div class="sky-box5">
@@ -199,7 +222,7 @@
                                         <img id="cloud-guy" src="img/cloud-family.png">
                                     </div>
                                     <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
                                     </div>
                                 </div>
                                 <div class="sky-box6">
@@ -207,7 +230,7 @@
                                         <img id="cloud-guy" src="img/cloud-family.png">
                                     </div>
                                     <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
                                     </div>
                                 </div> 
                                 <div class="sky-box7">
@@ -215,7 +238,7 @@
                                         <img id="cloud-guy" src="img/cloud-family.png">
                                     </div>
                                     <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
+                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
                                     </div>
                                 </div>
                                  <div id="codebot">
