@@ -55,6 +55,7 @@
          <audio id="here" src="audio/codebot_here.wav" type="audio/wav"></audio>
          <audio id="listening" src="audio/codebot_listening.m4a" type="audio/m4a"></audio>
          <audio id="codebot-run" src="audio/wi.m4a" type="audio/m4a"></audio>
+         <audio id="add" src="audio/add-command.wav" type="audio/wav"></audio>
    </section>
    <body onload="init()"> 
        <div class="Main">
@@ -69,18 +70,19 @@
                                 <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('here').play()" ondblclick="document.getElementById('here').pause()">
                             </div>
                             <div class="pulldown1">
-                                <img id="commands" src="img/swift.png">
+                                <img id="commands" src="img/swift.png"onclick="document.getElementById('add').play()">
                                 <span id="two-finger1">
                                     <div class="options">
                                     <div id="add-commands"><img id="command-bar"src="img/command-boxes.png"></div>
                                         <div id="command-options">
-                                            <div class="option1">Option 1:<br><img id="speaker" src="img/speaker.png"><br><br>"Hey Codebot, add [command]."<br>Codebot adds command to user’s code & uses Voice Back (i.e. “Adding [INSERT COMMAND].”).<br>
-                                                <br>Option 2:<br><img id="speaker" src="img/speaker.png">  <img id="swipe-right" src="img/swipe_right.png"><br>“Hey Codebot, select [COMMAND].”<br><br>1. Command selected & declared with Voice Back.
-                                                (i.e. “[INSERT COMMAND] selected.”).<br>2. User swipes right to add selected command to code & Voice Back confirms action (i.e. “Adding [INSERT COMMAND}.”).</div>
+                                            <div class="option1">Option 1:<br><img id="speaker" src="img/speaker.png"><br><span id="text">"Hey Codebot, add [command]."</span><br>1. Codebot adds command to user’s code & provides verbal confirmation.<br>
+                                                <br><br>Option 2:<br><img id="speaker" src="img/speaker.png">  <img id="swipe-right" src="img/swipe_right.png"><br><span id="text">“Hey Codebot, select [COMMAND].”</span><br>1. Command is selected & Codebot provides verbal confirmation.
+                                               <br>2. User swipes right to add a command to the code & Codebot provides verbal confirmation when the command is added.</div>
                                         </div>
                                     </div>
                                 </span>
                             </div>
+                            <!-- <div class="pulldown2"></div> -->
 
                               <div id="vr-line"></div>
                               <div id="vr-line2"></div>
