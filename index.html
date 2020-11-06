@@ -56,6 +56,7 @@
          <audio id="listening" src="audio/codebot_listening.m4a" type="audio/m4a"></audio>
          <audio id="codebot-run" src="audio/wi.m4a" type="audio/m4a"></audio>
          <audio id="add" src="audio/add-command.wav" type="audio/wav"></audio>
+         <audio id="run-code" src="audio/codebot_run_code.wav" type="audio/wav"></audio>
    </section>
    <body onload="init()"> 
        <div class="Main">
@@ -64,7 +65,7 @@
                   <!-- <div class="box3"> -->
                      <div id="sketchpadapp">
                            <div class="rightside">
-                              <canvas id="sketchpad" height="900" width="1500">
+                              <canvas id="sketchpad" height="800" width="1500">
                               </canvas>
                             <div id="codebot">
                                 <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('here').play()" ondblclick="document.getElementById('here').pause()">
@@ -82,7 +83,17 @@
                                     </div>
                                 </span>
                             </div>
-                            <!-- <div class="pulldown2"></div> -->
+                            <div class="pulldown2">
+                                <img id="func" src="img/coding.png" onclick="document.getElementById('run-code').play()" ondblclick="document.getElementById('run-code').pause()">
+                                <span id="two-finger2">
+                                    <div class="options2">
+                                    <div id="remove-commands"><img id="code-bar" src="img/run-code.png"></div>
+                                       <div id=code-options>
+
+                                       </div> 
+                                    </div>
+                                </span>
+                            </div>
 
                               <div id="vr-line"></div>
                               <div id="vr-line2"></div>
@@ -207,9 +218,11 @@
                                         <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
                                     </div>
                                 </div>
-                               
+                                 <div id="codebot">
+                                <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('here').play()" ondblclick="document.getElementById('here').pause()">
+                            </div>
                               
-                              <div id="clear"><input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
+                              <div id="clear"><img id="eraser" src="img/eraser.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
                            </div>   
                      </div>
                   </div>
