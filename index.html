@@ -5,7 +5,19 @@
       <link rel="stylesheet" href="styles.css">
       <link href=”css/ipadP.css” rel=”stylesheet” media=”only screen and (min-device-width:  768px) and (max-device-width: 1024px) and (orientation: portrait)”>
       <link href=”css/ipadL.css” rel=”stylesheet” media=”only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)”>  
-      <style>
+      <style type="text/css">
+        @font-face {
+          @font-face {
+    font-family: 'sf_ui_displayregular';
+    src: url('sf-ui-display-regular-webfont.woff2') format('woff2'),
+         url('sf-ui-display-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+      }
+    </style>
+     <style>
             @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap');
       </style>
       <script type="text/javascript" src="index.js"></script>
@@ -71,7 +83,7 @@
                                 <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('here').play()" ondblclick="document.getElementById('here').pause()">
                             </div>
                             <div class="pulldown1">
-                                <img id="commands" src="img/swift.png"onclick="document.getElementById('add').play()">
+                                <a href="presentation.html"><img id="commands" src="img/swift.png"onclick="document.getElementById('add').play()">
                                 <span id="two-finger1">
                                     <div class="options">
                                     <div id="add-commands"><img id="command-bar"src="img/command-boxes.png"></div>
@@ -84,9 +96,12 @@
                                                 provides verbal confirmation when the command is added.</div>
                                         </div>
                                     </div>
-                                </span>
+                                </span></a>
                             </div>
-                            <div class="haptics"><img id="haptic-tech" src="img/haptics.png">
+                            <!-- <div id="back">
+                                <a class="go-back" href="presentation.html">Back</a>
+                            </div> -->
+                            <!-- <div class="haptics"><img id="haptic-tech" src="img/haptics.png">
                                 <span id="haptic-feedback"><br><br>
                                 <br>I am wondering if<br>it
                                 is possible to <br>add some sort
@@ -105,6 +120,7 @@
                                 and<br>if you click the<br>button,
                                 it <br>plays a sound<br>effect.
                                 </span></div>
+                           </div> -->
                                
                             <div class="pulldown2">
                                 <img id="func" src="img/coding.png" onclick="document.getElementById('run-code').play()" ondblclick="document.getElementById('run-code').pause()">
@@ -144,11 +160,11 @@
                                 </div>
                                 <div class="sky-box-mini-r">
                                     <div id="sky">
-                                        <img id="cloud-guy-mini" src="img/cloud-family-mini.png">
+                                        <!-- <img id="cloud-guy-mini" src="img/cloud-family-mini.png"> -->
                                     </div>
-                                    <div id="cloud-button-mini">
+                                    <!-- <div id="cloud-button-mini">
                                         <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="sky-box1">
                                     <div id="sky">
@@ -245,112 +261,13 @@
                                 <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('here').play()" ondblclick="document.getElementById('here').pause()">
                             </div>
                               
-                              <div id="clear"><img id="eraser" src="img/eraser.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
-                           </div>   
+                              <div id="clear"><img id="eraser" src="img/erase.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
+                           </div>
+
                      </div>
                   </div>
-                  <!-- <div class="box">
-                     <div id="sky">
-                        <img id="cloud-guy" src="img/cloud-buddies.png">
-                     </div>
-                     <div id="cloud-button">
-                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
-                     </div>
-                  </div>  -->
                </div>
-               <!-- <div id="column-2">
-                  <div class="rock-box">
-                     <div id="boulder">
-                        <img id="rock" src="img/rock.png">
-                     </div>
-                     <div id="crash-button">
-                        <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()"></button>
-                     </div>
-                  </div>
-                  <div class="box">
-                     <div id="sky">
-                        <img id="cloud-guy" src="img/cloud-buddies.png">
-                     </div>
-                     <div id="cloud-button">
-                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
-                     </div>
-                  </div>
-                  <div class="box4"></div>
-                  <div class="box">
-                     <div id="sky">
-                        <img id="cloud-guy" src="img/cloud-buddies.png">
-                     </div>
-                     <div id="cloud-button">
-                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
-                     </div>
-                  </div>
-               </div> -->
-               <!-- <div id="column-3">
-                  <div class="box">
-                     <div id="sky">
-                        <img id="cloud-guy" src="img/cloud-buddies.png">
-                     </div>
-                     <div id="cloud-button">
-                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
-                     </div>
-                  </div>
-                  <div class="box">
-                     <div id="sky">
-                        <img id="cloud-guy" src="img/cloud-buddies.png">
-                     </div>
-                     <div id="cloud-button">
-                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
-                     </div>
-                  </div>
-                  <div class="box1"><div id="gem"><img id="gem" src="img/collectGem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('collect').pause()"></div></div>
-                  <div class="box">
-                     <div id="sky">
-                        <img id="cloud-guy" src="img/cloud-buddies.png">
-                     </div>
-                     <div id="cloud-button">
-                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
-                     </div>
-                  </div>
-               </div> -->
-               <!-- <div id="column-4">
-                  <div class="rock-box">
-                     <div id="boulder"><img id="rock" src="img/rock.png">
-                     </div>
-                     <div id="crash-button">
-                        <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()"></button>
-                     </div>
-                  </div>
-                  <div class="box">
-                     <div id="sky">
-                        <img id="cloud-guy" src="img/cloud-buddies.png">
-                     </div>
-                     <div id="cloud-button">
-                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
-                     </div>
-                  </div>
-                  <div class="box4"></div>
-                  <div class="box">
-                     <div id="sky">
-                        <img id="cloud-guy" src="img/cloud-buddies.png">
-                     </div>
-                     <div id="cloud-button">
-                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
-                     </div>
-                  </div>
-               </div> -->
-               <!-- <div id="column-5">
-                  <div class="box1"><div id="toggle"><img id="toggle" src="img/toggleSwitch.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()"></div></div>
-                  <div class="box4"></div>
-                  <div class="box1"><div id="toggle"><img id="toggle" src="img/toggleSwitch.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()"></div></div>
-                  <div class="box">
-                     <div id="sky">
-                        <img id="cloud-guy" src="img/cloud-buddies.png">
-                     </div>
-                     <div id="cloud-button">
-                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()"></button>
-                     </div>
-                  </div>
-               </div> -->
+              
          </section>
          </div>
    </body>
