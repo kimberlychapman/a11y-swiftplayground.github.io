@@ -234,16 +234,7 @@ body{
   display:flex;
   flex-direction: column;
 }
-#add-commands{
-  background-color: white;
-}
-#command-options{
-  background-color: white;
-  text-decoration:none;
-}
-#code-options{
-  background-color: white;
-}
+
 .option1{
   font-size:9pt;
   color:black;
@@ -256,8 +247,8 @@ body{
 #commands:hover ~#two-finger1{
   display:block;
   font-family: 'Trispace', sans-serif;
-  background-color: white;
-  width: 200px;
+  background-color: black;
+  width: 180px;
 }
 #text{
   color:blue;
