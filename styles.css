@@ -266,8 +266,8 @@ body{
 #func:hover ~#two-finger2{
   display:block;
   font-family: 'Trispace', sans-serif;
-  background-color: white;
-  width: 170px;
+  background-color: black;
+  width: 155px;
 }
 /* ********************************************************************************************************* */
 #sketchpadapp {
@@ -492,7 +492,7 @@ justify-items: center;
 display: flex;
 justify-content: center;
 justify-items: center;
-margin-top:-20px;
+margin-top:-17px;
 
 }
 #crash{
@@ -701,7 +701,7 @@ margin-top:5px;
   display: flex;
   justify-content: center;
   justify-items: center;
-  margin-top:-15px;
+  margin-top:-27px;
   
   }
 #cloud-button-mini{
@@ -825,6 +825,7 @@ display: flex;
 justify-content: center;
 justify-items: center;
 /* margin-top:10px; */
+margin-bottom:15px;
 }
 #collect{
 display:absolute;
@@ -914,6 +915,7 @@ text-decoration: none; */
   display: flex;
   justify-content: center;
   justify-items: center;
+  margin-bottom: 15px;
   }
 
   #toggle-switch2{
@@ -949,6 +951,7 @@ text-decoration: none; */
     display: flex;
     justify-content: center;
     justify-items: center;
+    margin-bottom:15px;
     }
     .toggle:hover {
       -webkit-animation: swing 0.5s ease-out;
