@@ -802,13 +802,15 @@ text-decoration: none; */
 /* ********************************************************************************************************* */   
 #collect-gem{
   position: absolute;
-  top:60%;
+  top:65%;
   left:50%;
   transform: translate(-50%, -50%);
+  height:180px;
+  width:20%;
 }
 .gem{
   margin-top:
-  50px;
+  -40px;
 }
 
 #gem-button{
@@ -816,6 +818,7 @@ display: flex;
 justify-content: center;
 justify-items: center;
 /* margin-top:10px; */
+margin-top:20px;
 margin-bottom:15px;
 }
 #collect{
