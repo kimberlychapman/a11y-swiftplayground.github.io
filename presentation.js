@@ -10,7 +10,7 @@ let mainSliderOptions = {
       // autoplay:{
       //   delay:3000
       // },
-      loopAdditionalSlides: 14,
+      loopAdditionalSlides: 20,
       grabCursor: true,
       watchSlidesProgress: true,
       navigation: {
@@ -67,8 +67,8 @@ let navSliderOptions = {
       loop: true,
       loopAdditionalSlides: 10,
       speed:1000,
-      spaceBetween: 5,
-      slidesPerView: 5,
+      spaceBetween: 4,
+      slidesPerView: 4,
       centeredSlides : true,
       touchRatio: 0.2,
       slideToClickedSlide: true,
