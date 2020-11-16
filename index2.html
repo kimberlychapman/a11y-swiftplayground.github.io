@@ -80,15 +80,14 @@
    </section>
    <body onload="init()"> 
        <div class="Main">
-            <!-- <section class="columns">                 -->
-               <!-- <div id="column-1"> -->
+    <!-- *************************************************** Sketchpad & Co. ********************************************* -->
                      <div id="sketchpadapp">
                            <div class="rightside">
                               <canvas id="sketchpad" height="800" width="1500">
                               </canvas>
                               <div id="clear"><img id="eraser" src="img/erase.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
                             </div>
-                                
+    <!-- ***************************************************  Lines/Panels *********************************************** -->                                  
                               <div id="vr-line"></div>
                               <div id="vr-line2"></div>
                               <div id="vr-line3"></div>
@@ -99,17 +98,66 @@
                               <div id="hr-line3"></div>
                               <div id="hr-line4"></div>
                               <div id="hr-line5"></div>
-                            
                             <div class="sky-panel"></div>
+                            <div class="sky-panel2"></div>
+    <!-- *******************************************************  Row 1 ************************************************** -->                                  
                             <div class="collect_gem">
                                 <img id="gemstone" src="img/collectGem.png" onclick="remove(this.id)">
-                                <button id="collect" onclick="document.getElementById('collect').play()" ondblclick="remove(this.id)">Sound Effect</button>
+                                <button id="collect1" onclick="document.getElementById('collect').play()" ondblclick="remove(this.id)">Sound Effect</button>
                             </div>
                             <div class=toggle_switch>
                                 <img id="toggle" src="img/toggleSwitch.png" onclick="remove(this.id)">
                                 <button id="switch" onclick="document.getElementById('toggle').play()" ondblclick="remove(this.id)">Sound Effect</button>
                             </div>
-                            <div class="sky-panel2"></div>
+    <!-- *******************************************************  Row 2 ************************************************** --> 
+                            <div class="collect_gem2">
+                                <img id="gemstone2" src="img/collectGem.png" onclick="remove(this.id)">
+                                <button id="collect2" onclick="document.getElementById('collect').play()" ondblclick="remove(this.id)">Sound Effect</button>
+                            </div>
+                            <div class=toggle_switch2>
+                                <img id="toggle2" src="img/toggleSwitch.png" onclick="remove(this.id)">
+                                <button id="switch2" onclick="document.getElementById('toggle').play()" ondblclick="remove(this.id)">Sound Effect</button>
+                            </div>
+    <!-- *******************************************************  Row 3 ************************************************** --> 
+                            <div class="collect_gem3">
+                                <img id="gemstone3" src="img/collectGem.png" onclick="remove(this.id)">
+                                <button id="collect3" onclick="document.getElementById('collect').play()" ondblclick="remove(this.id)">Sound Effect</button>
+                            </div>
+                            <div class=toggle_switch3>
+                                <img id="toggle3" src="img/toggleSwitch.png" onclick="remove(this.id)">
+                                <button id="switch3" onclick="document.getElementById('toggle').play()" ondblclick="remove(this.id)">Sound Effect</button>
+                            </div>
+    <!-- *******************************************************  Row 4 ************************************************** --> 
+                            <div class="collect_gem4">
+                                <img id="gemstone4" src="img/collectGem.png" onclick="remove(this.id)">
+                                <button id="collect4" onclick="document.getElementById('collect').play()" ondblclick="remove(this.id)">Sound Effect</button>
+                            </div>
+                            <div class=toggle_switch4>
+                                <img id="toggle4" src="img/toggleSwitch.png" onclick="remove(this.id)">
+                                <button id="switch4" onclick="document.getElementById('toggle').play()" ondblclick="remove(this.id)">Sound Effect</button>
+                            </div>
+    <!-- *******************************************************  Row 4 ************************************************** --> 
+                            <div class="collect_gem5">
+                                <img id="gemstone5" src="img/collectGem.png" onclick="remove(this.id)">
+                                <button id="collect5" onclick="document.getElementById('collect').play()" ondblclick="remove(this.id)">Sound Effect</button>
+                            </div>
+                            <div class=toggle_switch5>
+                                <img id="toggle5" src="img/toggleSwitch.png" onclick="remove(this.id)">
+                                <button id="switch5" onclick="document.getElementById('toggle').play()" ondblclick="remove(this.id)">Sound Effect</button>
+                            </div>
+    <!-- ***************************************************************************************************************** -->
+                            <div id="codebot">
+                                <a href="presentation.html"><img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('add').play()" ondblclick="remove(this.id)"></a>
+                            </div>
+
+
+
+
+
+
+
+
+
 
 
                             <!-- <div id="codebot">

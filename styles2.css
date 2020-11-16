@@ -24,7 +24,7 @@ body{
   /* background-image: url("img/sky.jpg"); */
 }
 
-/* ********************************************************************************************************S */
+/* ******************************************** Sidebar ************************************************************ */
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 * {
@@ -88,101 +88,7 @@ body{
 .menu-icon:hover {
   opacity: .5;
 }
-/* ********************************************************************************************************************** */
-#vr-line{
-  position: absolute;
-  top:0;
-  left:20%;
-  /* bottom:10%; */
-  height:800px;
-  border-left: 2px solid black;   
-  }
-#vr-line2{
-  position: absolute;
-  top:0;
-  left:35%;
-  /* bottom:10%; */
-  height:800px;
-  border-left: 2px solid black;   
-  }
-#vr-line3{
-  position: absolute;
-  top:0;
-  left:50%; 
-  /* bottom:10%;  */
-  height:800px;
-  border-left: 2px solid black;   
-  }
-#vr-line4{
-  position: absolute;
-  top:0;
-  left:65%;
-  /* bottom:10%; */
-  height:800px;
-  border-left: 2px solid black;   
-  }
-#vr-line5{
-  position: absolute;
-  top:0;
-  left:80%;
-  /* bottom:10%; */
-  height:800px;
-  border-left: 2px solid black;  
-  }
-#hr-line{
-  position: absolute;
-  top:15%;
-  left:0%;
-  /* transform: translate(-50%, -50%); */
-  text-decoration: underline;
-  width:100%;
-  border-top: 2px solid black;
-  border-bottom: 25px lightskyblue solid;
-  }
-#hr-line2{
-  position: absolute;
-  top:33%;
-  left:0%;
-  /* transform: translate(-50%, -50%); */
-  text-decoration: underline;
-  width:100%;
-  border-top: 2px solid black;
-  border-bottom: 25px solid lightskyblue;
-  }
-
-#hr-line3{
-  position: absolute;
-  top:51%;
-  left:0%;
-  /* transform: translate(-50%, -50%); */
-  text-decoration: underline;
-  width:100%;
-  border-top: 2px solid black;
-  border-bottom: 25px solid lightskyblue;
-  }
-
-#hr-line4{
-  position: absolute;
-  top:69%;
-  left:0%;
-  /* transform: translate(-50%, -50%); */
-  text-decoration: underline;
-  width:100%;
-  border-top: 2px solid black;
-  border-bottom: 25px solid lightskyblue;
-  }
-
-#hr-line5{
-  position: absolute;
-  top:87%;
-  left:0%;
-  /* transform: translate(-50%, -50%); */
-  text-decoration: underline;
-  width:100%;
-  /* border-top: 2px solid black; */
-  border-bottom: 25px solid lightskyblue;
-  }
-/* ********************************************************************************************************* */
+/* ************************************************ Sketchpad & Co. ***************************************************** */
 #sketchpadapp {
   /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
   /* position: relative; */
@@ -302,16 +208,879 @@ canvas.shake {
     transform: translate3d(4px, 0, 0);
     }
 }
-/* *********************************************************************************************************************** */
-.sky-panel{
+
+
+/* ******************************************************* Lines/Panels ************************************************** */
+#vr-line{
+  position: absolute;
+  top:0;
+  left:20%;
+  /* bottom:10%; */
+  height:800px;
+  border-left: 2px solid black;   
+  }
+#vr-line2{
+  position: absolute;
+  top:0;
+  left:35%;
+  /* bottom:10%; */
+  height:800px;
+  border-left: 2px solid black;   
+  }
+#vr-line3{
+  position: absolute;
+  top:0;
+  left:50%; 
+  /* bottom:10%;  */
+  height:800px;
+  border-left: 2px solid black;   
+  }
+#vr-line4{
+  position: absolute;
+  top:0;
+  left:65%;
+  /* bottom:10%; */
+  height:800px;
+  border-left: 2px solid black;   
+  }
+#vr-line5{
+  position: absolute;
+  top:0;
+  left:80%;
+  /* bottom:10%; */
+  height:800px;
+  border-left: 2px solid black;  
+  }
+#hr-line{
+  position: absolute;
+  top:15%;
+  left:0%;
+  /* transform: translate(-50%, -50%); */
+  text-decoration: underline;
+  width:100%;
+  border-top: 2px solid black;
+  border-bottom: 25px lightskyblue solid;
+  }
+#hr-line2{
+  position: absolute;
+  top:33%;
+  left:0%;
+  /* transform: translate(-50%, -50%); */
+  text-decoration: underline;
+  width:100%;
+  border-top: 2px solid black;
+  border-bottom: 25px solid lightskyblue;
+  }
+
+#hr-line3{
+  position: absolute;
+  top:51%;
+  left:0%;
+  /* transform: translate(-50%, -50%); */
+  text-decoration: underline;
+  width:100%;
+  border-top: 2px solid black;
+  border-bottom: 25px solid lightskyblue;
+  }
+
+#hr-line4{
+  position: absolute;
+  top:69%;
+  left:0%;
+  /* transform: translate(-50%, -50%); */
+  text-decoration: underline;
+  width:100%;
+  border-top: 2px solid black;
+  border-bottom: 25px solid lightskyblue;
+  }
+
+#hr-line5{
+  position: absolute;
+  top:87%;
+  left:0%;
+  /* transform: translate(-50%, -50%); */
+  text-decoration: underline;
+  width:100%;
+  /* border-top: 2px solid black; */
+  border-bottom: 25px solid lightskyblue;
+  }
+  .sky-panel{
+    position: absolute;
+    top:0%;
+    left:0%;
+    height:89%;
+    width:20%;
+    background-color: lightskyblue;
+  } 
+  .sky-panel2{
+    position: absolute;
+    top:0%;
+    left:80.25%;
+    height:89%;
+    width:20%;
+    background-color: lightskyblue;
+  }
+/* ********************************************************** Row 1 ***************************************************** */
+
+.collect_gem{
   position: absolute;
   top:0%;
+  left:35%;
+  height:15%;
+  width:15%;
+  border:solid 2px black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#collect1{
+  display:absolute;
+  top:70%;
+  left:80%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#collect2{
+  display:absolute;
+  top:70%;
+  left:80%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#gemstone:hover {
+  -webkit-animation: pulse 0.7s ease-out;
+          animation: pulse 0.7s ease-out;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.toggle_switch{
+  position: absolute;
+  top:0%;
+  left:65%;
+  height:15%;
+  width:15%;
+  border:solid 2px black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#switch{
+  display:absolute;
+  top:20%;
+  left:86%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+
+
+#toggle:hover {
+  -webkit-animation: swing 0.5s ease-out;
+          animation: swing 0.5s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+/* ********************************************************** Row 2 ***************************************************** */
+
+.collect_gem2{
+  position: absolute;
+  top:18%;
+  left:35%;
+  height:15%;
+  width:15%;
+  border:solid 2px black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#collect2{
+  display:absolute;
+  top:70%;
+  left:80%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#gemstone2:hover {
+  -webkit-animation: pulse 0.7s ease-out;
+          animation: pulse 0.7s ease-out;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.toggle_switch2{
+  position: absolute;
+  top:18%;
+  left:65%;
+  height:15%;
+  width:15%;
+  border:solid 2px black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#switch2{
+  display:absolute;
+  top:70%;
+  left:86%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#toggle2:hover {
+  -webkit-animation: swing 0.5s ease-out;
+          animation: swing 0.5s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+/* ********************************************************** Row 3 ***************************************************** */
+
+.collect_gem3{
+  position: absolute;
+  top:36%;
+  left:35%;
+  height:15%;
+  width:15%;
+  border:solid 2px black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#collect3{
+  display:absolute;
+  top:70%;
+  left:80%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#gemstone3:hover {
+  -webkit-animation: pulse 0.7s ease-out;
+          animation: pulse 0.7s ease-out;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.toggle_switch3{
+  position: absolute;
+  top:36%;
+  left:65%;
+  height:15%;
+  width:15%;
+  border:solid 2px black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#switch3{
+  display:absolute;
+  top:70%;
+  left:86%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#toggle3:hover {
+  -webkit-animation: swing 0.5s ease-out;
+          animation: swing 0.5s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+/* ********************************************************** Row 4 ***************************************************** */
+
+.collect_gem4{
+  position: absolute;
+  top:54%;
+  left:35%;
+  height:15%;
+  width:15%;
+  border:solid 2px black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#collect4{
+  display:absolute;
+  top:70%;
+  left:80%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#gemstone4:hover {
+  -webkit-animation: pulse 0.7s ease-out;
+          animation: pulse 0.7s ease-out;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.toggle_switch4{
+  position: absolute;
+  top:54%;
+  left:65%;
+  height:15%;
+  width:15%;
+  border:solid 2px black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#switch4{
+  display:absolute;
+  top:70%;
+  left:86%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#toggle4:hover {
+  -webkit-animation: swing 0.5s ease-out;
+          animation: swing 0.5s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+/* ********************************************************** Row 4 ***************************************************** */
+
+.collect_gem5{
+  position: absolute;
+  top:72%;
+  left:35%;
+  height:15%;
+  width:15%;
+  border:solid 2px black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#collect5{
+  display:absolute;
+  top:70%;
+  left:80%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#gemstone5:hover {
+  -webkit-animation: pulse 0.7s ease-out;
+          animation: pulse 0.7s ease-out;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.toggle_switch5{
+  position: absolute;
+  top:72%;
+  left:65%;
+  height:15%;
+  width:15%;
+  border:solid 2px black;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#switch5{
+  display:absolute;
+  top:70%;
+  left:86%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#toggle5:hover {
+  -webkit-animation: swing 0.5s ease-out;
+          animation: swing 0.5s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+
+/* ********************************************************************************************************************* */
+#codebot{
+  position: absolute;
+  right:70px;
+  top:0px;
+  height:70px;
+  }
+/* ********************************************************************************************************************* */
+
+/* .sky-panel3{
+  position: absolute;
+  top:18%;
   left:0%;
   height:15%;
   width:20%;
   background-color: lightskyblue;
-} 
-.collect_gem{
+}  */
+/* .collect_gem{
   position: absolute;
   top:0%;
   left:35%;
@@ -433,7 +1202,7 @@ canvas.shake {
   height:15%;
   width:20%;
   background-color: lightskyblue;
-}
+} */
 
 
 
@@ -469,12 +1238,12 @@ canvas.shake {
 } */
 
 /* ********************************************************************************************************* */
-#codebot{
+/* #codebot{
   position: absolute;
   left:70px;
   top:0px;
   height:70px;
-  }
+  } */
 .pulldown1{
   position:fixed;
   top:20px;
@@ -1097,26 +1866,14 @@ text-decoration: none; */
   /* .toggle2{
     /* margin-top:0px; */
   /* } */
-  #switch2{
-    display:absolute;
-    top:70%;
-    left:86%;
-    justify-content: center;
-    justify-items: center;
-    height:40px;
-    width: 80px;
-    background-color: transparent;
-    border:2px solid black;
-    border-radius:10%;
-    text-decoration: none;
-    font-family: 'Trispace', sans-serif;
+  
     /* height:20px;
     width: 50px;
     background-color: transparent;
     border:2px solid lightslategray;
     border-radius: 10%;
     text-decoration: none; */
-    }
+    
   #toggle-switch-button2{
     display: flex;
     justify-content: center;
