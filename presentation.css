@@ -18,6 +18,13 @@
   background-position: center;
 }
 .owl-carousel .owl-slide3 {
+  background-image: url("img/inspiration.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.owl-carousel .owl-slide4 {
   background-image: url("img/concept.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,6 +47,16 @@
   border-radius: 4px;
 }
 .owl-carousel div.owl--text3 {
+  position: absolute;
+  bottom: 4em;
+  left: 2em;
+  width: 40em;
+  height: 8em;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+.owl-carousel div.owl--text4 {
   position: absolute;
   bottom: 4em;
   left: 2em;

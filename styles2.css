@@ -12,7 +12,7 @@ div{ width:100px; height:100px; background:red;} */
     "Nav Main Header";
 } */
 body{
- background-color: black;
+ background-color:lightskyblue;
 }
 .Main { 
   display:flex;
@@ -302,7 +302,7 @@ canvas.shake {
   text-decoration: underline;
   width:100%;
   /* border-top: 2px solid black; */
-  border-bottom: 25px solid lightskyblue;
+  border-bottom: 70px solid lightskyblue;
   }
   .sky-panel{
     position: absolute;
