@@ -38,6 +38,8 @@ body{
   display:flex;
   flex-direction:column;
 }
+
+
 /* #column-2{
   width: 20%;
   border: 2px solid limegreen;
@@ -296,6 +298,7 @@ body{
   position:relative; /* Necessary for correct mouse co-ords in Firefox */
   cursor: pointer;
   background-color: tan;
+  cursor:url('img/apple-cursor.png'), pointer;
 
 }
 #clear:hover{

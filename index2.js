@@ -1,3 +1,44 @@
+// const addTally=(ev)=>{
+//     document.querySelector(".box").innerHTML=l;
+// };
+// document.querySelector('.box').onlcick=addTally;
+function showImage(){
+    document.getElementById('loadingImage').style.visibility=    document.getElementById('loadingImage').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+function showImage2(){
+    document.getElementById('loadingImage2').style.visibility=    document.getElementById('loadingImage2').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage3(){
+    document.getElementById('loadingImage3').style.visibility=    document.getElementById('loadingImage3').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage4(){
+    document.getElementById('loadingImage4').style.visibility=    document.getElementById('loadingImage4').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+function showImage5(){
+    document.getElementById('loadingImage5').style.visibility=    document.getElementById('loadingImage5').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage6(){
+    document.getElementById('loadingImage6').style.visibility=    document.getElementById('loadingImage6').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage7(){
+    document.getElementById('loadingImage7').style.visibility=    document.getElementById('loadingImage7').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage8(){
+    document.getElementById('loadingImage8').style.visibility=    document.getElementById('loadingImage8').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+function showImage9(){
+    document.getElementById('loadingImage9').style.visibility=    document.getElementById('loadingImage9').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage10(){
+    document.getElementById('loadingImage10').style.visibility=    document.getElementById('loadingImage10').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
 function allowDropThis(i) {
     i.preventDefault();
 }
@@ -15,6 +56,7 @@ function dropThis(i) {
 function toggleSidebar(){
     document.getElementById("sidebar").classList.toggle('active');
   }
+
 
 // Variables for referencing the canvas and 2dcanvas context
 var canvas,ctx;
