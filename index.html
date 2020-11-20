@@ -16,7 +16,9 @@
 
 }
       }
+    
     </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
      <style>
             @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap');
@@ -75,7 +77,7 @@
        <div class="Main">
          <section class="columns">
                <div id="column-1">
-                  <!-- <div class="box3"> -->
+<!-- ************************************************************************ Sketpad/Pull-downs ************************************************************************************-->
                      <div id="sketchpadapp">
                            <div class="rightside">
                               <canvas id="sketchpad" height="800" width="1500">
@@ -89,50 +91,19 @@
                                     <div class="options">
                                     <div id="add-commands"><img id="command-bar"src="img/command_line.png"></div>
                                         <div id="command-options">
-                                            <!-- <div class="option1">Option 1:<br><img id="speaker" src="img/speaker.png"><br>Voice Control<br><br>
-                                                <br><br><br><br>Option 2:<br><img id="speaker" src="img/speaker.png"><img id="swipe-right" src="img/swipe_right.png"><br>
-                                                Voice Control & Two Finger Right Swipe</span>
-                                                <br></div> -->
                                         </div>
                                     </div>
                                 </span></a>
                             </div>
-                            <!-- <div id="back">
-                                <a class="go-back" href="presentation.html">Back</a>
-                            </div> -->
-                            <!-- <div class="haptics"><img id="haptic-tech" src="img/haptics.png">
-                                <span id="haptic-feedback"><br><br>
-                                <br>I am wondering if<br>it
-                                is possible to <br>add some sort
-                                of <br>haptic feedback<br>
-                                (ex. different<br>vibration 
-                                patterns)<br>that occur when 
-                                <br>the user: goes off<br>of the 
-                                path while<br>tracing, and/or
-                                <br>when their bot<br>goes off 
-                                of the<br>path due to an<br>
-                                error in their<br>code. To model
-                                this<br>I've added a hover<br>effect 
-                                and a click<br>effect to squares
-                                <br>containing images.<br>If you hover
-                                over<br>the image, the<br>image shakes;
-                                and<br>if you click the<br>button,
-                                it <br>plays a sound<br>effect.
-                                </span></div>
-                           </div> -->
-                               
                             <div class="pulldown2">
                                 <img id="func" src="img/code-symbol.png" onclick="document.getElementById('run-code').play()" ondblclick="document.getElementById('run-code').pause()">
                                 <span id="two-finger2">
                                     <div class="options2">
                                     <div id="remove-commands"><img id="code-bar" src="img/code_bar.png"></div>
-                                       <div id=code-options>
-
-                                       </div> 
                                     </div>
                                 </span>
                             </div>
-
+<!-- ************************************************************************************ Lines ************************************************************************************-->
                               <div id="vr-line"></div>
                               <div id="vr-line2"></div>
                               <div id="vr-line3"></div>
@@ -141,6 +112,7 @@
                               <div id="hr-line2"></div>
                               <div id="hr-line3"></div>
                               <div id="hr-line4"></div>
+<!-- ************************************************************************************ Rocks ************************************************************************************-->
                               <div class="rock-box1">
                                     <div id="boulder">
                                         <img id="rock" src="img/rock.png">
@@ -148,7 +120,17 @@
                                     <div id="crash-button">
                                         <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">Sound Effect</span></button>
                                     </div>
-                                </div>                              
+                                </div> 
+                                <div class="rock-box2">
+                                    <div id="boulder">
+                                        <img id="rock" src="img/rock.png">
+                                    </div>
+                                    <div id="crash-button">
+                                        <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">Sound Effect</button>
+                                    </div>
+                                 </div>
+                                </div>
+<!-- ********************************************************************************* Sky-boxes ************************************************************************************-->
                                 <div class="sky-box-mini-l">
                                     <div id="sky">
                                         <img id="cloud-guy-mini" src="img/cloud-family-mini.png">
@@ -167,24 +149,6 @@
                                     </div>
                                     <div id="cloud-button-1">
                                         <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
-                                    </div>
-                                </div>
-                      
-                                <div class="rock-box2">
-                                    <div id="boulder">
-                                        <img id="rock" src="img/rock.png">
-                                    </div>
-                                    <div id="crash-button">
-                                        <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">Sound Effect</button>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div id="toggle-switch">
-                                    <div id="toggle">
-                                        <img class="toggle" src="img/toggleSwitch.png">
-                                    </div>
-                                    <div id="toggle-switch-button">
-                                        <button id="switch" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()">Sound Effect</button>
                                     </div>
                                 </div>
                                 <div class="sky-box2">
@@ -211,22 +175,6 @@
                                         <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
                                     </div>
                                 </div>
-                                <div id="collect-gem">
-                                    <div id="gem">
-                                        <img class="gem" src="img/collectGem.png">
-                                    </div>
-                                    <div id="gem-button">
-                                        <button id="collect" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('collect').pause()">Sound Effect</button>
-                                    </div>
-                                </div>
-                                <div id="toggle-switch2">
-                                    <div id="toggle2">
-                                        <img class="toggle2" src="img/toggleSwitch.png">
-                                    </div>
-                                    <div id="toggle-switch-button2">
-                                        <button id="switch2" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()">Sound Effect</button>
-                                    </div>
-                                </div>
                                 <div class="sky-box5">
                                     <div id="sky">
                                         <img id="cloud-guy" src="img/cloud-family.png">
@@ -251,12 +199,38 @@
                                         <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
                                     </div>
                                 </div>
+<!-- ******************************************************************************* Gem & Switches *********************************************************************************-->
+                                <div id="collect-gem">
+                                    <div id="gem">
+                                        <img class="gem" src="img/collectGem.png">
+                                    </div>
+                                    <div id="gem-button">
+                                        <button id="collect" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('collect').pause()">Sound Effect</button>
+                                    </div>
+                                </div>
+                                <div id="toggle-switch">
+                                    <div id="toggle">
+                                        <img class="toggle" src="img/toggleSwitch.png">
+                                    </div>
+                                    <div id="toggle-switch-button">
+                                        <button id="switch" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()">Sound Effect</button>
+                                    </div>
+                                </div>
+                                <div id="toggle-switch2">
+                                    <div id="toggle2">
+                                        <img class="toggle2" src="img/toggleSwitch.png">
+                                    </div>
+                                    <div id="toggle-switch-button2">
+                                        <button id="switch2" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()">Sound Effect</button>
+                                    </div>
+                                </div>
+<!-- **************************************************************************** Codebot/Clear *********************************************************************************-->
                                  <div id="codebot">
                                 <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('add').play()" ondblclick="document.getElementById('add').pause()">
                             </div>
                               
                               <div id="clear"><img id="eraser" src="img/erase.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
-                           </div>
+                            </div>
 
                      </div>
                   </div>
@@ -266,88 +240,4 @@
          </div>
    </body>
 </html>
-    <!-- <div class="grid-container"> -->
-        
-        <!-- </div> -->
-     
-            
-        
-      <!-- </div>
-    </div>
-    </body>     -->
-<!-- </html> -->
-
-
-<!-- <div id="sketchpadapp">
-    <div class="rightside">
-        <canvas id="sketchpad" height="110" width="150">
-        </canvas>
-    </div>
-    <div class="leftside">
-        <input type="submit" value="Clear Sketchpad" id="clearbutton" onclick="clearCanvas(canvas,ctx);">
-    </div>
-</div> -->
-
-<!-- <div class="Nav">
-            
-   <div id="commands">   
-       <div class="help">
-           <img id="speaker" src="images/speaker.png" onclick="document.getElementById('here').play()" ondblclick="document.getElementById('here').pause()">
-           <img id="siri" src="images/siri.png"><span id="action"><img id="voice" src="images/voice-command.png"><br>By embedding Siri— and training Siri to carry out game actions & to provide player support— the user can control game actions using voice commands (but instead of initiating Siri by saying the phrase "Hey Siri", users will say "Hey Codebot"). <br><br><img id="right" src="images/right.png"><br>The user can also control game actions by swiping.  To add a command to their code, the user swipes that command to the right.  It will make a swooshing noise if the user swipes right correctly.<br><br><img id="left" src="images/left.png"><br>To remove a command from their code, the user swipes that command to the left.  It will make a crumpling noise (the same noise it makes when you move an item on your computer into the trash) if the user swipes left correctly.</span>
-       </div>
-       <div class="blocks">
-           <div id="block1" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
-               <img id="move-forward" src="images/func_moveForward().png" draggable="true" ondragstart="dragThis(event)" id="drag1" width="120" height="180">
-           </div> 
-           <div id="block2" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
-               <img id="turn-left" src="images/func_turnLeft().png" draggable="true" ondragstart="dragThis(event)" id="drag1" width="120" height="180">
-           </div>                        
-           <div id="block3" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
-               <img id="turn-right" src="images/func_turnRight().png" draggable="true" ondragstart="dragThis(event)" id="drag1" width="120" height="180">
-           </div> 
-           <div id="block4" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
-               <img id="collect-gem" src="images/func_collectGem().png" draggable="true" ondragstart="dragThis(event)" id="drag1" width="120" height="180">
-           </div> 
-           <div id="block5" ondrop="dropThis(event)" ondragover="allowDropThis(event)">
-               <img id="toggle-switch" src="images/func_toggleSwitch().png" draggable="true" ondragstart="dragThis(event)" id="drag1" width="120" height="100">
-           </div>
-       </div>
-   </div> 
-</div> -->
-
-
-<!-- 
-<div class="Header">
-   <div class="code-blocks">
-       <div class="top">
-           <div id="run-code">
-               <button id="run" onclick="document.getElementById('codebot-run').play()" ondblclick="document.getElementById('codebot-run').pause()">Run Code</button><span class="siri">
-           </div>
-           <h1>func winGame{ </h1>
-       </div>
-       <div id="commands">
-           <div class="drop">
-               <div id="block" ondrop="dropThis(event)" ondragover="allowDropThis(event)"></div>
-           </div>   
-           <div class="drop">
-               <div id="block" ondrop="dropThis(event)" ondragover="allowDropThis(event)"></div>
-           </div>  
-           <div class="drop">
-               <div id="block" ondrop="dropThis(event)" ondragover="allowDropThis(event)"></div>
-           </div>  
-           <div class="drop">
-               <div id="block" ondrop="dropThis(event)" ondragover="allowDropThis(event)"></div>
-           </div>   
-           <div class="drop">
-               <div id="block" ondrop="dropThis(event)" ondragover="allowDropThis(event)"></div>
-           </div> 
-       </div>             
-       <div class="bottom">
-           <h2>}<br>winGame()</h2>
-       </div>
-
-   </div>
-
-</div> -->
-
-
+    

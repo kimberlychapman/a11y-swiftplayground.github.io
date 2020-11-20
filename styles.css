@@ -40,229 +40,8 @@ body{
 }
 
 
-/* #column-2{
-  width: 20%;
-  border: 2px solid limegreen;
-  display:flex;
-  flex-direction:column;
-}
-#column-3{
-  display:flex;
-  width: 20%;
-  border: 2px solid limegreen;
-  flex-direction:column;
-} */
-/* #column-4{
-  display:flex;
-  width: 20%;
-  border: 2px solid limegreen;
-  flex-direction:column;
-}
-#column-5{
-  display:flex;
-  width: 20%;
-  border: 2px solid limegreen;
-  flex-direction:column;
-} */
-/* .box{
-  height:225px;
-  width:100%;
-  border: black 1px solid;
-}
-.box1{
-  height:225px;
-  width:100%;
-  border:black 1px solid;
-  background-color: tan;
-}
-.box2{
-  height:225px;
-  width:100%;
-  border:black 1px solid;
-  background-color: green;
-}
-.box3{
-  position: relative;
-  height:679px;
-  width:100%;
-  border:black 1px solid;
-  background-color: tan;
-}
-.box4{
-  height:225px;
-  width:100%;
-  border:black 1px solid;
-  background-color: tan;
-}
-.box5{
-  height:225px;
-  width:100%;
-  border: black 1px solid;
-} */
 
-
-
-/* #cloud-guy{
-  /* margin-top:30px; */
-/* } */ 
-#toggle{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  margin-top:25px;
-}
-
-#gem{
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  margin-top:25px;
-}
-
-
-/* ********************************************************************************************************* */
-#codebot{
-  position: absolute;
-  left:70px;
-  top:0px;
-  height:70px;
-  }
-.pulldown1{
-  position:fixed;
-  top:20px;
-  left:2px;
-  width:100px;
-  border-radius:10px;
-  /* border:2px solid lightslategray; */
-}
-
-.pulldown2{
-  position:fixed;
-  top:2px;
-  right:80px;
-  width:100px;
-  border-radius:10px;
-
-} 
-#commands{
-  display:flex;
-  justify-content:center;
-  justify-items: center;
-}
-#func{
-  display:flex;
-  justify-content:center;
-  justify-items: center;
-}
-/* #command-bar{
-  
-} */
-#two-finger1{
-  display:none;
-  font-family: 'Trispace', sans-serif;
-}
-#two-finger2{
-  display:none;
-  font-family: 'Trispace', sans-serif;
-}
-/* h1{ */
-  /* font-family: 'Trispace', sans-serif;
-  font-size:16pt;
-  display:flex;
-  justify-content:right;
-  justify-items: right;
-  background-color: white; */
-/* } */
-.options{
-  display: flex;
-  flex-direction: row;
-  
-}
-/* .go-back{
-  position:fixed;
-  top:2px;
-  left:250px;
-  font: "sf_ui_displayregular";
-  font-size: 18pt;
-  color:black;
-  text-decoration: none;
-}
-#back{
-  position:absolute;
-  top:2px;
-  left:200px;
-  font: "sf_ui_displayregular";
-  font-size: 18pt;
-  color:black;
-  text-decoration: none;
-} */
-#haptic-feedback{
-  display:none;
-  width:500px;
-}
-#haptic-tech:hover~#haptic-feedback{
-  display:block;
-  font-family: 'Trispace', sans-serif;
-  background-color: white;
-  font-size:10pt;
-  width:400px;
-}
-
-.haptics:hover~#haptic-feedback{
-  display:block;
-  font-family: 'Trispace', sans-serif;
-  background-color: white;
-  font-size:10pt;
-  width:400px;
-}
-
-/* #back{ */
-  /* position: absolute;
-  left:5%;
-  bottom:6%;
-  font-family: 'sf_ui_displayregular';
-  color:black; */
-
-/* } */
-/* .go-back{ */
-  /* position: fixed;
-  left:5%;
-  bottom:6%;
-  font-family: 'sf_ui_displayregular';
-  color:black; */
-
-/* } */
-.options2{
-  display:flex;
-  flex-direction: column;
-}
-
-.option1{
-  font-size:9pt;
-  color:black;
-  text-decoration:none;
-}
-#swipe-right{
-  height:40px;
-  width: 35px;
-}
-#commands:hover ~#two-finger1{
-  display:block;
-  font-family: 'Trispace', sans-serif;
-  background-color: black;
-  width: 180px;
-}
-#text{
-  color:blue;
-  font-style: bold;
-}
-#func:hover ~#two-finger2{
-  display:block;
-  font-family: 'Trispace', sans-serif;
-  background-color: black;
-  width: 155px;
-}
-/* ********************************************************************************************************* */
+/* ************************************************* Sketchpad ******************************************************** */
 #sketchpadapp {
   /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
   /* position: relative; */
@@ -301,46 +80,152 @@ body{
   cursor:url('img/apple-cursor.png'), pointer;
 
 }
-#clear:hover{
-  -webkit-transform:scale(1.3);
-transform:scale(1.3);
+
+canvas.shake {
+  animation: shake 0.5s linear 1;
 }
-#clear{
-    position: absolute;
-    right:70px;
-    bottom:70px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    border: solid 2px black;
-    border-radius:20%;
-    width:170px;
-    height:80px;
-    /* transform: translate(-50%, -50%); */
-    }
-/* #eraser{
-  display: flex;
-  justify-content: center;
+@keyframes shake {
+  10%,
+  90% {
+  transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+  transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+  transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+  transform: translate3d(4px, 0, 0);
+  }
+}
+canvas.shake {
+  animation: shake 0.5s linear 1;
+}
+@keyframes shake {
+  10%,
+  90% {
+  transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+  transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+  transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+  transform: translate3d(4px, 0, 0);
+  }
+}
+/* ************************************************************ Top Features *********************************************************** */
+
+.pulldown1{
+  position:fixed;
+  top:20px;
+  left:2px;
+  width:100px;
+  border-radius:10px;
+  /* border:2px solid lightslategray; */
+}
+
+.pulldown2{
+  position:fixed;
+  top:2px;
+  right:80px;
+  width:100px;
+  border-radius:10px;
+
+} 
+#commands{
+  display:flex;
+  justify-content:center;
   justify-items: center;
-}     */
-    
-#clearbutton {
-    /* width: 50%; */
-    width:170px;
-    height:80px;
-    /* font-size: 16px; */
-    -webkit-appearance: none;
-    /* background:tan; */
-    border-radius: 10%;
-    border:2px solid lightslategray;
-    font-family: 'Trispace', sans-serif;
-    outline: none;
 }
+#func{
+  display:flex;
+  justify-content:center;
+  justify-items: center;
+}
+
+#two-finger1{
+  display:none;
+  font-family: 'Trispace', sans-serif;
+}
+#two-finger2{
+  display:none;
+  font-family: 'Trispace', sans-serif;
+}
+
+.options{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#haptic-feedback{
+  display:none;
+  width:500px;
+}
+#haptic-tech:hover~#haptic-feedback{
+  display:block;
+  font-family: 'Trispace', sans-serif;
+  background-color: white;
+  font-size:10pt;
+  width:400px;
+}
+
+.haptics:hover~#haptic-feedback{
+  display:block;
+  font-family: 'Trispace', sans-serif;
+  background-color: white;
+  font-size:10pt;
+  width:400px;
+}
+
+.options2{
+  display:flex;
+  flex-direction: column;
+}
+
+.option1{
+  font-size:9pt;
+  color:black;
+  text-decoration:none;
+}
+#swipe-right{
+  height:40px;
+  width: 35px;
+}
+#commands:hover ~#two-finger1{
+  display:block;
+  font-family: 'Trispace', sans-serif;
+  background-color: black;
+  width: 180px;
+}
+#text{
+  color:blue;
+  font-style: bold;
+}
+#func:hover ~#two-finger2{
+  display:block;
+  font-family: 'Trispace', sans-serif;
+  background-color: black;
+  width: 155px;
+}
+/* ************************************************************** Lines ************************************************************* */
+
 #vr-line{
  position: absolute;
  top:0;
  left:20%;
- /* bottom:10%; */
  height:1000px;
  border-left: 2px solid black;   
 }
@@ -348,7 +233,6 @@ transform:scale(1.3);
 position: absolute;
 top:0;
 left:40%;
-/* bottom:10%; */
 height:1000px;
 border-left: 2px solid black;   
 }
@@ -356,7 +240,6 @@ border-left: 2px solid black;
 position: absolute;
 top:0;
 left:60%; 
-/* bottom:10%;  */
 height:1000px;
 border-left: 2px solid black;   
 }
@@ -364,7 +247,6 @@ border-left: 2px solid black;
 position: absolute;
 top:0;
 left:80%;
-/* bottom:10%; */
 height:100%;
 border-left: 2px solid black;   
 }
@@ -372,7 +254,6 @@ border-left: 2px solid black;
 position: absolute;
 top:25%;
 left:0%;
-/* transform: translate(-50%, -50%); */
 text-decoration: underline;
 width:100%;
 border-top: 2px solid black;
@@ -382,7 +263,7 @@ border-top: 2px solid black;
 position: absolute;
 top:50%;
 left:0%;
-/* transform: translate(-50%, -50%); */
+
 text-decoration: underline;
 width:100%;
 border-top: 2px solid black;
@@ -392,424 +273,367 @@ border-top: 2px solid black;
   position: absolute;
   top:75%;
   left:0%;
-  /* transform: translate(-50%, -50%); */
   text-decoration: underline;
   width:100%;
   border-top: 2px solid black;
   } 
 
-
-canvas.shake {
-    animation: shake 0.5s linear 1;
-}
-@keyframes shake {
-    10%,
-    90% {
-    transform: translate3d(-1px, 0, 0);
-    }
-    20%,
-    80% {
-    transform: translate3d(2px, 0, 0);
-    }
-    30%,
-    50%,
-    70% {
-    transform: translate3d(-4px, 0, 0);
-    }
-    40%,
-    60% {
-    transform: translate3d(4px, 0, 0);
-    }
-}
-canvas.shake {
-    animation: shake 0.5s linear 1;
-}
-@keyframes shake {
-    10%,
-    90% {
-    transform: translate3d(-1px, 0, 0);
-    }
-    20%,
-    80% {
-    transform: translate3d(2px, 0, 0);
-    }
-    30%,
-    50%,
-    70% {
-    transform: translate3d(-4px, 0, 0);
-    }
-    40%,
-    60% {
-    transform: translate3d(4px, 0, 0);
-    }
-}
-/* ********************************************************************************************************* */
+/* ************************************************************** Rocks ************************************************************* */
 .rock-box1{
-position: absolute;
-top:0;
-left:20%;
-height:225px;
-width:20%;
-border: black 2px solid;
-display:block;
-background-color: green;
-}
-.rock-box2{
-position: absolute;
-top:0;
-left:60%;
-height:225px;
-width:20%;
-border: black 2px solid;
-display:block;
-background-color: green;
-}
-/* .rock-box{
-height:225px;
-width:100%;
-border: black 2px solid;
-display:block;
-background-color: green;
-} */
-#boulder{
-display: flex;
-justify-content: center;
-justify-items: center;
-margin-top: -10px;
-}
-#kick-rock{
-display: flex;
-justify-content: center;
-justify-items: center;
-}
-#crash-button{
-display: flex;
-justify-content: center;
-justify-items: center;
-margin-top:-17px;
+  position: absolute;
+  top:0;
+  left:20%;
+  height:225px;
+  width:20%;
+  border: black 2px solid;
+  display:block;
+  background-color: green;
+  }
+  .rock-box2{
+  position: absolute;
+  top:0;
+  left:60%;
+  height:225px;
+  width:20%;
+  border: black 2px solid;
+  display:block;
+  background-color: green;
+  }
+  
+  #boulder{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: -10px;
+  }
+  #kick-rock{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  }
+  #crash-button{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top:-17px;
+  
+  }
+  #crash{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+  }
+  
+  #rock:hover {
+      /* Start the shake animation and make the animation last for 0.5 seconds */
+      animation: shake 0.5s;
+      
+      /* When the animation is finished, start again */
+      animation-iteration-count: infinite;
+      }
+      
+      @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { transform: translate(-3px, 0px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+      }
+      
+      @-webkit-keyframes swing {
+      20% {
+          -webkit-transform: rotate3d(0, 0, 1, 15deg);
+          transform: rotate3d(0, 0, 1, 15deg);
+      }
+      
+      40% {
+          -webkit-transform: rotate3d(0, 0, 1, -10deg);
+          transform: rotate3d(0, 0, 1, -10deg);
+      }
+      
+      60% {
+          -webkit-transform: rotate3d(0, 0, 1, 5deg);
+          transform: rotate3d(0, 0, 1, 5deg);
+      }
+      
+      80% {
+          -webkit-transform: rotate3d(0, 0, 1, -5deg);
+          transform: rotate3d(0, 0, 1, -5deg);
+      }
+      
+      to {
+          -webkit-transform: rotate3d(0, 0, 1, 0deg);
+          transform: rotate3d(0, 0, 1, 0deg);
+      }
+      }
+      
+      @keyframes swing {
+      20% {
+          -webkit-transform: rotate3d(0, 0, 1, 15deg);
+          transform: rotate3d(0, 0, 1, 15deg);
+      }
+      
+      40% {
+          -webkit-transform: rotate3d(0, 0, 1, -10deg);
+          transform: rotate3d(0, 0, 1, -10deg);
+      }
+      
+      60% {
+          -webkit-transform: rotate3d(0, 0, 1, 5deg);
+          transform: rotate3d(0, 0, 1, 5deg);
+      }
+      
+      80% {
+          -webkit-transform: rotate3d(0, 0, 1, -5deg);
+          transform: rotate3d(0, 0, 1, -5deg);
+      }
+      
+      to {
+          -webkit-transform: rotate3d(0, 0, 1, 0deg);
+          transform: rotate3d(0, 0, 1, 0deg);
+      }
+      }
 
-}
-#crash{
-display: flex;
-justify-content: center;
-justify-items: center;
-height:40px;
-width: 80px;
-background-color: transparent;
-border:2px solid black;
-border-radius:10%;
-text-decoration: none;
-font-family: 'Trispace', sans-serif;
-}
 
-#rock:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: shake 0.5s;
-    
-    /* When the animation is finished, start again */
-    animation-iteration-count: infinite;
-    }
-    
-    @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-    }
-    
-    @-webkit-keyframes swing {
-    20% {
-        -webkit-transform: rotate3d(0, 0, 1, 15deg);
-        transform: rotate3d(0, 0, 1, 15deg);
-    }
-    
-    40% {
-        -webkit-transform: rotate3d(0, 0, 1, -10deg);
-        transform: rotate3d(0, 0, 1, -10deg);
-    }
-    
-    60% {
-        -webkit-transform: rotate3d(0, 0, 1, 5deg);
-        transform: rotate3d(0, 0, 1, 5deg);
-    }
-    
-    80% {
-        -webkit-transform: rotate3d(0, 0, 1, -5deg);
-        transform: rotate3d(0, 0, 1, -5deg);
-    }
-    
-    to {
-        -webkit-transform: rotate3d(0, 0, 1, 0deg);
-        transform: rotate3d(0, 0, 1, 0deg);
-    }
-    }
-    
-    @keyframes swing {
-    20% {
-        -webkit-transform: rotate3d(0, 0, 1, 15deg);
-        transform: rotate3d(0, 0, 1, 15deg);
-    }
-    
-    40% {
-        -webkit-transform: rotate3d(0, 0, 1, -10deg);
-        transform: rotate3d(0, 0, 1, -10deg);
-    }
-    
-    60% {
-        -webkit-transform: rotate3d(0, 0, 1, 5deg);
-        transform: rotate3d(0, 0, 1, 5deg);
-    }
-    
-    80% {
-        -webkit-transform: rotate3d(0, 0, 1, -5deg);
-        transform: rotate3d(0, 0, 1, -5deg);
-    }
-    
-    to {
-        -webkit-transform: rotate3d(0, 0, 1, 0deg);
-        transform: rotate3d(0, 0, 1, 0deg);
-    }
-    }
-/* ********************************************************************************************************* */   
+/* ************************************************************* Sky-boxes ********************************************************* */
 .sky-box1{
-position: absolute;
-top:0;
-left:40%;
-height:225px;
-width:20%;
-border: black 2px solid;
-display:block;
-background-color: lightskyblue;
-}
-.sky-box2{
-position: absolute;
-top:25%;
-left:20%;
-height:225px;
-width:20%;
-border: black 2px solid;
-display:block;
-background-color: lightskyblue;
-}
-.sky-box3{
-position: absolute;
-top:25%;
-left:40%;
-height:225px;
-width:20%;
-border: black 2px solid;
-display:block;
-background-color: lightskyblue;
-}
-.sky-box4{
-position: absolute;
-top:25%;
-left:60%;
-height:225px;
-width:20%;
-border: black 2px solid;
-display:block;
-background-color: lightskyblue;
-}
-.sky-box5{
-position: absolute;
-top:75%;
-/* top:74.5%; */
-left:20%;
-height:225px;
-width:20%;
-border: black 2px solid;
-display:block;
-background-color: lightskyblue;
-}
-.sky-box6{
-position: absolute;
-top:75%;
-left:40%;
-height:225px;
-width:20%;
-border: black 2px solid;
-display:block;
-background-color: lightskyblue;
-}
-.sky-box7{
-position: absolute;
-top:75%;
-left:60%;
-height:225px;
-width:20%;
-border: black 2px solid;
-display:block;
-background-color: lightskyblue;
-    }
-.sky-box-mini-l{
-position: absolute;
-top:75%;
-left:0%;
-height:225px;
-width:20%;
-border: black 2px solid;
-display:block;
-background-color: lightskyblue;
-    }
-.sky-box-mini-r{
+  position: absolute;
+  top:0;
+  left:40%;
+  height:225px;
+  width:20%;
+  border: black 2px solid;
+  display:block;
+  background-color: lightskyblue;
+  }
+  .sky-box2{
+  position: absolute;
+  top:25%;
+  left:20%;
+  height:225px;
+  width:20%;
+  border: black 2px solid;
+  display:block;
+  background-color: lightskyblue;
+  }
+  .sky-box3{
+  position: absolute;
+  top:25%;
+  left:40%;
+  height:225px;
+  width:20%;
+  border: black 2px solid;
+  display:block;
+  background-color: lightskyblue;
+  }
+  .sky-box4{
+  position: absolute;
+  top:25%;
+  left:60%;
+  height:225px;
+  width:20%;
+  border: black 2px solid;
+  display:block;
+  background-color: lightskyblue;
+  }
+  .sky-box5{
   position: absolute;
   top:75%;
-  left:80%;
+  /* top:74.5%; */
+  left:20%;
+  height:225px;
+  width:20%;
+  border: black 2px solid;
+  display:block;
+  background-color: lightskyblue;
+  }
+  .sky-box6{
+  position: absolute;
+  top:75%;
+  left:40%;
+  height:225px;
+  width:20%;
+  border: black 2px solid;
+  display:block;
+  background-color: lightskyblue;
+  }
+  .sky-box7{
+  position: absolute;
+  top:75%;
+  left:60%;
   height:225px;
   width:20%;
   border: black 2px solid;
   display:block;
   background-color: lightskyblue;
       }
-/* .sky-box9{
-position: absolute;
-bottom:0.5%;
-right:9.55%;
-height:225px;
-width:260px;;
-border: black 2px solid;
-display:block;
-background-color: lightskyblue;
-        } */
-#sky{
-display: flex;
-justify-content: center;
-justify-items: center;
-}
-#cloud-button{
-display: flex;
-justify-content: center;
-justify-items: center;
-margin-top:5px;
+  .sky-box-mini-l{
+  position: absolute;
+  top:75%;
+  left:0%;
+  height:225px;
+  width:20%;
+  border: black 2px solid;
+  display:block;
+  background-color: lightskyblue;
+      }
+  .sky-box-mini-r{
+    position: absolute;
+    top:75%;
+    left:80%;
+    height:225px;
+    width:20%;
+    border: black 2px solid;
+    display:block;
+    background-color: lightskyblue;
+        }
 
-}
-#cloud-button-1{
+  #sky{
   display: flex;
   justify-content: center;
   justify-items: center;
-  margin-top:-27px;
-  
   }
-#cloud-button-mini{
+  #cloud-button{
   display: flex;
   justify-content: center;
   justify-items: center;
-  margin-top:27.5px;
+  margin-top:5px;
   
   }
-#cloud{
-display: flex;
-justify-content: center;
-justify-items: center;
-height:40px;
-width: 80px;
-background-color: transparent;
-border:2px solid black;
-border-radius:10%;
-text-decoration: none;
-font-family: 'Trispace', sans-serif;
-
-/* height:20px;
-width: 50px;
-background-color: transparent;
-border:2px solid lightslategray;
-border-radius: 10%;
-text-decoration: none; */
-}
-#cloud-guy{
-    margin-top:10px;
+  #cloud-button-1{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top:-27px;
     
+    }
+  #cloud-button-mini{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top:27.5px;
+    
+    }
+  #cloud{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+  }
+
+  #cloud-guy{
+      margin-top:10px;
+      
+  }
+  
+  #cloud-guy-mini{
+    margin-top:10px;
+  }
+  
+  #cloud-guy:hover {
+      -webkit-animation: bounce 0.7s ease-out;
+              animation: bounce 0.7s ease-out;
+    }
+    @keyframes bounce {
+      0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+      25%, 45% {
+        -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+      }
+      50% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+      70% {
+        -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+      }
+      80% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+      90% {
+        -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+    }
+  
+    #cloud-guy-mini:hover {
+      -webkit-animation: bounce 0.7s ease-out;
+              animation: bounce 0.7s ease-out;
+    }
+    @keyframes bounce {
+      0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+      25%, 45% {
+        -webkit-transform: translateY(-15px);
+                transform: translateY(-15px);
+      }
+      50% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+      70% {
+        -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+      }
+      80% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+      90% {
+        -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+      }
+      100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+      }
+    }
+
+/* ********************************************************* Gems & Switches *************************************************** */
+#gem{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top:25px;
 }
 
-#cloud-guy-mini{
-  margin-top:10px;
-}
-
-#cloud-guy:hover {
-    -webkit-animation: bounce 0.7s ease-out;
-            animation: bounce 0.7s ease-out;
-  }
-  @keyframes bounce {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    25%, 45% {
-      -webkit-transform: translateY(-15px);
-              transform: translateY(-15px);
-    }
-    50% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    70% {
-      -webkit-transform: translateY(-8px);
-              transform: translateY(-8px);
-    }
-    80% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    90% {
-      -webkit-transform: translateY(-8px);
-              transform: translateY(-8px);
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-  }
-
-  #cloud-guy-mini:hover {
-    -webkit-animation: bounce 0.7s ease-out;
-            animation: bounce 0.7s ease-out;
-  }
-  @keyframes bounce {
-    0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    25%, 45% {
-      -webkit-transform: translateY(-15px);
-              transform: translateY(-15px);
-    }
-    50% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    70% {
-      -webkit-transform: translateY(-8px);
-              transform: translateY(-8px);
-    }
-    80% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-    90% {
-      -webkit-transform: translateY(-8px);
-              transform: translateY(-8px);
-    }
-    100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-    }
-  }
-/* ********************************************************************************************************* */   
 #collect-gem{
   position: absolute;
   top:65%;
   left:50%;
   transform: translate(-50%, -50%);
   height:180px;
-  width:20%;
+  width:120px;
 }
 .gem{
   margin-top:
@@ -836,12 +660,7 @@ border:2px solid black;
 border-radius:10%;
 text-decoration: none;
 font-family: 'Trispace', sans-serif;
-/* height:20px;
-width: 50px;
-background-color: transparent;
-border:2px solid lightslategray;
-border-radius: 10%;
-text-decoration: none; */
+
 }
 .gem:hover {
   -webkit-animation: pulse 0.7s ease-out;
@@ -877,7 +696,14 @@ text-decoration: none; */
             transform: scale(1);
   }
 }
-/* ********************************************************************************************************* */   
+
+#toggle{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top:25px;
+}
+
 #toggle-switch{
   position: absolute;
   top:10%;
@@ -900,13 +726,9 @@ text-decoration: none; */
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
-  /* height:20px;
-  width: 50px;
-  background-color: transparent;
-  border:2px solid lightslategray;
-  border-radius: 10%;
-  text-decoration: none; */
+
   }
+
 #toggle-switch-button{
   display: flex;
   justify-content: center;
@@ -920,9 +742,7 @@ text-decoration: none; */
     left:86%;
     transform: translate(-50%, -50%);
   }
-  /* .toggle2{
-    /* margin-top:0px; */
-  /* } */
+ 
   #switch2{
     display:absolute;
     top:70%;
@@ -936,12 +756,7 @@ text-decoration: none; */
     border-radius:10%;
     text-decoration: none;
     font-family: 'Trispace', sans-serif;
-    /* height:20px;
-    width: 50px;
-    background-color: transparent;
-    border:2px solid lightslategray;
-    border-radius: 10%;
-    text-decoration: none; */
+
     }
   #toggle-switch-button2{
     display: flex;
@@ -1066,6 +881,187 @@ text-decoration: none; */
                 transform: rotate(0deg);
       }
     }
+/* ****************************************************** Codebot & Clear *************************************************** */
+  #clear{
+    position: absolute;
+    right:70px;
+    bottom:70px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border: solid 2px black;
+    border-radius:20%;
+    width:170px;
+    height:80px;
+    }
+  
+  #codebot{
+    position: absolute;
+    left:70px;
+    top:0px;
+    height:70px;
+    }
+  #clearbutton {
+      width:170px;
+      height:80px;
+      -webkit-appearance: none;
+      border-radius: 10%;
+      border:2px solid lightslategray;
+      font-family: 'Trispace', sans-serif;
+      outline: none;
+  }
+  #clear:hover{
+    -webkit-transform:scale(1.3);
+  transform:scale(1.3);
+  }
+/* ********************************************************* Media Query **************************************************** */
+    @media only screen and (max-width: 768px){
+     .rightside{
+       width:225%;
+       height:900px;
+      }
+/*  */
+    body{
+      background-color: lightskyblue;
+    }
+    #hr-line2{
+      position: absolute;
+      top:50%;
+      left:0%;
+    } 
+    #hr-line3{
+      position: absolute;
+      top:75%;
+      left:0%;
+    }
+    #vr-line{
+      position:absolute;
+      top:50%;
+      left:30%;
+      height:25%;
+      border-left: 2px solid black;   
+    }
+    #vr-line2{
+      position:absolute;
+      top:50%;
+      left:70%;
+      height:25%;
+      border-left: 2px solid black;   
+    }
+    #vr-line3, #vr-line4 {
+      display:none;
+    }
+  
+    #command-bar{
+      height:300px;
+      width:98px;
+
+    }
+    .pulldown2{
+      position: absolute;
+      top:20%;
+      left:0%;
+    }
+    #func{
+      /* margin-top:150px;
+      margin-right: 10px; */
+      height:40px;
+      width:40px;
+      }
+/*  */
+    .rock-box1{
+      left:30%;
+      width:40%;
+    }
+    .rock-box2{
+      display:none;
+    }
+    #crash{
+      margin-top:10px;
+    }
+/*  */
+    #cloud-guy{
+      margin-top:20px;
+    }
+    .sky-box1{
+      position: absolute;
+      top:25%;
+      left:30%;
+      height:25%;
+      width:40%;
+    
+    }
+    .sky-box6{
+        width:100%;
+        left:0%
+      }
+    .sky-box6 #sky{
+      margin-top:-2%;
+    }
+    .sky-box2, .sky-box3, .sky-box4, .sky-boz5, .sky-box7, .sky-box8, .sky-box-mini-l,.sky-box-mini-r{
+      display:none;
+    }
+/*  */
+
+    #collect-gem{
+
+      left:15%;
+      width:90px;
+    }
+    #toggle-switch{
+      left:85%;
+      width: 90px;
+    }
+    .toggle{
+
+      height:100px;
+      width:100px;
+
+    }
+    .toggle2{
+      height:100px;
+      width:100px;
+
+    }
+    #switch, #switch2{
+      margin-top: 10px;
+    }
+/*  */
+    #eraser{
+     
+      height:70px;
+      width:130px;
+      margin-top:3.5px;
+    }
+    #clear{
+      height:71px;
+      width:131px;
+      position:absolute;
+      left:70%;
+      top: 90%;
+      border: solid 3px white;
+    }
+         
+    #hey-codebot{
+      height:60px;
+      width:60px;
+      margin-top:18px;
+    } 
+
+    #codebot{
+      top:75%;
+      left:0%;
+    }
+    #remove-commands{
+      height:300px;
+      width:98px;
+      /* height:100px; */
+    }
+    #code-bar{
+      height:300px;
+      width:98px;
+    }
+  }
 /* ********************************************************************************************************* */   
 /* .Nav { grid-area: Nav; 
   border: 1px solid  black;}
