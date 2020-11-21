@@ -540,10 +540,10 @@ canvas.shake {
 .collect_gem{
   position: absolute;
   top:0%;
-  left:35%;
+  left:42%;
   height:15%;
-  width:15%;
-  border:solid 2px black;
+  width:120px;
+  /* border:solid 2px black; */
   display:flex;
   align-items: center;
   justify-content: center;
@@ -555,14 +555,14 @@ canvas.shake {
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 40px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
 }
-#collect2{
+/* #collect2{
   display:absolute;
   top:70%;
   left:80%;
@@ -575,7 +575,7 @@ canvas.shake {
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
-}
+} */
 #gemstone:hover {
   -webkit-animation: pulse 0.7s ease-out;
           animation: pulse 0.7s ease-out;
@@ -615,8 +615,8 @@ canvas.shake {
   top:0%;
   left:65%;
   height:15%;
-  width:15%;
-  border:solid 2px black;
+  width:120px;
+  /* border:solid 2px black; */
   display:flex;
   align-items: center;
   justify-content: center;
@@ -697,223 +697,18 @@ canvas.shake {
   }
 }
 /* ********************************************************** Row 2 ***************************************************** */
-
-.collect_gem2{
-  position: absolute;
-  top:18%;
-  left:35%;
-  height:15%;
-  width:15%;
-  border:solid 2px black;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-#collect2{
-  display:absolute;
-  top:70%;
-  left:80%;
-  justify-content: center;
-  justify-items: center;
-  height:40px;
-  width: 80px;
-  background-color: transparent;
-  border:2px solid black;
-  border-radius:10%;
-  text-decoration: none;
-  font-family: 'Trispace', sans-serif;
-}
-#gemstone2:hover {
-  -webkit-animation: pulse 0.7s ease-out;
-          animation: pulse 0.7s ease-out;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  40%, 70% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  40%, 70% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-.toggle_switch2{
-  position: absolute;
-  top:18%;
-  left:65%;
-  height:15%;
-  width:15%;
-  border:solid 2px black;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#switch2{
-  display:absolute;
-  top:70%;
-  left:86%;
-  justify-content: center;
-  justify-items: center;
-  height:40px;
-  width: 80px;
-  background-color: transparent;
-  border:2px solid black;
-  border-radius:10%;
-  text-decoration: none;
-  font-family: 'Trispace', sans-serif;
-}
-#toggle2:hover {
-  -webkit-animation: swing 0.5s ease-out;
-          animation: swing 0.5s ease-out;
-}
-
-@-webkit-keyframes swing {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  20% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  40% {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
-  }
-  60% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  80% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@keyframes swing {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  20% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  40% {
-    -webkit-transform: rotate(-20deg);
-            transform: rotate(-20deg);
-  }
-  60% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  80% {
-    -webkit-transform: rotate(20deg);
-            transform: rotate(20deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-/* ********************************************************** Row 3 ***************************************************** */
-
-.collect_gem3{
-  position: absolute;
-  top:36%;
-  left:35%;
-  height:15%;
-  width:15%;
-  border:solid 2px black;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-#collect3{
-  display:absolute;
-  top:70%;
-  left:80%;
-  justify-content: center;
-  justify-items: center;
-  height:40px;
-  width: 80px;
-  background-color: transparent;
-  border:2px solid black;
-  border-radius:10%;
-  text-decoration: none;
-  font-family: 'Trispace', sans-serif;
-}
-#gemstone3:hover {
-  -webkit-animation: pulse 0.7s ease-out;
-          animation: pulse 0.7s ease-out;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  40%, 70% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  40%, 70% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
 .toggle_switch3{
   position: absolute;
-  top:36%;
-  left:65%;
+  top:18%;
+  left:22%;
   height:15%;
-  width:15%;
-  border:solid 2px black;
+  width:120px;
+  /* border:solid 2px black; */
   display:flex;
   align-items: center;
   justify-content: center;
 }
+
 #switch3{
   display:absolute;
   top:70%;
@@ -921,7 +716,7 @@ canvas.shake {
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 40px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -987,34 +782,32 @@ canvas.shake {
   }
 }
 
-/* ********************************************************** Row 4 ***************************************************** */
-
-.collect_gem4{
+.collect_gem2{
   position: absolute;
-  top:54%;
-  left:35%;
+  top:18%;
+  left:42%;
   height:15%;
-  width:15%;
-  border:solid 2px black;
+  width:120px;
+  /* border:solid 2px black; */
   display:flex;
   align-items: center;
   justify-content: center;
 }
-#collect4{
+#collect2{
   display:absolute;
   top:70%;
   left:80%;
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 40px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
 }
-#gemstone4:hover {
+#gemstone2:hover {
   -webkit-animation: pulse 0.7s ease-out;
           animation: pulse 0.7s ease-out;
 }
@@ -1050,15 +843,16 @@ canvas.shake {
 }
 .toggle_switch4{
   position: absolute;
-  top:54%;
+  top:18%;
   left:65%;
   height:15%;
-  width:15%;
-  border:solid 2px black;
+  width:120px;
+  /* border:solid 2px black; */
   display:flex;
   align-items: center;
   justify-content: center;
 }
+
 #switch4{
   display:absolute;
   top:70%;
@@ -1066,7 +860,7 @@ canvas.shake {
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 40px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -1132,15 +926,551 @@ canvas.shake {
   }
 }
 
-/* ********************************************************** Row 4 ***************************************************** */
+/* ********************************************************** Row 3 ***************************************************** */
+.toggle_switch5{
+  position: absolute;
+  top:36%;
+  left:22%;
+  height:15%;
+  width:120px;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#switch5{
+  display:absolute;
+  top:70%;
+  left:86%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#toggle5:hover {
+  -webkit-animation: swing 0.5s ease-out;
+          animation: swing 0.5s ease-out;
+}
 
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+.collect_gem3{
+  position: absolute;
+  top:36%;
+  left:42%;
+  height:15%;
+  width:120px;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#collect3{
+  display:absolute;
+  top:70%;
+  left:80%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#gemstone3:hover {
+  -webkit-animation: pulse 0.7s ease-out;
+          animation: pulse 0.7s ease-out;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.toggle_switch6{
+  position: absolute;
+  top:36%;
+  left:65%;
+  height:15%;
+  width:120px;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#switch6{
+  display:absolute;
+  top:70%;
+  left:86%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#toggle6:hover {
+  -webkit-animation: swing 0.5s ease-out;
+          animation: swing 0.5s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+/* ********************************************************** Row 4 ***************************************************** */
+.toggle_switch7{
+  position: absolute;
+  top:54%;
+  left:22%;
+  height:15%;
+  width:120px;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#switch7{
+  display:absolute;
+  top:70%;
+  left:86%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#toggle7:hover {
+  -webkit-animation: swing 0.5s ease-out;
+          animation: swing 0.5s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+} 
+.collect_gem4{
+  position: absolute;
+  top:54%;
+  left:42%;
+  height:15%;
+  width:120px;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#collect4{
+  display:absolute;
+  top:70%;
+  left:80%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#gemstone4:hover {
+  -webkit-animation: pulse 0.7s ease-out;
+          animation: pulse 0.7s ease-out;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.toggle_switch8{
+  position: absolute;
+  top:54%;
+  left:65%;
+  height:15%;
+  width:120px;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#switch8{
+  display:absolute;
+  top:70%;
+  left:86%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#toggle8:hover {
+  -webkit-animation: swing 0.5s ease-out;
+          animation: swing 0.5s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+/* ********************************************************** Row 4 ***************************************************** */
+.toggle_switch9{
+  position: absolute;
+  top:70%;
+  left:22%;
+  height:15%;
+  width:120px;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#switch9{
+  display:absolute;
+  top:70%;
+  left:86%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#toggle9:hover {
+  -webkit-animation: swing 0.5s ease-out;
+          animation: swing 0.5s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
 .collect_gem5{
   position: absolute;
   top:72%;
-  left:35%;
+  left:42%;
   height:15%;
-  width:15%;
-  border:solid 2px black;
+  width:120px;
+  /* border:solid 2px black; */
   display:flex;
   align-items: center;
   justify-content: center;
@@ -1193,18 +1523,18 @@ canvas.shake {
             transform: scale(1);
   }
 }
-.toggle_switch5{
+.toggle_switch10{
   position: absolute;
   top:72%;
   left:65%;
   height:15%;
-  width:15%;
-  border:solid 2px black;
+  width:120px;
+  /* border:solid 2px black; */
   display:flex;
   align-items: center;
   justify-content: center;
 }
-#switch5{
+#switch10{
   display:absolute;
   top:70%;
   left:86%;
@@ -1218,7 +1548,7 @@ canvas.shake {
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
 }
-#toggle5:hover {
+#toggle10:hover {
   -webkit-animation: swing 0.5s ease-out;
           animation: swing 0.5s ease-out;
 }
