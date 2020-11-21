@@ -30,64 +30,278 @@ body{
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Trispace', sans-serif;
   text-shadow: 0px 0px 300px #000;
+}
+a, a:hover, a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.navbar {
+  /* padding: 15px 10px; */
+  /* background: #fff; */
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  /* background-color: lightskyblue; */
+  /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
+}
+/* .navbar-default{
+  background-color:lightskyblue;
+} */
+.navbar-btn {
+  box-shadow: none;
+  outline: none !important;
+  border: none;
+  /* background-color: lightskyblue; */
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+/* .navbar-header{
+  background-color:lightskyblue;
+} */
+/* ---------------------------------------------------
+  SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+  position:absolute;
+  display: flex;
+  align-items: stretch;
 }
 
 #sidebar {
-  position: fixed;
-  width: 200px;
-  height: 100%;
-  background: #151719;
-  left: -200px;
-  transition: all 250ms linear;
+  min-width: 250px;
+  max-width: 250px;
+  background: black;
+  /* color: #fff; */
+  transition: all 0.3s;
 }
 
 #sidebar.active {
-  left: 0px;
+  margin-left: -250px;
 }
 
-#sidebar ul li {
-  color: rgba(230, 230, 230, 0.9);
-  list-style: none;
-  padding: 15px 10px;
-  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
-  text-transform: uppercase;
-  text-decoration: none;
+#sidebar .sidebar-header {
+  padding: 15px;
+  background: black;
+  color:white;
+   margin-bottom:-35px;
+   margin-top:-20px;
 }
 
-#sidebar ul li:hover {
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
   color: #fff;
-  background: #333;
-  text-decoration: none;
+  padding: 10px;
 }
 
 #sidebar ul li a {
-  text-decoration: none;
-  color: rgba(230, 230, 230, 0.9);
+  padding: 10px;
+  font-size: 1.3em;
+  display: block;
+  background-color: #000;
+  color:white;
 }
-
 #sidebar ul li a:hover {
-  text-decoration: none;
+  color: black;
+  background: #fff;
+  font-weight: bold;
+}
+/* 
+#sidebar ul li.active > a, a[aria-expanded="true"] {
   color: #fff;
+  background: black;
+} */
+
+
+a[data-toggle="collapse"] {
+  position: relative;
 }
 
-#sidebar .toggle-btn {
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+  content: '\e259';
+  display: block;
   position: absolute;
-  left: 230px;
-  top: 20px;
+  right: 20px;
+  font-family: 'Glyphicons Halflings';
+  font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+  content: '\e260';
 }
 
-.menu-icon {
-  background: linear-gradient(to bottom, #151719 0%, #151719 20%, transparent 20%, transparent 40%, #151719 40%, #151719 60%, transparent 60%, transparent 80%, #151719 80%, #151719 100%);
+
+ul ul a {
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: black;
+}
+
+ul.CTAs {
+  padding: 20px;
+}
+
+ul.CTAs a {
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+a.download {
+  background: #fff;
+  color: #7386D5;
+}
+
+a.active,a.article, a.article:hover {
+  background: #6d7fcc !important;
+  color: #fff !important;
+}
+
+#sidebarCollapse{
+  background-color: black;
+}
+#loop-label{
+  color:white;
+  /* margin-left:10px; */
+}
+
+
+.radio-btn input[type="radio"], .check-box input[type="checkbox"] {
+  visibility: hidden;
+}
+/*Custom checkbox*/
+.check-box {
+  width: 22px;
+  height: 22px;
   cursor: pointer;
-  height: 2em;
-  transition: opacity .5s ease;
-  width: 2em;
+  display: inline-block;
+  margin: 2px 7px 0 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 1px #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+  border: 1px solid #ccc;
 }
-.menu-icon:hover {
+.check-box i {
+  background: url('http://cdn1.iconfinder.com/data/icons/mimiGlyphs/16/check_mark.png') no-repeat center center;
+  position: absolute;
+  left: 3px;
+  bottom: -15px;
+  width: 16px;
+  height: 16px;
   opacity: .5;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  -webkit-transform:rotateZ(-180deg);
+  -moz-transform:rotateZ(-180deg);
+  -o-transform:rotateZ(-180deg);
+  transform:rotateZ(-180deg);
 }
+.checkedBox {
+  -moz-box-shadow: inset 0 0 5px 1px #ccc;
+  -webkit-box-shadow: inset 0 0 5px 1px #ccc;
+  box-shadow: inset 0 0 5px 1px #ccc;
+  border-bottom-color: #fff;
+}
+.checkedBox i {
+  bottom: 2px;
+  -webkit-transform:rotateZ(0deg);
+  -moz-transform:rotateZ(0deg);
+  -o-transform:rotateZ(0deg);
+  transform:rotateZ(0deg);
+}
+/*Custom radio button*/
+.radio-btn {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  float: left;
+  margin: 3px 7px 0 0;
+  cursor: pointer;
+  position: relative;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 1px #ccc;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+}
+.checkedRadio {
+  -moz-box-shadow: inset 0 0 5px 1px #ccc;
+  -webkit-box-shadow: inset 0 0 5px 1px #ccc;
+  box-shadow: inset 0 0 5px 1px #ccc;
+}
+.radio-btn i {
+  border: 1px solid #E1E2E4;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.checkedRadio i {
+  background-color: #898A8C;
+}
+
+/* ---------------------------------------------------
+  CONTENT STYLE
+----------------------------------------------------- */
+#content {
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+  MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+  #sidebar {
+      margin-left: -250px;
+  }
+  #sidebar.active {
+      margin-left: 0;
+  }
+  #sidebarCollapse span {
+      display: none;
+  }
+}
+
 /* ************************************************ Sketchpad & Co. ***************************************************** */
 #sketchpadapp {
   /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
@@ -1081,9 +1295,10 @@ canvas.shake {
     border:solid black 2px;
   }
   #loop{
-  position:absolute;
-  top:90%;
-  left:17%;
+    display:inline-block;
+  /* position:absolute; */
+  /* top:90%;
+  left:17%; */
   }
   #loop2{
   position:absolute;
@@ -1136,6 +1351,30 @@ button{
 
 /* ********************************************************************************************************************* */
 
+@media (max-width: 768px) {
+  #sidebar {
+      margin-left: -250px;
+  }
+  #sidebar.active {
+      margin-left: 0;
+  }
+  #sidebarCollapse span {
+      display: none;
+  }
+  .rightside{
+    width:200%;
+    height:900px;
+   }
+}
+
+/* @media only screen and (max-width: 768px){
+  .rightside{
+    width:225%;
+    height:900px;
+   } */
+
+
+    
 /* .sky-panel3{
   position: absolute;
   top:18%;

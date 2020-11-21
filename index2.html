@@ -2,11 +2,15 @@
 <html>
    <head>
       <title>a11y Swift Loops</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <link rel="stylesheet" href="styles2.css">
       <link href=”css/ipadP.css” rel=”stylesheet” media=”only screen and (min-device-width:  768px) and (max-device-width: 1024px) and (orientation: portrait)”>
       <link href=”css/ipadL.css” rel=”stylesheet” media=”only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)”>  
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <style type="text/css">
-        @font-face {
+       
+       @font-face {
           @font-face {
     font-family: 'sf_ui_displayregular';
     src: url('sf-ui-display-regular-webfont.woff2') format('woff2'),
@@ -32,15 +36,15 @@
             background-color: lightskyblue;
         }
     </style>
-
-      <script type="text/javascript" src="index2.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> -->
+      <!-- <script type="text/javascript" src="index2.js"></script> -->
       <script type = "text/javascript"
          src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
       </script>
       
-      <script type = "text/javascript" 
+      <!-- <script type = "text/javascript" 
          src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
-      </script>
+      </script> -->
       
       <script type = "text/javascript" language = "javascript">
    
@@ -65,7 +69,7 @@
             }
       </script>
       
-
+      <script type="text/javascript" src="index2.js"></script>
        
         
          <!-- <style>
@@ -184,7 +188,7 @@
                             <div id="codebot">
                                 <a href="presentation.html"><img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('add').play()" ondblclick="remove(this.id)"></a>
                             </div>
-                            <div id="loop">  
+                            <!-- <div id="loop">  
                                     <input id="text" type="button" value="Loop" onclick="showImage();"/>
                                     <img id="loadingImage" src="img/loop.png" style="visibility:hidden"/>
                             </div>
@@ -223,215 +227,103 @@
                             <div id="loop10">  
                                 <input id="text" type="button" value="Loop" onclick="showImage10();"/>
                                 <img id="loadingImage10" src="img/loop.png" style="visibility:hidden"/>
-                            </div>    
+                            </div>     -->
                             
     <!-- ***************************************************************************************************************** -->
-                     
+    <div id="clear"><img id="eraser" src="img/erase.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
+    </div>
+    <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Using Loops</h3>
+                </div>
 
+                <ul class="list-unstyled components">
+                    <!-- <p>Dummy Heading</p> -->
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">for i in 1...number</a>
+                        
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
+                            </a></li>
+                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
+                            </a></li>
+                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
+                            </a></li>
+                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
+                            </a></li>
+                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
+                            </a></li>
+                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
+                            </a></li>
+                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
+                            </a></li>
+                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
+                            </a></li>
+                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
+                            </a></li>
+                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- <a href="#">About</a> -->
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">My Code</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <a href="#">Portfolio</a>
+                    </li> -->
+                    <!-- <li>
+                        <a href="#">Contact</a>
+                    </li> -->
+                </ul>
 
+            </nav>
 
+            <!-- Page Content Holder -->
+            <div id="content">
 
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
 
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <!-- <span>Toggle Sidebar</span> -->
+                            </button>
+                        </div>
 
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        </div>
+                    </div>
+                </nav>
+            </div>
 
-
-                            <!-- <div id="codebot">
-                                <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('add').play()" ondblclick="remove(this.id)">
-                            </div> -->
-                           
-
-<!--                             
-                             
-                              <div id="space">
-                                    <div class="collect">
-                                      <div id="collect-gem">
-                                        <img id="gem">
-                                      </div>
-                                     div id="gem-button"><button id="collect" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('collect').pause()">Sound Effect</button></div> -->
-                                    <!-- </div>
-                              </div> -->
-                               <!-- <div class="rock-box1">
-                                        <div id="boulder">
-                                            <img id="rock" src="img/rock.png">
-                                        </div>
-                                        <div id="crash-button">
-                                            <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">Sound Effect</span></button>
-                                        </div>
-                                    </div>
-                                </div>  -->
-                            <div id="sidebar">
-                                <div class="toggle-btn" onclick="toggleSidebar()">
-                                  <div class="menu-icon"></div>
-                                </div>
-                                <ul>
-                                  <li>
-                                      <form action="PayslipServlet" method="get">
-                                        <input type="button" value="for i in ..." onclick="writeValues(form)">
-                                        <input type="text" name="lname" id="lname"><br/>
-                                        <span id="answer"></span><br>
-                                        <!-- <input type="button" value="Number" onclick="writeValues(form)"> -->
-                                    </form>
-                                </li>
-                                  <li><a href="#">Nodes</a></li>
-                                  <li><a href="#">Containers</a></li>
-                                  <li><a href="#">Authentication</a></li>
-                                  <li><a href="#">Settings</a></li>
-                                </ul>
-                              </div>
-                             
-                              <!-- <div id="vr-line"></div>
-                              <div id="vr-line2"></div>
-                              <div id="vr-line3"></div>
-                              <div id="vr-line4"></div>
-                              <div id="vr-line5"></div>
-                              <div id="hr-line"></div>
-                              <div id="hr-line2"></div>
-                              <div id="hr-line3"></div>
-                              <div id="hr-line4"></div>
-                              <div id="hr-line5"></div> -->
-                              <!-- <div id="vr-line4"></div>
-                              
-                              <div id="hr-line2"></div>
-                              <div id="hr-line3"></div>
-                              <div id="hr-line4"></div>
-
-
-                               <div class="rock-box1">
-                                   <div id="rock-container">
-                                        <div id="boulder">
-                                            <img id="rock" src="img/rock.png">
-                                        </div>
-                                        <div id="crash-button">
-                                            <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">Sound Effect</span></button>
-                                        </div>
-                                    </div> -->
-                                <!-- </div>  -->
-
-                            
-                              <!-- <div class="rock-box1">
-                                    <div id="boulder">
-                                        <img id="rock" src="img/rock.png">
-                                    </div>
-                                    <div id="crash-button">
-                                        <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">Sound Effect</span></button>
-                                    </div>
-                                </div>                              
-                                <div class="sky-box-mini-l">
-                                    <div id="sky">
-                                        <img id="cloud-guy-mini" src="img/cloud-family-mini.png">
-                                    </div>
-                                    <div id="cloud-button-mini">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
-                                    </div>
-                                </div> -->
-                                <!-- <div class="sky-box-mini-r">
-                                    <div id="sky">
-                                    </div>
-                                </div>
-                                <div class="sky-box1">
-                                    <div id="sky">
-                                        <img id="cloud-guy" src="img/cloud-family.png">
-                                    </div>
-                                    <div id="cloud-button-1">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
-                                    </div>
-                                </div> -->
-
-                                <!-- <div class="rock-box2">
-                                    <div id="boulder">
-                                        <img id="rock" src="img/rock.png">
-                                    </div>
-                                    <div id="crash-button">
-                                        <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">Sound Effect</button>
-                                    </div>
-                                 </div>
-                                </div>
-                                <div id="toggle-switch">
-                                    <div id="toggle">
-                                        <img class="toggle" src="img/toggleSwitch.png">
-                                    </div>
-                                    <div id="toggle-switch-button">
-                                        <button id="switch" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()">Sound Effect</button>
-                                    </div>
-                                </div> 
-                                <div class="sky-box2">
-                                    <div id="sky">
-                                        <img id="cloud-guy" src="img/cloud-family.png">
-                                    </div>
-                                    <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
-                                    </div>
-                                </div>
-                                <div class="sky-box3">
-                                    <div id="sky">
-                                        <img id="cloud-guy" src="img/cloud-family.png">
-                                    </div>
-                                    <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
-                                  </div>
-                                </div>
-                                <div class="sky-box4">
-                                    <div id="sky">
-                                        <img id="cloud-guy" src="img/cloud-family.png">
-                                    </div>
-                                    <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
-                                    </div>
-                                </div>
-                                <div id="collect-gem">
-                                    <div id="gem">
-                                        <img class="gem" src="img/collectGem.png">
-                                    </div>
-                                    <div id="gem-button">
-                                        <button id="collect" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('collect').pause()">Sound Effect</button>
-                                    </div>
-                                </div>
-                                <div id="toggle-switch2">
-                                    <div id="toggle2">
-                                        <img class="toggle2" src="img/toggleSwitch.png">
-                                    </div>
-                                    <div id="toggle-switch-button2">
-                                        <button id="switch2" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()">Sound Effect</button>
-                                    </div>
-                                </div> 
-                                <div class="sky-box5">
-                                    <div id="sky">
-                                        <img id="cloud-guy" src="img/cloud-family.png">
-                                    </div>
-                                    <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
-                                    </div>
-                                </div>
-                                <div class="sky-box6">
-                                    <div id="sky">
-                                        <img id="cloud-guy" src="img/cloud-family.png">
-                                    </div>
-                                    <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
-                                    </div>
-                                </div> 
-                                <div class="sky-box7">
-                                    <div id="sky">
-                                        <img id="cloud-guy" src="img/cloud-family.png">
-                                    </div>
-                                    <div id="cloud-button">
-                                        <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
-                                    </div>
-                                </div>  -->
-                                 <!-- <div id="codebot">
-                                <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('add').play()" ondblclick="document.getElementById('add').pause()">
-                            </div> -->
-                              
-                            <div id="clear"><img id="eraser" src="img/erase.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
-                           </div>
 
                      </div>
                   </div>
                </div>
-         </section>
+         <!-- </section> -->
          
          </div>
+         <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+         <!-- Bootstrap Js CDN -->
          
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+         <script type="text/javascript">
+         $(document).ready(function () {
+             $('#sidebarCollapse').on('click', function () {
+                 $('#sidebar').toggleClass('active');
+             });
+         });
+         </script> 
    </body>
 </html>  
 
