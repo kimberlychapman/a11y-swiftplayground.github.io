@@ -442,6 +442,10 @@ a.active,a.article, a.article:hover {
     width:200px;
 
   }
+  #closed-bracket{
+    font-size:14pt;
+    font-family:'Trispace', sans-serif;
+  }
 /* ************************************************ Sketchpad & Co. ***************************************************** */
 #sketchpadapp {
   /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */

@@ -93,22 +93,22 @@
                                 <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('here').play()" ondblclick="document.getElementById('here').pause()">
                             </div>
                             <div class="pulldown1">
-                                <a href="presentation.html"><img id="commands" src="img/swift.png"onclick="document.getElementById('add').play()">
-                                <span id="two-finger1">
+                                <a href="presentation.html"><img id="commands" src="img/swift.png"onclick="document.getElementById('add').play()"></a>
+                                <!-- <span id="two-finger1">
                                     <div class="options">
                                     <div id="add-commands"><img id="command-bar"src="img/command_line.png"></div>
                                         <div id="command-options">
                                         </div>
                                     </div>
-                                </span></a>
+                                </span></a> -->
                             </div>
                             <div class="pulldown2">
                                 <img id="func" src="img/code-symbol.png" onclick="document.getElementById('run-code').play()" ondblclick="document.getElementById('run-code').pause()">
-                                <span id="two-finger2">
+                                <!-- <span id="two-finger2">
                                     <div class="options2">
                                     <div id="remove-commands"><img id="code-bar" src="img/code_bar.png"></div>
                                     </div>
-                                </span>
+                                </span> -->
                             </div>
 <!-- ************************************************************************************ Lines ************************************************************************************-->
                               <div id="vr-line"></div>
@@ -242,7 +242,7 @@
                             <div id="mySidepanel" class="sidepanel">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                             <a href="#" style="font-family: 'Trispace', sans-serif; font-size:13pt;
-                            color:white;">for i in 1...number{</a>
+                            color:white;margin-top:-10px;">for i in 1...number{</a>
                             <a href="#">
                                 <div id="drop-box">
                                     <!-- <div class="col" id="col1">
@@ -259,19 +259,23 @@
                                       <div class="col" id="col6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                       <div class="col" id="col7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                       <div class="col" id="col8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                      <div class="col" id="col9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                      <div class="col" id="col10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                      <div id="closed-bracket">}</div>
+                                      <!-- <div class="col" id="col9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                      <div class="col" id="col10" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
                                     </div>
                                     <!-- <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
                                     <div class="col" id="col1">
                                       <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">
-                                        <img class="moving" src="img/moveForward().png"></div>
+                                        <img class="moving" src="img/moveForward().png">moveForward()</div>
                                       <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">
-                                        <img class="left" src="img/turnLeft().png"></div>  
+                                        <img class="left" src="img/turnLeft().png">turnLeft()</div>  
                                       <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)">
-                                        <img class="right" src="img/turnRight().png"></div>  
-                                      <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)"><img class="collecting"src="img/gem.png"></div>
-                                      <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)"><img class="jump"src="img/toggle_key.png"></div>
+                                        <img class="right" src="img/turnRight().png">turnRight()</div>  
+                                      <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)">
+                                        <img class="collecting"src="img/collect-gem.png">collectGem()</div>
+                                      <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)">
+                                        <img class="jump"src="img/toggle_key.png">toggleSwitch()</div>
+                                    <!-- <div id="closed-bracket">}</div> -->
                                     </div>
                                 </div>
                             </a>

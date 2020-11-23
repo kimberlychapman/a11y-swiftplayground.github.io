@@ -153,6 +153,8 @@ canvas.shake {
   display:flex;
   justify-content:center;
   justify-items: center;
+  height:50px;
+  width:50px;
 }
 
 #two-finger1{
@@ -978,15 +980,15 @@ font-family: 'Trispace', sans-serif;
 
 #drop-box{
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   }
   .thing {
   display:flex;
   flex-direction: row;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 30px;
   /* padding: 0.5em; */
-  margin: 5px;
+  /* margin: 5px; */
   margin-bottom:10px;
   /* background-color:red; */
   /* background: rgba(0,0,0,0.8); */
@@ -998,40 +1000,41 @@ font-family: 'Trispace', sans-serif;
   /* border:2px solid yellow; */
  }
  #thing1{
-   margin-left:10%;
+   /* margin-left:10%; */
    background-color:red;
    padding-top: 15px;
-   padding-left:10px;
+   /* padding-left:10px; */
 
  }
  #thing2{
-  margin-left:10%;
+  /* margin-left:10%; */
   background-color:yellow;
   padding-top: 15px;
-  padding-left:10px;
+  /* padding-left:10px; */
 }
 #thing3{
-  margin-left:10%;
+  /* margin-left:10%; */
   background-color: #8A2BE2;
   padding-top: 15px;
-  padding-left:10px;
+  /* padding-left:10px; */
 }
 
 #thing4{
-  margin-left:10%;
+  /* margin-left:10%; */
   background-color: lime;
   padding-top: 15px;
-  padding-left:10px;
+  /* padding-left:10px; */
 }
 #thing5{
-  margin-left:10%;
+  /* margin-left:10%; */
   background-color:aqua;
   padding-top: 15px;
-  padding-left:10px;
+  /* padding-left:10px; */
 }
   .moving{
     height:40px;
     width:40px;
+    margin-top:-5px;
     /* margin-right:10px; */
     /* margin-right:5px; */
   }
@@ -1040,12 +1043,14 @@ font-family: 'Trispace', sans-serif;
     width:45px;
   }
   .jump{
-    height:45px;
-    width:45px;
+    /* height:45px;
+    width:45px; */
+    margin-top:-10px;
   }
   .collecting{
     height:40px;
     width:50px;
+    margin-top:-10px;
     /* margin-top:70px; */
   }
   .col {
@@ -1057,7 +1062,7 @@ font-family: 'Trispace', sans-serif;
   /* border: 1px solid; */
   border-radius: 5px;
   position: relative;
-  float: left;
+  /* float: left; */
   }
   #drop-container{
   display:flex;
@@ -1065,9 +1070,15 @@ font-family: 'Trispace', sans-serif;
   }
   #col2, #col3, #col4, #col5, #col6, #col7, #col8, #col9, #col10{
     border: 2px solid yellow;
+    margin-bottom:7px;
     height:50px;
-    width:50px;
+    width:150px;
+    padding:5px;
 
+  }
+  #closed-bracket{
+    font-size:14pt;
+    font-family:'Trispace', sans-serif;
   }
 /* ********************************************************* Media Query **************************************************** */
     @media only screen and (max-width: 768px){
