@@ -18,12 +18,18 @@
       }
     
     </style>
+    <script>
+        function remove(me) {
+        document.getElementById(me).outerHTML = ""
+        }
+  </script>
+  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
      <style>
             @import url('https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap');
       </style>
-      <script type="text/javascript" src="index.js"></script>
+      <!-- <script type="text/javascript" src="index.js"></script> -->
       <script type = "text/javascript"
          src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
       </script>
@@ -33,6 +39,7 @@
       </script>
       
       <script type = "text/javascript" language = "javascript">
+      
    
          // $(document).ready(function() {
 
@@ -199,6 +206,7 @@
                                         <button id="cloud" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
                                     </div>
                                 </div>
+                                
 <!-- ******************************************************************************* Gem & Switches *********************************************************************************-->
                                 <div id="collect-gem">
                                     <div id="gem">
@@ -231,6 +239,70 @@
                               
                               <div id="clear"><img id="eraser" src="img/erase.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
                             </div>
+                            <div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <a href="#" style="font-family: 'Trispace', sans-serif; font-size:13pt;
+                            color:white;">for i in 1...number{</a>
+                            <a href="#">
+                                <div id="drop-box">
+                                    <!-- <div class="col" id="col1">
+                                      <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1">THING 1</div>
+                                      <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2">THING 2</div>  
+                                      <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3">THING 3</div>  
+                                      <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4">THING 4</div>
+                                    </div> -->
+                                    <div id="drop-container">
+                                      <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                      <div class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                      <div class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                      <div class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                      <div class="col" id="col6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                      <div class="col" id="col7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                      <div class="col" id="col8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                      <div class="col" id="col9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                      <div class="col" id="col10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    </div>
+                                    <!-- <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+                                    <div class="col" id="col1">
+                                      <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">
+                                        <img class="moving" src="img/moveForward().png"></div>
+                                      <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">
+                                        <img class="left" src="img/turnLeft().png"></div>  
+                                      <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)">
+                                        <img class="right" src="img/turnRight().png"></div>  
+                                      <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)"><img class="collecting"src="img/gem.png"></div>
+                                      <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)"><img class="jump"src="img/toggle_key.png"></div>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- <a href="#">Contact</a> -->
+                        </div>
+                        <button class="openbtn" onclick="openNav()">☰ Code</button>  
+                        <!-- <h2>Collapsed Sidepanel</h2>
+                        <p>Click on the hamburger menu/bar icon to open the sidepanel.</p> -->
+                        <script>
+                            function openNav() {
+                              document.getElementById("mySidepanel").style.width = "250px";
+                            }
+                            
+                            function closeNav() {
+                              document.getElementById("mySidepanel").style.width = "0";
+                            }
+                        </script>
+                        <!--  -->
+                             <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+                             <!-- Bootstrap Js CDN -->
+                             
+                             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                             <script type="text/javascript">
+                             $(document).ready(function () {
+                                 $('#sidebarCollapse').on('click', function () {
+                                     $('#sidebar').toggleClass('active');
+                                 });
+                             });
+                             </script> 
+        
 
                      </div>
                   </div>
@@ -238,6 +310,7 @@
               
          </section>
          </div>
+         <script type="text/javascript" src="index.js"></script>
    </body>
 </html>
     
