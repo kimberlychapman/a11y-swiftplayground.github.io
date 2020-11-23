@@ -98,14 +98,14 @@
    </section>
    <body onload="init()"> 
        <div class="Main">
-    <!-- *************************************************** Sketchpad & Co. ********************************************* -->
+<!-- Sktechpad & Co. -->
                      <div id="sketchpadapp">
                            <div class="rightside">
                               <canvas id="sketchpad" height="800" width="1500">
                               </canvas>
                               <div id="clear"><img id="eraser" src="img/erase.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
                             </div>
-    <!-- ***************************************************  Lines/Panels *********************************************** -->                                  
+<!-- Lines -->
                               <!-- <div id="vr-line"></div>
                               <div id="vr-line2"></div>
                               <div id="vr-line3"></div>
@@ -118,7 +118,7 @@
                               <div id="hr-line5"></div>
                             <div class="sky-panel"></div>
                             <div class="sky-panel2"></div>
-    <!-- *******************************************************  Row 1 ************************************************** -->                                  
+<!-- Row 1 -->
                         <div id="row1" ondblclick="remove(this.id)">
                             <div class=toggle_switch>
                                 <img id="toggle" src="img/toggleSwitch.png">
@@ -128,13 +128,13 @@
                                 <img id="gemstone" src="img/collectGem.png">
                                 <button id="collect1" onclick="document.getElementById('collect').play()"><img id="sound" src="img/speaker.png"></button> 
                             </div>
-                            <div class=toggle_switch2>
+                            <!-- <div class=toggle_switch2>
                                 <img id="toggle2" src="img/toggleSwitch.png">
                                 <button id="switch2" onclick="document.getElementById('toggle').play()"><img id="sound" src="img/speaker.png"></button>  
-                            </div>
+                            </div> -->
                         </div>
                                 
-    <!-- *******************************************************  Row 2 ************************************************** --> 
+<!-- Row 2 -->
                         <div id="row2" ondblclick="remove(this.id)">
                             <div class=toggle_switch3>
                                 <img id="toggle3" src="img/toggleSwitch.png">
@@ -150,7 +150,7 @@
                                 <button id="switch4" onclick="document.getElementById('toggle').play()"><img id="sound" src="img/speaker.png"></button>  
                             </div>
                         </div>
-    <!-- *******************************************************  Row 3 ************************************************** --> 
+<!-- Row 3 -->
                         <div id="row3" ondblclick="remove(this.id)">
                             <div class=toggle_switch5>
                                 <img id="toggle5" src="img/toggleSwitch.png">
@@ -166,7 +166,7 @@
                                 <button id="switch6" onclick="document.getElementById('toggle').play()"><img id="sound" src="img/speaker.png"></button>  
                             </div>
                         </div>
-    <!-- *******************************************************  Row 4 ************************************************** --> 
+<!-- Row 4 -->
                         <div id="row4" ondblclick="remove(this.id)">
                             <div class=toggle_switch7>
                                 <img id="toggle7" src="img/toggleSwitch.png">
@@ -182,7 +182,7 @@
                                 <button id="switch8" onclick="document.getElementById('toggle').play()"><img id="sound" src="img/speaker.png"></button>  
                             </div> 
                         </div>
-    <!-- *******************************************************  Row 4 ************************************************** --> 
+<!-- Row 5  -->
                         <div id="row5" ondblclick="remove(this.id)">
                             <div class=toggle_switch9>
                                 <img id="toggle9" src="img/toggleSwitch.png">
@@ -197,7 +197,7 @@
                                 <button id="switch10" onclick="document.getElementById('toggle').play()"><img id="sound" src="img/speaker.png"></button>  
                             </div>
                         </div>
-    <!-- ***************************************************************************************************************** -->
+<!-- Codebot -->
                             <div id="codebot">
                                 <a href="presentation.html"><img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('add').play()" ondblclick="remove(this.id)"></a>
                             </div>
@@ -242,9 +242,10 @@
                                 <img id="loadingImage10" src="img/loop.png" style="visibility:hidden"/>
                             </div>     -->
                             
-    <!-- ***************************************************************************************************************** -->
+<!-- Clear -->
     <div id="clear"><img id="eraser" src="img/erase.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
     </div>
+<!-- Left Sidebar -->
     <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
@@ -255,7 +256,7 @@
                 <ul class="list-unstyled components">
                     <!-- <p>Dummy Heading</p> -->
                     <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">for i in 1...number</a>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Loop Tracker</a>
                         
                         <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
@@ -282,12 +283,12 @@
                     </li>
                     <li>
                         <!-- <a href="#">About</a> -->
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">My Code</a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Total</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li><a href="#">Page 1</a></li>
-                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Number</a></li>
+                            <!-- <li><a href="#">Page 2</a></li> -->
                             <!-- <li><a href="#">Page 3</a></li> -->
-                        </ul>
+                        <!-- </ul> -->
                     </li>
                     <!-- <li>
                         <a href="#">Portfolio</a>
@@ -325,6 +326,53 @@
          <!-- </section> -->
          
          </div>
+<!-- Right Sidepanel -->
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#" style="font-family: 'Trispace', sans-serif; font-size:13pt;
+                color:white;">for i in 1...number{</a>
+                <a href="#">
+                    <div id="drop-box">
+                        <!-- <div class="col" id="col1">
+                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1">THING 1</div>
+                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2">THING 2</div>  
+                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3">THING 3</div>  
+                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4">THING 4</div>
+                        </div> -->
+                        <div id="drop-container">
+                          <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                          <div class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                          <div class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                          <div class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </div>
+                        <!-- <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+                        <div class="col" id="col1">
+                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">
+                            <img class="move" src="img/moveForward().png">moveForward()</div>
+                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">
+                            <img class="left" src="img/turnLeft().png">turnLeft()</div>  
+                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)">
+                            <img class="right" src="img/turnRight().png">turnRight()</div>  
+                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)"><img src="img/gem.png">collectGem()</div>
+                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)"><img src="img/toggle_key.png">toggleSwitch()</div>
+                        </div>
+                    </div>
+                </a>
+                <!-- <a href="#">Contact</a> -->
+            </div>
+            <button class="openbtn" onclick="openNav()">☰ Code</button>  
+            <h2>Collapsed Sidepanel</h2>
+            <p>Click on the hamburger menu/bar icon to open the sidepanel.</p>
+    <script>
+        function openNav() {
+          document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+    <!--  -->
          <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
          <!-- Bootstrap Js CDN -->
          
@@ -339,6 +387,8 @@
          </script> 
    </body>
 </html>  
+
+
 
 
 

@@ -301,7 +301,147 @@ a.active,a.article, a.article:hover {
       display: none;
   }
 }
+/* ---------------------------------------------------
+  RIGHT SIDE PANEL
+----------------------------------------------------- */
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  /* font-family: 'Trispace', sans-serif;
+  color:white; */
+}
 
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position:fixed;
+  top:0px;
+  right:0px;
+  
+
+}
+
+.openbtn:hover {
+  background-color:#444;
+}
+
+#drop-box{
+  display:flex;
+  flex-direction: column;
+  }
+  .thing {
+  display:flex;
+  flex-direction: row;
+  width: 165px;
+  height: 50px;
+  /* padding: 0.5em; */
+  margin: 5px;
+  margin-bottom:10px;
+  /* background-color:red; */
+  /* background: rgba(0,0,0,0.8); */
+  color: black;
+  font-family: 'Trispace', sans-serif;
+  font-weight: bold;
+  font-size:10pt;
+  /* font-family: sans-serif; */
+  /* border:2px solid yellow; */
+ }
+ #thing1{
+   margin-left:10%;
+   background-color:red;
+   padding-top: 10px;
+ }
+ #thing2{
+  margin-left:10%;
+  background-color:yellow;
+  padding-top: 15px;
+  padding-left:10px;
+}
+#thing3{
+  margin-left:10%;
+  background-color: #8A2BE2;
+  padding-top: 15px;
+  padding-left:10px;
+}
+
+#thing4{
+  margin-left:10%;
+  background-color: lime;
+  padding-top: 15px;
+  padding-left:10px;
+}
+#thing5{
+  margin-left:10%;
+  background-color:aqua;
+  padding-top: 15px;
+  padding-left:10px;
+}
+  .move{
+    height:40px;
+    width:30px;
+  }
+  .left, .right{
+    height:20px;
+    width:40px;
+  }
+  .gem{
+    height:30px;
+    width:30px;
+    /* margin-top:70px; */
+  }
+  .col {
+  display:flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100px;
+  padding: 7px;
+  /* border: 1px solid; */
+  border-radius: 5px;
+  position: relative;
+  float: left;
+  }
+  #drop-container{
+  display:flex;
+  flex-direction: column;
+  }
+  #col2, #col3, #col4, #col5{
+    border: 2px solid yellow;
+    height:100px;
+    width:200px;
+
+  }
 /* ************************************************ Sketchpad & Co. ***************************************************** */
 #sketchpadapp {
   /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
@@ -1383,7 +1523,7 @@ canvas.shake {
 /* ********************************************************** Row 4 ***************************************************** */
 .toggle_switch9{
   position: absolute;
-  top:70%;
+  top:72%;
   left:22%;
   height:15%;
   width:120px;
@@ -1611,7 +1751,7 @@ canvas.shake {
 /* ********************************************************************************************************************* */
   #codebot{
     position: absolute;
-    right:70px;
+    right:120px;
     top:0px;
     height:70px;
     }
@@ -1696,6 +1836,9 @@ button{
     height:900px;
    }
 }
+
+
+
 
 /* @media only screen and (max-width: 768px){
   .rightside{

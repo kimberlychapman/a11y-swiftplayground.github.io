@@ -58,19 +58,36 @@ function showImage10(){
     document.getElementById('loadingImage10').style.visibility=    document.getElementById('loadingImage10').style.visibility == 'visible'? 'hidden' : 'visible';
 }
 
-function allowDropThis(i) {
-    i.preventDefault();
+
+function allowDrop(ev) {
+    ev.preventDefault();
 }
 
-function dragThis(i) {
-    i.dataTransfer.setData("text", i.target.id);
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+  var origThing = document.getElementById(data);
+  var newThing = origThing.cloneNode(true);
+    ev.target.appendChild(newThing);
 }
 
-function dropThis(i) {
-    i.preventDefault();
-    var data = i.dataTransfer.getData("text");
-    i.target.appendChild(document.getElementById(data));
-}
+
+// function allowDropThis(i) {
+//     i.preventDefault();
+// }
+
+// function dragThis(i) {
+//     i.dataTransfer.setData("text", i.target.id);
+// }
+
+// function dropThis(i) {
+//     i.preventDefault();
+//     var data = i.dataTransfer.getData("text");
+//     i.target.appendChild(document.getElementById(data));
+// }
 
 function toggleSidebar(){
     document.getElementById("sidebar").classList.toggle('active');

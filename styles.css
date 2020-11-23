@@ -636,8 +636,10 @@ border-top: 2px solid black;
   width:120px;
 }
 .gem{
-  margin-top:
-  -40px;
+  margin-top:-40px;
+  border:solid black 2px;
+  margin-bottom:15px;
+
 }
 
 #gem-button{
@@ -712,6 +714,7 @@ font-family: 'Trispace', sans-serif;
 }
 .toggle{
   margin-top:40px;
+  margin-bottom:7px;
 }
 #switch{
   display:absolute;
@@ -736,151 +739,154 @@ font-family: 'Trispace', sans-serif;
   margin-bottom: 15px;
   }
 
-  #toggle-switch2{
-    position: absolute;
-    top:65%;
-    left:86%;
-    transform: translate(-50%, -50%);
+#toggle-switch2{
+  position: absolute;
+  top:65%;
+  left:86%;
+  transform: translate(-50%, -50%);
+}
+.toggle2{
+  margin-top:-20px;
+  margin-bottom:7px;
+}
+#switch2{
+  display:absolute;
+  top:70%;
+  left:86%;
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 80px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+
   }
- 
-  #switch2{
-    display:absolute;
-    top:70%;
-    left:86%;
-    justify-content: center;
-    justify-items: center;
-    height:40px;
-    width: 80px;
-    background-color: transparent;
-    border:2px solid black;
-    border-radius:10%;
-    text-decoration: none;
-    font-family: 'Trispace', sans-serif;
+#toggle-switch-button2{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom:15px;
+  }
+.toggle:hover {
+  -webkit-animation: swing 0.5s ease-out;
+          animation: swing 0.5s ease-out;
+}
 
-    }
-  #toggle-switch-button2{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-bottom:15px;
-    }
-    .toggle:hover {
-      -webkit-animation: swing 0.5s ease-out;
-              animation: swing 0.5s ease-out;
-    }
-    
-    @-webkit-keyframes swing {
-      0% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-      20% {
-        -webkit-transform: rotate(20deg);
-                transform: rotate(20deg);
-      }
-      40% {
-        -webkit-transform: rotate(-20deg);
-                transform: rotate(-20deg);
-      }
-      60% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-      80% {
-        -webkit-transform: rotate(20deg);
-                transform: rotate(20deg);
-      }
-      100% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-    }
-    
-    @keyframes swing {
-      0% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-      20% {
-        -webkit-transform: rotate(20deg);
-                transform: rotate(20deg);
-      }
-      40% {
-        -webkit-transform: rotate(-20deg);
-                transform: rotate(-20deg);
-      }
-      60% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-      80% {
-        -webkit-transform: rotate(20deg);
-                transform: rotate(20deg);
-      }
-      100% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-    }
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
 
-    .toggle2:hover {
-      -webkit-animation: swing 0.5s ease-out;
-              animation: swing 0.5s ease-out;
-    }
-    
-    @-webkit-keyframes swing {
-      0% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-      20% {
-        -webkit-transform: rotate(20deg);
-                transform: rotate(20deg);
-      }
-      40% {
-        -webkit-transform: rotate(-20deg);
-                transform: rotate(-20deg);
-      }
-      60% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-      80% {
-        -webkit-transform: rotate(20deg);
-                transform: rotate(20deg);
-      }
-      100% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-    }
-    
-    @keyframes swing {
-      0% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-      20% {
-        -webkit-transform: rotate(20deg);
-                transform: rotate(20deg);
-      }
-      40% {
-        -webkit-transform: rotate(-20deg);
-                transform: rotate(-20deg);
-      }
-      60% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-      80% {
-        -webkit-transform: rotate(20deg);
-                transform: rotate(20deg);
-      }
-      100% {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-      }
-    }
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.toggle2:hover {
+  -webkit-animation: swing 0.5s ease-out;
+          animation: swing 0.5s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
 /* ****************************************************** Codebot & Clear *************************************************** */
   #clear{
     position: absolute;
