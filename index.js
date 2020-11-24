@@ -206,29 +206,24 @@ function init() {
         canvas.addEventListener('touchend', sketchpad_touchEnd, false);
         canvas.addEventListener('touchmove', sketchpad_touchMove, false);
     }
+        document.body.addEventListener("touchstart", function (e) {
+            if (e.target == canvas) {
+            e.preventDefault();
+            }
+        }, false);
+        document.body.addEventListener("touchend", function (e) {
+            if (e.target == canvas) {
+            e.preventDefault();
+            }
+        }, false);
+        document.body.addEventListener("touchmove", function (e) {
+            if (e.target == canvas) {
+            e.preventDefault();
+            }
+        }, false);
+    
 }
 
-function resize() {
-
-    var canvas = document.getElementById('game');
-    var canvasRatio = canvas.height / canvas.width;
-    var windowRatio = window.innerHeight / window.innerWidth;
-    var width;
-    var height;
-
-    if (windowRatio < canvasRatio) {
-        height = window.innerHeight;
-        width = height / canvasRatio;
-    } else {
-        width = window.innerWidth;
-        height = width * canvasRatio;
-    }
-
-    canvas.style.width = width + 'px';
-    canvas.style.height = height + 'px';
-};
-
-window.addEventListener('resize', resize, false);
 
 
 
