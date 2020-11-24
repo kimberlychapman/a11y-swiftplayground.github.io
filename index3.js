@@ -1,3 +1,64 @@
+// const addTally=(ev)=>{
+//     document.querySelector(".box").innerHTML=l;
+// };
+// document.querySelector('.box').onlcick=addTally;
+
+$('input[name="radio-btn"]').wrap('<div class="radio-btn"><i></i></div>');
+$(".radio-btn").on('click', function () {
+    var _this = $(this),
+        block = _this.parent().parent();
+    block.find('input:radio').attr('checked', false);
+    block.find(".radio-btn").removeClass('checkedRadio');
+    _this.addClass('checkedRadio');
+    _this.find('input:radio').attr('checked', true);
+});
+$('input[name="check-box"]').wrap('<div class="check-box"><i></i></div>');
+$.fn.toggleCheckbox = function () {
+    this.attr('checked', !this.attr('checked'));
+}
+$('.check-box').on('click', function () {
+    $(this).find(':checkbox').toggleCheckbox();
+    $(this).toggleClass('checkedBox');
+});
+
+function showImage(){
+    document.getElementById('loadingImage').style.visibility=    document.getElementById('loadingImage').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+function showImage2(){
+    document.getElementById('loadingImage2').style.visibility=    document.getElementById('loadingImage2').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage3(){
+    document.getElementById('loadingImage3').style.visibility=    document.getElementById('loadingImage3').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage4(){
+    document.getElementById('loadingImage4').style.visibility=    document.getElementById('loadingImage4').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+function showImage5(){
+    document.getElementById('loadingImage5').style.visibility=    document.getElementById('loadingImage5').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage6(){
+    document.getElementById('loadingImage6').style.visibility=    document.getElementById('loadingImage6').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage7(){
+    document.getElementById('loadingImage7').style.visibility=    document.getElementById('loadingImage7').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage8(){
+    document.getElementById('loadingImage8').style.visibility=    document.getElementById('loadingImage8').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+function showImage9(){
+    document.getElementById('loadingImage9').style.visibility=    document.getElementById('loadingImage9').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage10(){
+    document.getElementById('loadingImage10').style.visibility=    document.getElementById('loadingImage10').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+
 function allowDrop(ev) {
     ev.preventDefault();
 }
@@ -12,6 +73,26 @@ function drop(ev) {
   var newThing = origThing.cloneNode(true);
     ev.target.appendChild(newThing);
 }
+
+
+// function allowDropThis(i) {
+//     i.preventDefault();
+// }
+
+// function dragThis(i) {
+//     i.dataTransfer.setData("text", i.target.id);
+// }
+
+// function dropThis(i) {
+//     i.preventDefault();
+//     var data = i.dataTransfer.getData("text");
+//     i.target.appendChild(document.getElementById(data));
+// }
+
+function toggleSidebar(){
+    document.getElementById("sidebar").classList.toggle('active');
+  }
+
 
 // Variables for referencing the canvas and 2dcanvas context
 var canvas,ctx;
@@ -207,28 +288,6 @@ function init() {
         canvas.addEventListener('touchmove', sketchpad_touchMove, false);
     }
 }
-
-function resize() {
-
-    var canvas = document.getElementById('game');
-    var canvasRatio = canvas.height / canvas.width;
-    var windowRatio = window.innerHeight / window.innerWidth;
-    var width;
-    var height;
-
-    if (windowRatio < canvasRatio) {
-        height = window.innerHeight;
-        width = height / canvasRatio;
-    } else {
-        width = window.innerWidth;
-        height = width * canvasRatio;
-    }
-
-    canvas.style.width = width + 'px';
-    canvas.style.height = height + 'px';
-};
-
-window.addEventListener('resize', resize, false);
 
 
 

@@ -639,7 +639,7 @@ border-top: 2px solid black;
 }
 .gem{
   margin-top:-40px;
-  border:solid black 2px;
+  /* border:solid black 2px; */
   margin-bottom:15px;
 
 }

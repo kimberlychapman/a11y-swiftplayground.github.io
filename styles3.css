@@ -1824,24 +1824,6 @@ button{
   }
 
 /* ********************************************************************************************************************* */
-/* @media (max-width: 1000px) {
-  .rightside {
-    height:900px;
-    width:150%;
-      
-  } */
-  body{
-    background-color: lightskyblue;
-  }
-  /* .collect_gem{
-  height:10%;
-  width:110px;
-  margin-top:15px;
-  } */
-  #gemstone{
-    height:80px;
-    width:80px;
-  }
 
 @media (max-width: 768px) {
   #sidebar {
@@ -1853,11 +1835,11 @@ button{
   #sidebarCollapse span {
       display: none;
   }
-  /* .rightside{
+  .rightside{
     width:200%;
-    height:900px; */
+    height:900px;
    }
-
+}
 
 
 
