@@ -1082,10 +1082,10 @@ font-family: 'Trispace', sans-serif;
   }
 /* ********************************************************* Media Query **************************************************** */
     @media only screen and (max-width: 768px){
-     .rightside{
-       width:225%;
-       height:900px;
-      }
+    /* #sketchpad{
+       width:800px;
+       height:800px;
+      } */
 /*  */
     body{
       background-color: lightskyblue;
