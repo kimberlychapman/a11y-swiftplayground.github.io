@@ -1140,25 +1140,35 @@ border-top: 2px solid black;
   
 
   @media only screen and (max-width: 768px){
-    /* #sketchpad{
-       width:75%;
-       height:525px;
-      }  */
+    #sketchpad{
+       width:1500px;
+       height:1000px;
+      } 
 
     body{
       background-color: lightskyblue;
+      max-width: 100%;
+      overflow-x: hidden;
+      max-height: 100%;
+      overflow-y: hidden
+    }
+    .sky-block{
+      width:1500px;
     }
     #hr-line2{
+      display:none;
       position: absolute;
       top:50%;
       left:0%;
     } 
-    #hr-line3{
+    #hr-line3, #hr-line{
+      display:none;
       position: absolute;
       top:75%;
       left:0%;
     }
     #vr-line{
+      display:none;
       position:absolute;
       top:50%;
       left:30%;
@@ -1166,6 +1176,7 @@ border-top: 2px solid black;
       border-left: 2px solid black;   
     }
     #vr-line2{
+      display:none;
       position:absolute;
       top:50%;
       left:70%;
@@ -1177,16 +1188,19 @@ border-top: 2px solid black;
     }
   
     #command-bar{
+      display:none;
       height:300px;
       width:98px;
 
     }
     .pulldown2{
+      display:none;
       position: absolute;
       top:20%;
       left:0%;
     }
     #func{
+      display:none;
       /* margin-top:150px;
       margin-right: 10px; */
       height:40px;
@@ -1194,6 +1208,7 @@ border-top: 2px solid black;
       }
 /*  */
     .rock-box1{
+      /* display:none; */
       left:30%;
       width:40%;
     }
@@ -1201,13 +1216,16 @@ border-top: 2px solid black;
       display:none;
     }
     #crash{
+      /* display:none; */
       margin-top:10px;
     }
 /*  */
     #cloud-guy{
+      /* display:none; */
       margin-top:20px;
     }
     .sky-box1{
+      /* display:none; */
       position: absolute;
       top:25%;
       left:30%;
@@ -1216,41 +1234,54 @@ border-top: 2px solid black;
     
     }
     .sky-box6{
+      /* display:none; */
+      position:absolute;
+      top:80%;
+      left:0%;
         width:100%;
+        height:180px;
         left:0%
       }
     .sky-box6 #sky{
+      /* display:none; */
       margin-top:-2%;
     }
-    .sky-box2, .sky-box3, .sky-box4, .sky-boz5, .sky-box7, .sky-box8, .sky-box-mini-l,.sky-box-mini-r{
+    .sky-box2, .sky-box3, .sky-box4, .sky-box5, .sky-box7, .sky-box8, .sky-box-mini-l,.sky-box-mini-r{
       display:none;
     }
-/*  */
-
-    /* #collect-gem{
-
-      left:15%;
+/* #cloud-button{
+  display:none;
+} */
+/* #cloud{
+  display:none;
+} */
+    #collect-gem{
+      left:12%;
+      top:38%;
       width:90px;
     }
     #toggle-switch{
+      /* display:none; */
       left:85%;
       width: 90px;
     }
     .toggle{
-
+      /* display:none; */
       height:100px;
       width:100px;
 
     }
     .toggle2{
+      /* display:none; */
       height:100px;
       width:100px;
 
     }
     #switch, #switch2{
+      /* display:none; */
       margin-top: 10px;
-    } */
-/*  */
+    } 
+
     #eraser{
      
       height:70px;
@@ -1261,27 +1292,32 @@ border-top: 2px solid black;
       height:71px;
       width:131px;
       position:absolute;
-      left:70%;
+      left:78%;
       top: 90%;
+      /* margin-right:10px; */
       border: solid 3px white;
     }
          
     #hey-codebot{
+      display:none;
       height:60px;
       width:60px;
       margin-top:18px;
     } 
 
     #codebot{
+      display:none;
       top:75%;
       left:0%;
     }
     #remove-commands{
+      display:none;
       height:300px;
       width:98px;
       /* height:100px; */
     }
     #code-bar{
+      display:none;
       height:300px;
       width:98px;
     }

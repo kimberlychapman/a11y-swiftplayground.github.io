@@ -282,10 +282,16 @@
                         </ul>
                     </li>
                     <li>
-                        <!-- <a href="#">About</a> -->
+                       <!-- <a href="#">About</a> -->
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Total</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <li><a href="#">Number</a></li>
+                            <div id="drop-container">
+                                <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div id="closed-bracket">}</div>
+                            </div>
                             <!-- <li><a href="#">Page 2</a></li> -->
                             <!-- <li><a href="#">Page 3</a></li> -->
                         <!-- </ul> -->
@@ -331,36 +337,60 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="#" style="font-family: 'Trispace', sans-serif; font-size:13pt;
                 color:white;">for i in 1...number{</a>
-                <a href="#">
-                    <div id="drop-box">
-                        <!-- <div class="col" id="col1">
-                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1">THING 1</div>
-                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2">THING 2</div>  
-                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3">THING 3</div>  
-                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4">THING 4</div>
-                        </div> -->
-                        <div id="drop-container">
-                          <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                          <div class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                          <div class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                          <div class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                          <div id="closed-bracket">}</div>
-                        </div>
-                        <!-- <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
-                        <div class="col" id="col1">
-                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">
-                            <img class="move" src="img/moveForward().png">moveForward()</div>
-                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">
-                            <img class="left" src="img/turnLeft().png">turnLeft()</div>  
-                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)">
-                            <img class="right" src="img/turnRight().png">turnRight()</div>  
-                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)"><img src="img/gem.png">collectGem()</div>
-                          <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)"><img src="img/toggle_key.png">toggleSwitch()</div>
-                        </div>
-                    </div>
-                </a>
-                <!-- <a href="#">Contact</a> -->
+            
+
+
+            <!-- <ul class="list-unstyled components">
+        
+                <li class="active">
+
+                        <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false">Loop Tracker</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu2"> -->
+                            <div class="col" id="col1">
+                                <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">
+                                    <img class="move" src="img/moveForward().png">moveForward()</div>
+                                <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">
+                                    <img class="left" src="img/turnLeft().png">turnLeft()</div>  
+                                <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)">
+                                    <img class="right" src="img/turnRight().png">turnRight()</div>  
+                                <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)"><img src="img/gem.png">collectGem()</div>
+                                <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)"><img src="img/toggle_key.png">toggleSwitch()</div>
+                            </div>
+                        </ul>
+                    </li>
+                <!-- <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Total</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <div id="drop-box">
+                                <div id="drop-container">
+                                    <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <div class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <div class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <div class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <div id="closed-bracket">}</div>
+                                </div>
+                                <div class="col" id="col1">
+                                    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">
+                                        <img class="move" src="img/moveForward().png">moveForward()</div>
+                                    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">
+                                        <img class="left" src="img/turnLeft().png">turnLeft()</div>  
+                                    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)">
+                                        <img class="right" src="img/turnRight().png">turnRight()</div>  
+                                    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)"><img src="img/gem.png">collectGem()</div>
+                                    <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)"><img src="img/toggle_key.png">toggleSwitch()</div>
+                                </div>
+                            </div>       
+                        </ul>
+                </li> -->
+        
+            <!-- </ul> -->
             </div>
+              
+                <!-- <a href="#"> -->
+                    
+                <!-- </a> -->
+                <!-- <a href="#">Contact</a> -->
+            <!-- </div> -->
             <button class="openbtn" onclick="openNav()">☰ Code</button>  
             <!-- <h2>Collapsed Sidepanel</h2>
             <p>Click on the hamburger menu/bar icon to open the sidepanel.</p> -->
