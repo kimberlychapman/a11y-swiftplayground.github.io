@@ -94,21 +94,10 @@
                             </div>
                             <div class="pulldown1">
                                 <a href="presentation.html"><img id="commands" src="img/swift.png"onclick="document.getElementById('add').play()"></a>
-                                <!-- <span id="two-finger1">
-                                    <div class="options">
-                                    <div id="add-commands"><img id="command-bar"src="img/command_line.png"></div>
-                                        <div id="command-options">
-                                        </div>
-                                    </div>
-                                </span></a> -->
+                         
                             </div>
                             <div class="pulldown2">
                                 <img id="func" src="img/code-symbol.png" onclick="document.getElementById('run-code').play()" ondblclick="document.getElementById('run-code').pause()">
-                                <!-- <span id="two-finger2">
-                                    <div class="options2">
-                                    <div id="remove-commands"><img id="code-bar" src="img/code_bar.png"></div>
-                                    </div>
-                                </span> -->
                             </div>
 <!-- ************************************************************************************ Lines ************************************************************************************-->
                               <div id="vr-line"></div>
@@ -118,7 +107,7 @@
                               <div id="hr-line"></div>
                               <div id="hr-line2"></div>
                               <div id="hr-line3"></div>
-                              <div id="hr-line4"></div>
+
 <!-- ************************************************************************************ Rocks ************************************************************************************-->
                               <div class="rock-box1">
                                     <div id="boulder">
@@ -209,29 +198,21 @@
                                 
 <!-- ******************************************************************************* Gem & Switches *********************************************************************************-->
                                 <div id="collect-gem">
-                                    <div id="gem">
-                                        <img class="gem" src="img/collectGem.png">
-                                    </div>
-                                    <div id="gem-button">
-                                        <button id="collect" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('collect').pause()">Sound Effect</button>
-                                    </div>
+                                    <img class="gem" src="img/collectGem.png">
+                                    <button id="collect" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('collect').pause()">Sound Effect</button>
                                 </div>
+                                
                                 <div id="toggle-switch">
-                                    <div id="toggle">
-                                        <img class="toggle" src="img/toggleSwitch.png">
-                                    </div>
-                                    <div id="toggle-switch-button">
-                                        <button id="switch" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()">Sound Effect</button>
-                                    </div>
+                                    <img class="toggle" src="img/toggleSwitch.png">
+                                    <button id="switch" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()">Sound Effect</button>
                                 </div>
                                 <div id="toggle-switch2">
-                                    <div id="toggle2">
-                                        <img class="toggle2" src="img/toggleSwitch.png">
-                                    </div>
-                                    <div id="toggle-switch-button2">
-                                        <button id="switch2" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()">Sound Effect</button>
-                                    </div>
+                                    <img class="toggle2" src="img/toggleSwitch.png">
+                                    <button id="switch2" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()">Sound Effect</button>
                                 </div>
+<!-- **************************************************************************** Sky Block *************************************************************************************-->
+                                <div class="sky-block"></div>
+                                <div id="hr-line5"></div>
 <!-- **************************************************************************** Codebot/Clear *********************************************************************************-->
                                  <div id="codebot">
                                 <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('add').play()" ondblclick="document.getElementById('add').pause()">
@@ -239,11 +220,55 @@
                               
                               <div id="clear"><img id="eraser" src="img/erase.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
                             </div>
+<!-- **************************************************************************** Sidepanel Left ********************************************************************************-->
+                            <div id="mySidepanel-left" class="sidepanel-left">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNavLeft()">×</a>
+                                <a href="#" style="font-family: 'Trispace', sans-serif; font-size:13pt;
+                                color:white;margin-top:-10px;">for i in 1...number{</a>
+                                <a href="#">
+                                    <div id="drop-container">
+                                        <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                        <div class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                        <div class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                        <div class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                        <div class="col" id="col6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                        <div class="col" id="col7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                        <div class="col" id="col8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                        <a href="#" style="font-family: 'Trispace', sans-serif; font-size:13pt;
+                                        color:white;margin-top:-10px;">}</a>
+                                        <!-- <a href="#">
+                                        <div id="closed-bracket">}</div> -->
+                                      </div>
+                                      <br>
+                                </a>
+                                <a href="#" style="font-family: 'Trispace', sans-serif; font-size:13pt;
+                                color:white;margin-top:-10px; font-size:12pt;">*** dblclick to remove a command.</a>
+                                <!-- <a href="#">Services</a>
+                                <a href="#">Clients</a>
+                                <a href="#">Contact</a> -->
+                            </div>
+                            
+                            <button class="openbtn" id= "left-button" onclick="openNavLeft()">☰ Code</button>  
+                            <!-- <h2>Collapsed Sidepanel</h2>
+                            <p>Click on the hamburger menu/bar icon to open the sidepanel.</p> -->
+                            <script>
+                                function openNavLeft() {
+                                  document.getElementById("mySidepanel-left").style.width = "250px";
+                                }
+                                
+                                function closeNavLeft() {
+                                  document.getElementById("mySidepanel-left").style.width = "0";
+                                }
+                                </script>
+<!-- **************************************************************************** Sidepanel Right *******************************************************************************-->
                             <div id="mySidepanel" class="sidepanel">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                            <a href="#" style="font-family: 'Trispace', sans-serif; font-size:13pt;
-                            color:white;margin-top:-10px;">for i in 1...number{</a>
-                            <a href="#">
+                            <!-- <a href="#" style="font-family: 'Trispace', sans-serif; font-size:13pt;
+                            color:white;margin-top:-10px;">for i in 1...number{</a> -->
+                                <a href="#" style="font-family: 'Trispace', sans-serif; font-size:13pt;
+                                color:white;margin-top:-10px;">To write your code, Drag the Command Blocks into the Code Boxes (in the left sidepanel).</a>
+                                <br>
+                                <a href="#">
                                 <div id="drop-box">
                                     <!-- <div class="col" id="col1">
                                       <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1">THING 1</div>
@@ -251,6 +276,7 @@
                                       <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3">THING 3</div>  
                                       <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4">THING 4</div>
                                     </div> -->
+<!-- 
                                     <div id="drop-container">
                                       <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                       <div class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -260,10 +286,8 @@
                                       <div class="col" id="col7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                       <div class="col" id="col8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                       <div id="closed-bracket">}</div>
-                                      <!-- <div class="col" id="col9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                      <div class="col" id="col10" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
-                                    </div>
-                                    <!-- <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+                                    </div> -->
+                                     
                                     <div class="col" id="col1">
                                       <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">
                                         <img class="moving" src="img/moveForward().png">moveForward()</div>
@@ -275,7 +299,6 @@
                                         <img class="collecting"src="img/collect-gem.png">collectGem()</div>
                                       <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)">
                                         <img class="jump"src="img/toggle_key.png">toggleSwitch()</div>
-                                    <!-- <div id="closed-bracket">}</div> -->
                                     </div>
                                 </div>
                             </a>
@@ -293,6 +316,7 @@
                               document.getElementById("mySidepanel").style.width = "0";
                             }
                         </script>
+                        
                         <!--  -->
                              <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
                              <!-- Bootstrap Js CDN -->
