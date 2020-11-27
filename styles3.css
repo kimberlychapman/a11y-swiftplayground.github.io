@@ -679,6 +679,14 @@ canvas.shake {
     width:20%;
     background-color: lightskyblue;
   }
+  .sky-panel3{
+    position: absolute;
+    bottom:0;
+    left:0%;
+    height:200px;
+    width:100%;
+    background-color: lime;
+  }
 /* ********************************************************** Row 1 ***************************************************** */
 
 .collect_gem{
@@ -1160,11 +1168,16 @@ canvas.shake {
   left:42%;
   height:15%;
   width:120px;
-  /* border:solid 2px black; */
+  border:solid 2px black;
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
+/* #gemstone3{
+  height: 100px;
+  width:100px;
+} */
 #collect3{
   display:absolute;
   top:70%;
@@ -1172,7 +1185,7 @@ canvas.shake {
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 1200px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;

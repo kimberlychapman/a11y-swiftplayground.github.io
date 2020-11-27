@@ -11,8 +11,14 @@ div{ width:100px; height:100px; background:red;} */
   grid-template-areas:
     "Nav Main Header";
 } */
+/* html{
+  background-color: lightskyblue;
+} */
 body{
  background-color:lightskyblue;
+ max-height: 100%;
+ overflow-y: hidden;
+ 
 }
 .Main { 
   display:flex;
@@ -39,15 +45,17 @@ a, a:hover, a:focus {
   transition: all 0.3s;
 }
 
-.navbar {
+/* .navbar { */
   /* padding: 15px 10px; */
   /* background: #fff; */
-  border: none;
+  /* border: none;
   border-radius: 0;
-  margin-bottom: 40px;
+  margin-bottom: 40px; */
+
+
   /* background-color: lightskyblue; */
   /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
-}
+/* } */
 /* .navbar-default{
   background-color:lightskyblue;
 } */
@@ -74,6 +82,7 @@ a, a:hover, a:focus {
   position:absolute;
   display: flex;
   align-items: stretch;
+  /* height:100%; */
 }
 
 #sidebar {
@@ -82,6 +91,7 @@ a, a:hover, a:focus {
   background: black;
   /* color: #fff; */
   transition: all 0.3s;
+    /* height:100%; */
 }
 
 #sidebar.active {
@@ -117,6 +127,11 @@ a, a:hover, a:focus {
   color: black;
   background: #fff;
   font-weight: bold;
+}
+#closed-bracket{
+  font-family: 'Trispace', sans-serif;
+  font-size:12pt;
+  color:white;
 }
 /* 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
@@ -366,10 +381,10 @@ a.active,a.article, a.article:hover {
   .thing {
   display:flex;
   flex-direction: row;
-  width: 165px;
-  height: 50px;
+  width: 180px;
+  height: 80px;
   /* padding: 0.5em; */
-  margin: 5px;
+  /* margin: 5px; */
   margin-bottom:10px;
   /* background-color:red; */
   /* background: rgba(0,0,0,0.8); */
@@ -381,31 +396,31 @@ a.active,a.article, a.article:hover {
   /* border:2px solid yellow; */
  }
  #thing1{
-   margin-left:10%;
+   /* margin-left:10%; */
    background-color:red;
    padding-top: 10px;
  }
  #thing2{
-  margin-left:10%;
+  /* margin-left:10%; */
   background-color:yellow;
   padding-top: 15px;
   padding-left:10px;
 }
 #thing3{
-  margin-left:10%;
+  /* margin-left:10%; */
   background-color: #8A2BE2;
   padding-top: 15px;
-  padding-left:10px;
+  /* padding-left:10px; */
 }
 
 #thing4{
-  margin-left:10%;
+  /* margin-left:10%; */
   background-color: lime;
   padding-top: 15px;
   padding-left:10px;
 }
 #thing5{
-  margin-left:10%;
+  /* margin-left:10%; */
   background-color:aqua;
   padding-top: 15px;
   padding-left:10px;
@@ -414,15 +429,12 @@ a.active,a.article, a.article:hover {
     height:40px;
     width:30px;
   }
-  .left, .right{
-    height:20px;
-    width:40px;
-  }
-  .gem{
-    height:30px;
-    width:30px;
+
+  /* .gem{
+    height:50px;
+    width:50px; */
     /* margin-top:70px; */
-  }
+  /* } */
   .col {
   display:flex;
   flex-direction: column;
@@ -437,11 +449,15 @@ a.active,a.article, a.article:hover {
   #drop-container{
   display:flex;
   flex-direction: column;
+  margin-left:25px;
+  margin-top:15px;
+  margin-bottom:10pox;
   }
   #col2, #col3, #col4, #col5{
     border: 2px solid yellow;
     height:100px;
     width:200px;
+    margin-bottom:15px;
 
   }
   #closed-bracket{
@@ -719,7 +735,7 @@ canvas.shake {
     position: absolute;
     top:0%;
     left:0%;
-    height:89%;
+    height:100%;
     width:20%;
     background-color: lightskyblue;
   } 
@@ -727,8 +743,16 @@ canvas.shake {
     position: absolute;
     top:0%;
     left:80.25%;
-    height:89%;
+    height:100%;
     width:20%;
+    background-color: lightskyblue;
+  }
+  .sky-panel3{
+    position:absolute;
+    top:90%;
+    left:0%;
+    height:250px;
+    width:100%;
     background-color: lightskyblue;
   }
 /* ********************************************************** Row 1 ***************************************************** */
@@ -743,35 +767,31 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction:column
 }
-#collect1{
-  display:absolute;
+#gemstone{
+height:100px;
+width:100px;
+margin-bottom:5px;
+/* margin-bottom:35px; */
+}
+ #collect1{
+  /* display:absolute;
   top:70%;
-  left:80%;
+  left:80%; */
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 40px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
-}
-/* #collect2{
-  display:absolute;
-  top:70%;
-  left:80%;
-  justify-content: center;
-  justify-items: center;
-  height:40px;
-  width: 80px;
-  background-color: transparent;
-  border:2px solid black;
-  border-radius:10%;
-  text-decoration: none;
-  font-family: 'Trispace', sans-serif;
-} */
+  margin-top:-10px;
+} 
+
+
 #gemstone:hover {
   -webkit-animation: pulse 0.7s ease-out;
           animation: pulse 0.7s ease-out;
@@ -816,16 +836,45 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction:column;
 }
-
+#toggle{
+  height:100px;
+  width:100px;
+  /* margin-bottom:15px; */
+}
+.switch{
+  height:50px;
+  width:50px;
+  border:2px solid black;
+  border-radius: 10px;
+  /* background-color: transparent; */
+}
+#sp{
+  height:30px;
+  width:30px;
+  display:none;
+}
 #switch{
-  display:absolute;
+  /* display:absolute;
   top:20%;
-  left:86%;
+  left:86%; */
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#sw,#cg{
+  display:none;
+  justify-content: center;
+  justify-items: center;
+  height:35px;
+  width: 35px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -903,8 +952,13 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-
+#toggle3{
+  height:100px;
+  width:100px;
+  /* margin-bottom:15px; */
+}
 #switch3{
   display:absolute;
   top:70%;
@@ -912,7 +966,7 @@ canvas.shake {
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 40px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -988,20 +1042,20 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction:column
 }
+
 #collect2{
-  display:absolute;
-  top:70%;
-  left:80%;
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 40px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
+  margin-top:-10px;
 }
 #gemstone2:hover {
   -webkit-animation: pulse 0.7s ease-out;
@@ -1047,16 +1101,20 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-
+#toggle4{
+  height:100px;
+  width:100px;
+}
 #switch4{
-  display:absolute;
+  /* display:absolute;
   top:70%;
-  left:86%;
+  left:86%; */
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 40px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -1133,15 +1191,20 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+#toggle5{
+  height:100px;
+  width:100px;
 }
 #switch5{
-  display:absolute;
+  /* display:absolute;
   top:70%;
-  left:86%;
+  left:86%; */
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -1216,20 +1279,19 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 #collect3{
-  display:absolute;
-  top:70%;
-  left:80%;
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
+  margin-top:-10px;
 }
 #gemstone3:hover {
   -webkit-animation: pulse 0.7s ease-out;
@@ -1275,6 +1337,11 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+#toggle6{
+  height: 100px;
+  width:100px;
 }
 #switch6{
   display:absolute;
@@ -1283,7 +1350,7 @@ canvas.shake {
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -1360,15 +1427,20 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+#toggle7{
+  height:100px;
+  width:100px;
 }
 #switch7{
-  display:absolute;
+  /* display:absolute;
   top:70%;
-  left:86%;
+  left:86%; */
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -1443,20 +1515,19 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 #collect4{
-  display:absolute;
-  top:70%;
-  left:80%;
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
+  margin-top:-10px;
 }
 #gemstone4:hover {
   -webkit-animation: pulse 0.7s ease-out;
@@ -1502,6 +1573,11 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+#toggle8{
+  height:100px;
+  width:100px;
 }
 #switch8{
   display:absolute;
@@ -1510,7 +1586,7 @@ canvas.shake {
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -1587,6 +1663,7 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 #switch9{
   display:absolute;
@@ -1595,12 +1672,16 @@ canvas.shake {
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
+}
+#toggle9{
+  height: 100px;
+  width:100px;
 }
 #toggle9:hover {
   -webkit-animation: swing 0.5s ease-out;
@@ -1670,20 +1751,19 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 #collect5{
-  display:absolute;
-  top:70%;
-  left:80%;
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
+  margin-top:-10px;
 }
 #gemstone5:hover {
   -webkit-animation: pulse 0.7s ease-out;
@@ -1729,15 +1809,20 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction:column;
+}
+#toggle10{
+  height: 100px;
+  width:100px;
 }
 #switch10{
-  display:absolute;
+  /* display:absolute;
   top:70%;
-  left:86%;
+  left:86%; */
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -1890,10 +1975,10 @@ button{
   width:110px;
   margin-top:15px;
   } */
-  #gemstone{
+  /* #gemstone{
     height:80px;
     width:80px;
-  }
+  } */
 
 @media (max-width: 768px) {
   #sidebar {
@@ -1906,8 +1991,8 @@ button{
       display: none;
   }
   .rightside{
-    width:1500px;
-    height:1000px;
+    width:1500px;;
+    height:900px;
    }
 
 .sky-panel{
@@ -1916,7 +2001,111 @@ button{
 .sky-panel2{
   display:none;
 }
-   
+#codebot{
+  position:fixed;
+  top:7%;
+  left:90%;
+}
+#clear{
+  top:90%;
+}
+#switch, #switch3, #switch4, #switch5, #switch6, #switch7, #switch8, #switch9, #switch10{
+  display:none;
+}
+#collect1, #collect2, #collect3, #collect4, #collect5{
+  display:none;
+}
+#sw, #sp, #cg{
+  display:block;
+}
+.collect_gem{
+  position: absolute;
+  display:flex;
+  flex-direction: row;
+  /* border:black 2px solid; */
+  top:0%;
+  left:38%;
+  height:15%;
+  width:90px;
+}
+#cg{
+  margin-left:-25px;
+}
+.collect_gem2{
+  position: absolute;
+  display:flex;
+  flex-direction: row;
+  top:18%;
+  left:38%;
+  height:15%;
+  width:80px;
+  /* border:black 2px solid; */
+}
+.collect_gem3,.collect_gem4, .collect_gem5{
+  position: absolute;
+  display:flex;
+  flex-direction: row;
+  left:38%;
+  height:15%;
+  width:80px;
+  /* border:black 2px solid; */
+}
+#gemstone{
+height:110px;
+width:110px;
+margin-bottom:10px;
+/* margin-bottom:35px; */
+}
+#toggle,#toggle2, #toggle3 ,#toggle4, #toggle5, #toggle6,#toggle7, #toggle8 ,#toggle9,#toggle10{
+  height:90px;
+  width:90px;
+}
+.toggle_switch{
+  position: absolute;
+  top:0%;
+  left:73%;
+  height:15%;
+  width:80px;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
+.toggle_switch3{
+  position: absolute;
+  top:18%;
+  left:5%;
+  height:15%;
+  width:80px;
+  /* margin-left:-7px; */
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
+
+.toggle_switch4, .toggle_switch6, .toggle_switch8, .toggle_switch10{
+  left:73%;
+  width:80px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
+.toggle_switch5, .toggle_switch7, .toggle_switch9{
+  left:5%;
+  width:80px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
+
+}
+  
+
 
 
     
@@ -2678,7 +2867,7 @@ text-decoration: none; */
 .toggle{
   margin-top:40px;
 }
-#switch{
+/* #switch{
   display:absolute;
   top:20%;
   left:86%;
@@ -2690,14 +2879,14 @@ text-decoration: none; */
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
-  font-family: 'Trispace', sans-serif;
+  font-family: 'Trispace', sans-serif; */
   /* height:20px;
   width: 50px;
   background-color: transparent;
   border:2px solid lightslategray;
   border-radius: 10%;
   text-decoration: none; */
-  }
+  /* } */
 #toggle-switch-button{
   display: flex;
   justify-content: center;
