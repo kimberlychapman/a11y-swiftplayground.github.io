@@ -11,8 +11,14 @@ div{ width:100px; height:100px; background:red;} */
   grid-template-areas:
     "Nav Main Header";
 } */
+/* html{
+  background-color: lightskyblue;
+} */
 body{
  background-color:lightskyblue;
+ max-height: 100%;
+ overflow-y: hidden;
+ 
 }
 .Main { 
   display:flex;
@@ -39,15 +45,17 @@ a, a:hover, a:focus {
   transition: all 0.3s;
 }
 
-.navbar {
+/* .navbar { */
   /* padding: 15px 10px; */
   /* background: #fff; */
-  border: none;
+  /* border: none;
   border-radius: 0;
-  margin-bottom: 40px;
+  margin-bottom: 40px; */
+
+
   /* background-color: lightskyblue; */
   /* box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
-}
+/* } */
 /* .navbar-default{
   background-color:lightskyblue;
 } */
@@ -74,6 +82,7 @@ a, a:hover, a:focus {
   position:absolute;
   display: flex;
   align-items: stretch;
+  /* height:100%; */
 }
 
 #sidebar {
@@ -82,6 +91,7 @@ a, a:hover, a:focus {
   background: black;
   /* color: #fff; */
   transition: all 0.3s;
+    /* height:100%; */
 }
 
 #sidebar.active {
@@ -117,6 +127,11 @@ a, a:hover, a:focus {
   color: black;
   background: #fff;
   font-weight: bold;
+}
+#closed-bracket{
+  font-family: 'Trispace', sans-serif;
+  font-size:12pt;
+  color:white;
 }
 /* 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
@@ -304,6 +319,7 @@ a.active,a.article, a.article:hover {
 /* ---------------------------------------------------
   RIGHT SIDE PANEL
 ----------------------------------------------------- */
+
 .sidepanel  {
   width: 0;
   position: fixed;
@@ -322,8 +338,9 @@ a.active,a.article, a.article:hover {
 .sidepanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 18px;
+  color:white;
+  font-family: 'Trispace', sans-serif;
   display: block;
   transition: 0.3s;
 }
@@ -364,46 +381,49 @@ a.active,a.article, a.article:hover {
   .thing {
   display:flex;
   flex-direction: row;
-  width: 165px;
-  height: 50px;
+  width: 265px;
+  height: 80px;
   /* padding: 0.5em; */
-  margin: 5px;
+  /* margin: 5px; */
   margin-bottom:10px;
   /* background-color:red; */
   /* background: rgba(0,0,0,0.8); */
   color: black;
   font-family: 'Trispace', sans-serif;
   font-weight: bold;
-  font-size:10pt;
+  font-size:11.5pt;
+  /* border:2px solid blue; */
   /* font-family: sans-serif; */
   /* border:2px solid yellow; */
  }
  #thing1{
-   margin-left:10%;
+   /* margin-left:10%; */
    background-color:red;
    padding-top: 10px;
  }
  #thing2{
-  margin-left:10%;
-  background-color:yellow;
+  /* margin-left:10%; */
+  background-color: white;
   padding-top: 15px;
   padding-left:10px;
+  border:3px solid blue;
 }
 #thing3{
-  margin-left:10%;
-  background-color: #8A2BE2;
+  /* margin-left:10%; */
+  background-color: white;
   padding-top: 15px;
-  padding-left:10px;
+  border:3px solid blue;
+  /* padding-left:10px; */
 }
 
 #thing4{
-  margin-left:10%;
+  /* margin-left:10%; */
   background-color: lime;
   padding-top: 15px;
   padding-left:10px;
 }
 #thing5{
-  margin-left:10%;
+  /* margin-left:10%; */
   background-color:aqua;
   padding-top: 15px;
   padding-left:10px;
@@ -412,40 +432,106 @@ a.active,a.article, a.article:hover {
     height:40px;
     width:30px;
   }
-  .left, .right{
-    height:20px;
-    width:40px;
-  }
-  .gem{
-    height:30px;
-    width:30px;
+
+  /* .gem{
+    height:50px;
+    width:50px; */
     /* margin-top:70px; */
-  }
-  .col {
+  /* } */
+  /* .col {
   display:flex;
   flex-direction: column;
   width: 200px;
   height: 100px;
   padding: 7px;
-  /* border: 1px solid; */
+
   border-radius: 5px;
   position: relative;
   float: left;
-  }
+  } */
   #drop-container{
   display:flex;
   flex-direction: column;
+  margin-left:25px;
+  margin-top:15px;
+  margin-bottom:10pox;
   }
-  #col2, #col3, #col4, #col5{
+  /* #col2, #col3, #col4, #col5{
     border: 2px solid yellow;
     height:100px;
     width:200px;
+    margin-bottom:15px;
 
-  }
+  } */
   #closed-bracket{
     font-size:14pt;
     font-family:'Trispace', sans-serif;
   }
+
+
+/* ---------------------------------------------------
+LEFT SIDE PANEL
+----------------------------------------------------- */
+  .sidepanel-left  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel-left a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel-left a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel-left .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+ #lname{
+   background-color: yellow;
+   color:black;
+ }
+ #submit{
+  width:100px;
+ }
+ #code1-1, #code1-2, #code1-3, #code2-1, #code2-2, #code2-3, #code3-1, #code3-2, #code3-3{
+   height:50px;
+   width:180px;
+   font-family:'Trispace', sans-serif;
+   font-size: 12pt;
+   color:black;
+   background-color: white;
+ }
 /* ************************************************ Sketchpad & Co. ***************************************************** */
 #sketchpadapp {
   /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
@@ -612,13 +698,13 @@ canvas.shake {
   }
 #hr-line{
   position: absolute;
-  top:15%;
+  top:0%;
   left:0%;
   /* transform: translate(-50%, -50%); */
   text-decoration: underline;
   width:100%;
-  border-top: 2px solid black;
-  border-bottom: 25px lightskyblue solid;
+  /* border-top: 2px solid black; */
+  border-top: 315px lightskyblue solid;
   }
 #hr-line2{
   position: absolute;
@@ -627,8 +713,9 @@ canvas.shake {
   /* transform: translate(-50%, -50%); */
   text-decoration: underline;
   width:100%;
-  border-top: 2px solid black;
-  border-bottom: 25px solid lightskyblue;
+  height:100px;
+  /* border-top: 2px solid black; */
+  border-top: 2px solid lightskyblue;
   }
 
 #hr-line3{
@@ -668,7 +755,7 @@ canvas.shake {
     top:0%;
     left:0%;
     height:89%;
-    width:20%;
+    width:150px;
     background-color: lightskyblue;
   } 
   .sky-panel2{
@@ -676,121 +763,79 @@ canvas.shake {
     top:0%;
     left:80.25%;
     height:89%;
-    width:20%;
+    width:150px;
     background-color: lightskyblue;
   }
   .sky-panel3{
     position: absolute;
     bottom:0;
     left:0%;
-    height:200px;
+    height:140px;
     width:100%;
-    background-color: lime;
+    background-color:lightskyblue;
   }
-/* ********************************************************** Row 1 ***************************************************** */
-
-.collect_gem{
-  position: absolute;
-  top:0%;
-  left:42%;
-  height:15%;
-  width:120px;
-  /* border:solid 2px black; */
+/* Toggles */
+#open-switch1{
+  position:absolute;
+  top:34%;
+  left:8.5%;
+  height:440px;
+  width:300px;
+  /* border:2px black solid; */
   display:flex;
-  align-items: center;
-  justify-content: center;
-}
-#collect1{
-  display:absolute;
-  top:70%;
-  left:80%;
+  flex-direction:column;
   justify-content: center;
   justify-items: center;
-  height:40px;
-  width: 40px;
+}
+#myImage{
+  height:300px;
+  width:300px;
+}
+#if-switch{
   background-color: transparent;
-  border:2px solid black;
-  border-radius:10%;
-  text-decoration: none;
+  width:200px;
+  height:50px;
+  font-size:18pt;
   font-family: 'Trispace', sans-serif;
-}
-/* #collect2{
-  display:absolute;
-  top:70%;
-  left:80%;
-  justify-content: center;
-  justify-items: center;
-  height:40px;
-  width: 80px;
-  background-color: transparent;
-  border:2px solid black;
+  margin-top:30px;
+  margin-left:16%;
   border-radius:10%;
-  text-decoration: none;
-  font-family: 'Trispace', sans-serif;
-} */
-#gemstone:hover {
-  -webkit-animation: pulse 0.7s ease-out;
-          animation: pulse 0.7s ease-out;
 }
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  40%, 70% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  40%, 70% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-.toggle_switch{
-  position: absolute;
-  top:0%;
-  left:65%;
-  height:15%;
-  width:120px;
-  /* border:solid 2px black; */
+#open-switch2{
+  position:absolute;
+  top:34%;
+  left:63.5%;
+  height:440px;
+  width:300px;
+  /* border:2px black solid; */
   display:flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#switch{
-  display:absolute;
-  top:20%;
-  left:86%;
+  flex-direction:column;
   justify-content: center;
   justify-items: center;
-  height:40px;
-  width: 80px;
-  background-color: transparent;
-  border:2px solid black;
-  border-radius:10%;
-  text-decoration: none;
-  font-family: 'Trispace', sans-serif;
 }
 
+#myImage2{
+  height:300px;
+  width:300px;
+}
+#closed-switch{
+  position:absolute;
+  top:34%;
+  left:36%;
+  height:440px;
+  width:300px;
+  /* border:2px black solid; */
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  justify-items: center;
+}
+#myImage3{
+  height:300px;
+  width:300px;
+}
 
-#toggle:hover {
+#myImage:hover {
   -webkit-animation: swing 0.5s ease-out;
           animation: swing 0.5s ease-out;
 }
@@ -848,6 +893,276 @@ canvas.shake {
             transform: rotate(0deg);
   }
 }
+
+#myImage2:hover {
+  -webkit-animation: swing 0.5s ease-out;
+          animation: swing 0.5s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  20% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  40% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+#myImage3:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 0.6s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 3; 
+}  
+
+/* Code Blocks Above Board */
+#col1, #col2, #col3, #col4, #col5, #col6, #col7, #col8, #col9, #col0{
+  /* position: absolute;
+  top:15%;
+  left:8.5%; */
+  /* height:150px; */
+  width:265px;
+  height:80px;
+  border:solid 3px black;
+  background-color: white;
+}
+#col4{
+  display:flex;
+  flex-direction: row;
+}
+
+.if-1{
+  display:flex;
+  flex-direction:row;
+  position: absolute;
+  position: absolute;
+  top:8%;
+  left:8.5%;
+}
+p{ 
+  font-family: 'Trispace', sans-serif;
+  font-size: 24pt;
+  color:black;
+}
+.bracket{
+  position:absolute;
+  top:80%;
+  left:100%;
+  font-family: 'Trispace', sans-serif;
+  font-size: 24pt;
+  color:black;
+}
+
+.if-boxes{
+  display:flex;
+  flex-direction:column;
+}
+.if-2{
+  display:flex;
+  flex-direction:row;
+  position: absolute;
+  position: absolute;
+  top:8%;
+  left:36%;
+}
+.if-3{
+  display:flex;
+  flex-direction:row;
+  position: absolute;
+  position: absolute;
+  top:8%;
+  left:63.5%;
+}
+.open-mini{
+  height:70px;
+  width:70px;
+  margin-top:-15px;
+  margin-left:-5px;
+}
+.closed-mini{
+  height:70px;
+  width:70px;
+  margin-top:-15px;
+  /* margin-left:-5px; */
+}
+/* ********************************************************** Row 1 ***************************************************** */
+
+.collect_gem{
+  position: absolute;
+  top:0%;
+  left:42%;
+  height:15%;
+  width:120px;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column
+}
+#gemstone{
+height:100px;
+width:100px;
+margin-bottom:5px;
+/* margin-bottom:35px; */
+}
+ #collect1{
+  /* display:absolute;
+  top:70%;
+  left:80%; */
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 120px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+  margin-top:-10px;
+} 
+
+
+#gemstone:hover {
+  -webkit-animation: pulse 0.7s ease-out;
+          animation: pulse 0.7s ease-out;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40%, 70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.toggle_switch{
+  position: absolute;
+  top:0%;
+  left:65%;
+  height:15%;
+  width:120px;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+}
+#toggle{
+  height:100px;
+  width:100px;
+  /* margin-bottom:15px; */
+}
+.switch{
+  height:50px;
+  width:50px;
+  border:2px solid black;
+  border-radius: 10px;
+  /* background-color: transparent; */
+}
+#sp{
+  height:30px;
+  width:30px;
+  display:none;
+}
+#switch{
+  /* display:absolute;
+  top:20%;
+  left:86%; */
+  justify-content: center;
+  justify-items: center;
+  height:40px;
+  width: 120px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+#sw,#cg{
+  display:none;
+  justify-content: center;
+  justify-items: center;
+  height:35px;
+  width: 35px;
+  background-color: transparent;
+  border:2px solid black;
+  border-radius:10%;
+  text-decoration: none;
+  font-family: 'Trispace', sans-serif;
+}
+
+
+
 /* ********************************************************** Row 2 ***************************************************** */
 .toggle_switch3{
   position: absolute;
@@ -859,8 +1174,13 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-
+#toggle3{
+  height:100px;
+  width:100px;
+  /* margin-bottom:15px; */
+}
 #switch3{
   display:absolute;
   top:70%;
@@ -868,7 +1188,7 @@ canvas.shake {
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 40px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -944,20 +1264,20 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction:column
 }
+
 #collect2{
-  display:absolute;
-  top:70%;
-  left:80%;
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 40px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
+  margin-top:-10px;
 }
 #gemstone2:hover {
   -webkit-animation: pulse 0.7s ease-out;
@@ -1003,16 +1323,20 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-
+#toggle4{
+  height:100px;
+  width:100px;
+}
 #switch4{
-  display:absolute;
+  /* display:absolute;
   top:70%;
-  left:86%;
+  left:86%; */
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 40px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -1089,15 +1413,20 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+#toggle5{
+  height:100px;
+  width:100px;
 }
 #switch5{
-  display:absolute;
+  /* display:absolute;
   top:70%;
-  left:86%;
+  left:86%; */
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -1168,29 +1497,23 @@ canvas.shake {
   left:42%;
   height:15%;
   width:120px;
-  border:solid 2px black;
+  /* border:solid 2px black; */
   display:flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-/* #gemstone3{
-  height: 100px;
-  width:100px;
-} */
 #collect3{
-  display:absolute;
-  top:70%;
-  left:80%;
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 1200px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
+  margin-top:-10px;
 }
 #gemstone3:hover {
   -webkit-animation: pulse 0.7s ease-out;
@@ -1236,6 +1559,11 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+#toggle6{
+  height: 100px;
+  width:100px;
 }
 #switch6{
   display:absolute;
@@ -1244,7 +1572,7 @@ canvas.shake {
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -1321,15 +1649,20 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+#toggle7{
+  height:100px;
+  width:100px;
 }
 #switch7{
-  display:absolute;
+  /* display:absolute;
   top:70%;
-  left:86%;
+  left:86%; */
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -1404,20 +1737,19 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 #collect4{
-  display:absolute;
-  top:70%;
-  left:80%;
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
+  margin-top:-10px;
 }
 #gemstone4:hover {
   -webkit-animation: pulse 0.7s ease-out;
@@ -1463,6 +1795,11 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+#toggle8{
+  height:100px;
+  width:100px;
 }
 #switch8{
   display:absolute;
@@ -1471,7 +1808,7 @@ canvas.shake {
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -1548,6 +1885,7 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 #switch9{
   display:absolute;
@@ -1556,12 +1894,16 @@ canvas.shake {
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
+}
+#toggle9{
+  height: 100px;
+  width:100px;
 }
 #toggle9:hover {
   -webkit-animation: swing 0.5s ease-out;
@@ -1631,20 +1973,19 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 #collect5{
-  display:absolute;
-  top:70%;
-  left:80%;
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
   font-family: 'Trispace', sans-serif;
+  margin-top:-10px;
 }
 #gemstone5:hover {
   -webkit-animation: pulse 0.7s ease-out;
@@ -1690,15 +2031,20 @@ canvas.shake {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction:column;
+}
+#toggle10{
+  height: 100px;
+  width:100px;
 }
 #switch10{
-  display:absolute;
+  /* display:absolute;
   top:70%;
-  left:86%;
+  left:86%; */
   justify-content: center;
   justify-items: center;
   height:40px;
-  width: 80px;
+  width: 120px;
   background-color: transparent;
   border:2px solid black;
   border-radius:10%;
@@ -1837,6 +2183,24 @@ button{
   }
 
 /* ********************************************************************************************************************* */
+/* @media (max-width: 1000px) {
+  .rightside {
+    height:900px;
+    width:150%;
+      
+  } */
+  body{
+    background-color: lightskyblue;
+  }
+  /* .collect_gem{
+  height:10%;
+  width:110px;
+  margin-top:15px;
+  } */
+  /* #gemstone{
+    height:80px;
+    width:80px;
+  } */
 
 @media (max-width: 768px) {
   #sidebar {
@@ -1849,19 +2213,121 @@ button{
       display: none;
   }
   .rightside{
-    width:200%;
-    height:900px;
+    width:1500px;;
+    height:1000px;
    }
+
+.sky-panel{
+  display:none;
+}
+.sky-panel2{
+  display:none;
+}
+#codebot{
+  position:fixed;
+  top:7%;
+  left:90%;
+}
+#clear{
+  top:90%;
+}
+#switch, #switch3, #switch4, #switch5, #switch6, #switch7, #switch8, #switch9, #switch10{
+  display:none;
+}
+#collect1, #collect2, #collect3, #collect4, #collect5{
+  display:none;
+}
+#sw, #sp, #cg{
+  display:block;
+}
+.collect_gem{
+  position: absolute;
+  display:flex;
+  flex-direction: row;
+  /* border:black 2px solid; */
+  top:0%;
+  left:41%;
+  height:15%;
+  width:90px;
+}
+#cg{
+  margin-left:-25px;
+}
+.collect_gem2{
+  position: absolute;
+   display:flex;
+  flex-direction: row;
+  top:18%;
+  left:41%;
+  height:15%;
+  width:80px;
+  /* border:black 2px solid; */
+}
+.collect_gem3,.collect_gem4, .collect_gem5{
+  position: absolute;
+  display:flex;
+  flex-direction: row;
+  left:41%;
+  height:15%;
+  width:80px;
+  /* border:black 2px solid; */
+}
+#gemstone{
+height:110px;
+width:110px;
+margin-bottom:10px;
+/* margin-bottom:35px; */
+}
+#toggle,#toggle2, #toggle3 ,#toggle4, #toggle5, #toggle6,#toggle7, #toggle8 ,#toggle9,#toggle10{
+  height:90px;
+  width:90px;
+}
+.toggle_switch{
+  position: absolute;
+  top:0%;
+  left:73%;
+  height:15%;
+  width:80px;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
+.toggle_switch3{
+  position: absolute;
+  top:18%;
+  left:5%;
+  height:15%;
+  width:80px;
+  /* margin-left:-7px; */
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
 }
 
+.toggle_switch4, .toggle_switch6, .toggle_switch8, .toggle_switch10{
+  left:73%;
+  width:80px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
+.toggle_switch5, .toggle_switch7, .toggle_switch9{
+  left:5%;
+  width:80px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
 
+}
+  
 
-
-/* @media only screen and (max-width: 768px){
-  .rightside{
-    width:225%;
-    height:900px;
-   } */
 
 
     
@@ -2623,7 +3089,7 @@ text-decoration: none; */
 .toggle{
   margin-top:40px;
 }
-#switch{
+/* #switch{
   display:absolute;
   top:20%;
   left:86%;
@@ -2635,14 +3101,14 @@ text-decoration: none; */
   border:2px solid black;
   border-radius:10%;
   text-decoration: none;
-  font-family: 'Trispace', sans-serif;
+  font-family: 'Trispace', sans-serif; */
   /* height:20px;
   width: 50px;
   background-color: transparent;
   border:2px solid lightslategray;
   border-radius: 10%;
   text-decoration: none; */
-  }
+  /* } */
 #toggle-switch-button{
   display: flex;
   justify-content: center;

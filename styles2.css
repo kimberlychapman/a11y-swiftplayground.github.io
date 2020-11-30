@@ -514,6 +514,13 @@ LEFT SIDE PANEL
   .openbtn:hover {
     background-color:#444;
   }
+ #lname{
+   background-color: yellow;
+   color:black;
+ }
+ #submit{
+  width:100px;
+ }
 /* ************************************************ Sketchpad & Co. ***************************************************** */
 #sketchpadapp {
   /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
@@ -742,9 +749,9 @@ canvas.shake {
   .sky-panel2{
     position: absolute;
     top:0%;
-    left:80.25%;
-    height:100%;
-    width:20%;
+    left:0%;
+    height:250px;
+    width:100%;
     background-color: lightskyblue;
   }
   .sky-panel3{
@@ -1992,7 +1999,7 @@ button{
   }
   .rightside{
     width:1500px;;
-    height:900px;
+    height:1000px;
    }
 
 .sky-panel{
@@ -2024,7 +2031,7 @@ button{
   flex-direction: row;
   /* border:black 2px solid; */
   top:0%;
-  left:38%;
+  left:41%;
   height:15%;
   width:90px;
 }
@@ -2033,10 +2040,10 @@ button{
 }
 .collect_gem2{
   position: absolute;
-  display:flex;
+   display:flex;
   flex-direction: row;
   top:18%;
-  left:38%;
+  left:41%;
   height:15%;
   width:80px;
   /* border:black 2px solid; */
@@ -2045,7 +2052,7 @@ button{
   position: absolute;
   display:flex;
   flex-direction: row;
-  left:38%;
+  left:41%;
   height:15%;
   width:80px;
   /* border:black 2px solid; */

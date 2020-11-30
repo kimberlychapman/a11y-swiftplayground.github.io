@@ -289,7 +289,90 @@ function init() {
     }
 }
 
+function myStatement(){
+    document.getElementById('code1-1').innerHTML="isOnClosedSwitch{";
+    document.getElementById('code1-1').style.color="blue";
+}
 
+function removeStatement(){
+    document.getElementById('code1-1').innerHTML="Condition";
+    document.getElementById('code1-1').style.color="black";
+}
+
+function firstCommand(){
+    document.getElementById('code1-2').innerHTML="toggleSwitch()";
+    document.getElementById('code1-2').style.backgroundColor="aqua";
+}
+
+function removeFirst(){
+    document.getElementById('code1-2').innerHTML="Command";
+    document.getElementById('code1-2').style.backgroundColor="white";
+}
+function secondCommand(){
+    document.getElementById('code1-3').innerHTML="moveForward()";
+    document.getElementById('code1-3').style.backgroundColor="red";
+}
+
+function removeSecond(){
+    document.getElementById('code1-3').innerHTML="Command";
+    document.getElementById('code1-3').style.backgroundColor="white";
+}
+function myStatementTwo(){
+    document.getElementById('code2-1').innerHTML="isOnClosedSwitch{";
+    document.getElementById('code2-1').style.color="blue";
+}
+
+function removeStatementTwo(){
+    document.getElementById('code2-1').innerHTML="Condition";
+    document.getElementById('code2-1').style.color="black";
+}
+
+function firstCommandTwo(){
+    document.getElementById('code2-2').innerHTML="toggleSwitch()";
+    document.getElementById('code2-2').style.backgroundColor="aqua";
+}
+
+function removeFirstTwo(){
+    document.getElementById('code2-2').innerHTML="Command";
+    document.getElementById('code2-2').style.backgroundColor="white";
+}
+function secondCommandTwo(){
+    document.getElementById('code2-3').innerHTML="moveForward()";
+    document.getElementById('code2-3').style.backgroundColor="red";
+}
+
+function removeSecondTwo(){
+    document.getElementById('code2-3').innerHTML="Command";
+    document.getElementById('code2-3').style.backgroundColor="white";
+}
+function myStatementThree(){
+    document.getElementById('code3-1').innerHTML="isOnClosedSwitch{";
+    document.getElementById('code3-1').style.color="blue";
+}
+
+function removeStatementThree(){
+    document.getElementById('code3-1').innerHTML="Condition";
+    document.getElementById('code3-1').style.color="black";
+}
+
+function firstCommandThree(){
+    document.getElementById('code3-2').innerHTML="toggleSwitch()";
+    document.getElementById('code3-2').style.backgroundColor="aqua";
+}
+
+function removeFirstThree(){
+    document.getElementById('code3-2').innerHTML="Command";
+    document.getElementById('code3-2').style.backgroundColor="white";
+}
+function secondCommandThree(){
+    document.getElementById('code3-3').innerHTML="moveForward()";
+    document.getElementById('code3-3').style.backgroundColor="red";
+}
+
+function removeSecondThree(){
+    document.getElementById('code3-3').innerHTML="Command";
+    document.getElementById('code3-3').style.backgroundColor="white";
+}
 
 
     // // Variables for referencing the canvas and 2dcanvas context

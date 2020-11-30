@@ -255,7 +255,15 @@
                        <!-- <a href="#">About</a> -->
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">func myLoop(){</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <div id="closed-bracket">for i in 1...number{</div>
+                            <!-- <div id="closed-bracket">for i in 1...number{</div> -->
+                                <div id="closed-bracket">
+                                    <form action="PayslipServlet" method="get">
+                                        Number of Loops: <input type="text" name="lname" id="lname"><br/>
+                                        <input type="button" id="submit" value="Submit" onclick="writeValues(form)">
+                                        for i in 1...<span id="answer"></span><br>
+                                      <!-- <input type="button" id="submit" value="Submit" onclick="writeValues(form)"> -->
+                                    </form>
+                                </div>
                             <div id="drop-container">
                                 <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                 <div class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -366,6 +374,13 @@
         function closeNav() {
           document.getElementById("mySidepanel").style.width = "0";
         }
+    </script>
+       <script>
+        window.writeValues=function (form){
+          var lname=form.lname.value;
+          
+          document.getElementById("answer").innerHTML=lname;
+          }
     </script>
     <!--  -->
          <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
