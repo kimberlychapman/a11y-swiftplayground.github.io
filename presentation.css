@@ -1,3 +1,13 @@
+@font-face {
+  @font-face {
+font-family: 'sf_ui_displayregular';
+src: url('sf-ui-display-regular-webfont.woff2') format('woff2'),
+ url('sf-ui-display-regular-webfont.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+
+}}
+
 .owl-carousel {
   position: relative;
   height: 100%;
@@ -25,11 +35,30 @@
 }
 
 .owl-carousel .owl-slide4 {
-  background-image: url("img/concept.png");
+  background-image: url("img/concept2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+.owl-carousel .owl-slide5 {
+  background-image: url("img/demo_links.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* font-family: 'sf_ui_displayregular'; */
+}
+/* #testing{
+  position:fixed;
+  top:0%;
+  left:0%;
+} */
+/* #heading5{
+  font-size:36;
+  display:flex;
+  justify-content:center;
+  justify-items:center;
+  font-family: 'sf_ui_displayregular';
+} */
 /* .owl-carousel .owl-slide {
   background-image: url("https://images.unsplash.com/photo-1437915015400-137312b61975?fit=crop&fm=jpg&h=800&q=80&w=1200");
   background-repeat: no-repeat;
@@ -66,21 +95,45 @@
   background: rgba(255, 255, 255, 0.5);
   border-radius: 4px;
 }
+.owl-carousel div.owl--text5 {
+  position: absolute;
+  bottom: 10em;
+  left: 2em;
+  width: 40em;
+  height: 8em;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  font-weight:18pt;
+}
 .link{
   color: black;
   text-decoration: none;
+  
 }
 .link2{
   color: black;
   text-decoration: none;
 }
-.CF{
+/* 
+.CF, .FL{
   margin-right: 5px;
 }
+.IS,.IES{
+  margin-left:10px;
+} */
 #demo-link{
+  /* position:absolute;
+  top:10%;
+  left:30%; */
+  margin-top:-200px;
+  /* margin-left:300px; */
   display:flex;
-  flex-direction:row;
-  justify-content: space-evenly;
+  flex-direction:column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  font-size:28pt;
   /* justify-items: left; */
 }
 .CF:hover{
@@ -91,6 +144,21 @@
   text-decoration: underline;
   text-decoration-color: #000;
 }
+.IS:hover{
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
+.IES:hover{
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
+p:hover{
+    text-decoration: underline;
+    text-decoration-color: #000;
+  }
+/* .CF{
+  margin-left:50%;
+} */
 /* #demo-link2:hover{
   text-decoration: underline;
   text-decoration-color: #000;
