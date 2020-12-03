@@ -1,3 +1,64 @@
+// const addTally=(ev)=>{
+//     document.querySelector(".box").innerHTML=l;
+// };
+// document.querySelector('.box').onlcick=addTally;
+
+$('input[name="radio-btn"]').wrap('<div class="radio-btn"><i></i></div>');
+$(".radio-btn").on('click', function () {
+    var _this = $(this),
+        block = _this.parent().parent();
+    block.find('input:radio').attr('checked', false);
+    block.find(".radio-btn").removeClass('checkedRadio');
+    _this.addClass('checkedRadio');
+    _this.find('input:radio').attr('checked', true);
+});
+$('input[name="check-box"]').wrap('<div class="check-box"><i></i></div>');
+$.fn.toggleCheckbox = function () {
+    this.attr('checked', !this.attr('checked'));
+}
+$('.check-box').on('click', function () {
+    $(this).find(':checkbox').toggleCheckbox();
+    $(this).toggleClass('checkedBox');
+});
+
+function showImage(){
+    document.getElementById('loadingImage').style.visibility=    document.getElementById('loadingImage').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+function showImage2(){
+    document.getElementById('loadingImage2').style.visibility=    document.getElementById('loadingImage2').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage3(){
+    document.getElementById('loadingImage3').style.visibility=    document.getElementById('loadingImage3').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage4(){
+    document.getElementById('loadingImage4').style.visibility=    document.getElementById('loadingImage4').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+function showImage5(){
+    document.getElementById('loadingImage5').style.visibility=    document.getElementById('loadingImage5').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage6(){
+    document.getElementById('loadingImage6').style.visibility=    document.getElementById('loadingImage6').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage7(){
+    document.getElementById('loadingImage7').style.visibility=    document.getElementById('loadingImage7').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage8(){
+    document.getElementById('loadingImage8').style.visibility=    document.getElementById('loadingImage8').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+function showImage9(){
+    document.getElementById('loadingImage9').style.visibility=    document.getElementById('loadingImage9').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+function showImage10(){
+    document.getElementById('loadingImage10').style.visibility=    document.getElementById('loadingImage10').style.visibility == 'visible'? 'hidden' : 'visible';
+}
+
+
 function allowDrop(ev) {
     ev.preventDefault();
 }
@@ -12,6 +73,26 @@ function drop(ev) {
   var newThing = origThing.cloneNode(true);
     ev.target.appendChild(newThing);
 }
+
+
+// function allowDropThis(i) {
+//     i.preventDefault();
+// }
+
+// function dragThis(i) {
+//     i.dataTransfer.setData("text", i.target.id);
+// }
+
+// function dropThis(i) {
+//     i.preventDefault();
+//     var data = i.dataTransfer.getData("text");
+//     i.target.appendChild(document.getElementById(data));
+// }
+
+function toggleSidebar(){
+    document.getElementById("sidebar").classList.toggle('active');
+  }
+
 
 // Variables for referencing the canvas and 2dcanvas context
 var canvas,ctx;
@@ -207,11 +288,198 @@ function init() {
         canvas.addEventListener('touchmove', sketchpad_touchMove, false);
     }
 }
+function myStatement0(){
+    document.getElementById('code1-0').innerHTML="4{";
+    document.getElementById('code1-0').style.color="OrangeRed";
+    document.getElementById('code1-0').style.fontSize="20pt";
+}
 
+function removeStatement0(){
+    document.getElementById('code1-0').innerHTML="number";
+    document.getElementById('code1-0').style.color="black";
+    document.getElementById('code1-0').style.fontSize="12pt";
+}
+function myStatement(){
+    document.getElementById('code1-1').innerHTML="else if";
+    document.getElementById('code1-1').style.color="magenta";
+}
 
+function removeStatement(){
+    document.getElementById('code1-1').innerHTML="if";
+    document.getElementById('code1-1').style.color="yellow";
+}
 
+function firstCommand(){
+    document.getElementById('code1-2').innerHTML="isOnClosedSwitch{";
+    document.getElementById('code1-2').style.color="blue";
+}
 
+function removeFirst(){
+    document.getElementById('code1-2').innerHTML="Condition";
+    document.getElementById('code1-2').style.color="black";
+}
+function secondCommand(){
+    document.getElementById('code1-3').innerHTML="toggleSwitch()";
+    document.getElementById('code1-3').style.backgroundColor="aqua";
+}
 
+function removeSecond(){
+    document.getElementById('code1-3').innerHTML="Command";
+    document.getElementById('code1-3').style.backgroundColor="white";
+}
+function thirdCommand(){
+    document.getElementById('code1-4').innerHTML="moveForward()";
+    document.getElementById('code1-4').style.backgroundColor="red";
+}
+
+function removeThird(){
+    document.getElementById('code1-4').innerHTML="Command";
+    document.getElementById('code1-4').style.backgroundColor="white";
+}
+function myStatementTwo(){
+    document.getElementById('code2-1').innerHTML="else if";
+    document.getElementById('code2-1').style.color="magenta";
+}
+
+function removeStatementTwo(){
+    document.getElementById('code2-1').innerHTML="if";
+    document.getElementById('code2-1').style.color="yellow";
+}
+
+function firstCommandTwo(){
+    document.getElementById('code2-2').innerHTML="isOnGem{";
+    document.getElementById('code2-2').style.color="DarkGreen";
+}
+
+function removeFirstTwo(){
+    document.getElementById('code2-2').innerHTML="Condition";
+    document.getElementById('code2-2').style.color="black";
+}
+function secondCommandTwo(){
+    document.getElementById('code2-3').innerHTML="collectGem()";
+    document.getElementById('code2-3').style.backgroundColor="lime";
+}
+
+function removeSecondTwo(){
+    document.getElementById('code2-3').innerHTML="Command";
+    document.getElementById('code2-3').style.backgroundColor="white";
+}
+function myStatementThree(){
+    document.getElementById('code3-1').innerHTML="isOnClosedSwitch{";
+    document.getElementById('code3-1').style.color="blue";
+}
+
+function removeStatementThree(){
+    document.getElementById('code3-1').innerHTML="Condition";
+    document.getElementById('code3-1').style.color="black";
+}
+
+function firstCommandThree(){
+    document.getElementById('code3-2').innerHTML="toggleSwitch()";
+    document.getElementById('code3-2').style.backgroundColor="aqua";
+}
+
+function removeFirstThree(){
+    document.getElementById('code3-2').innerHTML="Command";
+    document.getElementById('code3-2').style.backgroundColor="white";
+}
+function secondCommandThree(){
+    document.getElementById('code3-3').innerHTML="moveForward()";
+    document.getElementById('code3-3').style.backgroundColor="red";
+}
+
+function removeSecondThree(){
+    document.getElementById('code3-3').innerHTML="Command";
+    document.getElementById('code3-3').style.backgroundColor="white";
+}
+
+function thirdCommandTwo(){
+    document.getElementById('code2-4').innerHTML="moveForward()";
+    document.getElementById('code2-4').style.backgroundColor="red";
+}
+
+function removeThirdTwo(){
+    document.getElementById('code2-4').innerHTML="Command";
+    document.getElementById('code2-4').style.backgroundColor="white";
+}
+
+// Drag and Drop Boxes
+function firstBox(){
+
+    document.getElementById('col2').style.backgroundColor="black";
+    document.getElementById('col2').style.border="2px solid yellow";
+
+}
+function removeFirstBox(){
+    document.getElementById('col2').style.backgroundColor="white";
+    document.getElementById('col2').style.border="2px solid black";
+}
+
+function secondBox(){
+
+    document.getElementById('col3').style.backgroundColor="black";
+    document.getElementById('col3').style.border="2px solid yellow";
+
+}
+function removeSecondBox(){
+    document.getElementById('col3').style.backgroundColor="white";
+    document.getElementById('col3').style.border="2px solid black";
+}
+
+function thirdBox(){
+
+    document.getElementById('col4').style.backgroundColor="black";
+    document.getElementById('col4').style.border="2px solid yellow";
+
+}
+function removeThirdBox(){
+    document.getElementById('col4').style.backgroundColor="white";
+    document.getElementById('col4').style.border="2px solid black";
+}
+
+function fourthBox(){
+
+    document.getElementById('col5').style.backgroundColor="black";
+    document.getElementById('col5').style.border="2px solid yellow";
+
+}
+function removeFourthBox(){
+    document.getElementById('col5').style.backgroundColor="white";
+    document.getElementById('col5').style.border="2px solid black";
+}
+
+function fifthBox(){
+
+    document.getElementById('col6').style.backgroundColor="black";
+    document.getElementById('col6').style.border="2px solid yellow";
+
+}
+function removeFifthBox(){
+    document.getElementById('col6').style.backgroundColor="white";
+    document.getElementById('col6').style.border="2px solid black";
+}
+
+function sixthBox(){
+
+    document.getElementById('col7').style.backgroundColor="black";
+    document.getElementById('col7').style.border="2px solid yellow";
+
+}
+function removeSixthBox(){
+    document.getElementById('col7').style.backgroundColor="white";
+    document.getElementById('col7').style.border="2px solid black";
+}
+
+function seventhBox(){
+
+    document.getElementById('col8').style.backgroundColor="black";
+    document.getElementById('col8').style.border="2px solid yellow";
+
+}
+function removeSeventhBox(){
+    document.getElementById('col8').style.backgroundColor="white";
+    document.getElementById('col8').style.border="2px solid black";
+}
     // // Variables for referencing the canvas and 2dcanvas context
     // var canvas,ctx;
 
