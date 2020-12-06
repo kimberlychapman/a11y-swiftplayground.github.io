@@ -2008,7 +2008,7 @@ font-family: 'Trispace', sans-serif;
   display:none;
 }
 
-.sky-5, .sky-6, .sky-7{
+.sky-6, .sky-7{
   display:none;
   /* position:absolute;
   left:25%;
@@ -2022,11 +2022,11 @@ font-family: 'Trispace', sans-serif;
   top:0%;
   left:0%;
   height:1000px;
-  border-right:90px lightskyblue solid;
+  border-right:80px lightskyblue solid;
 }
 .rock-box1{
   left:35%;
-  width:280px;
+  width:39%;
 }
 #rock{
   margin-left:45px;
@@ -2035,21 +2035,47 @@ font-family: 'Trispace', sans-serif;
   margin-left:70px;
 }
 .sky-1{
-  width:280px;
+  width:39%;
   left:35%;
 }
 .sky-3{
-  width:50%;
+  width:33%;
   height:250px;
+  border-right: transparent;
+
+}
+.sky-1 #cloudy{
+  margin-left:35px;
+  height:160px;
+  width:220px;
+}
+#cloudy{
+  margin-left:15px;
+  height:160px;
+  width:220px;
 }
 .sky-4{
-  left:50%;
-  width:50%;
+  left:33%;
+  width:33%;
   height:250px;
+  border-right: transparent;
+  border-left: transparent;
+  
 }
-.sky-4 #windy{
+.sky-5{
+  left:66%;
+  width:34%;
+  height:250px;
+  border-left: transparent;
+  
+}
+.sky-5 #cloudy, .sky-5 #windy{
+ display:none;
+  
+}
+/* .sky-4 #windy{
   display:none;
-}
+} */
 .gem-box1{
   left:35%;
   border:black solid 2px;
@@ -2058,20 +2084,21 @@ font-family: 'Trispace', sans-serif;
 .rock-box2{
   display:none;
 }
-.gem-box2{
-  left:80%;
+.gem-box2, .gem-box3, .sky-8{
+  left:74%;
+  width:26%;
 }
 
 #red2, #red3{
   height:120px;
   width:120px;
-  margin-left:0px;
+  margin-left:35px;
   margin-top:30px;
 }
 #red{
   margin-left:15px;
 }
-#treasure, #treasure2 {
+#treasure{
 width:100px;
 font-size:16px;
 height:50px;
@@ -2081,11 +2108,11 @@ margin-left:17px;
   width:100px;
   font-size:16px;
   height:50px;
-  margin-left:8px;
+  margin-left:43px;
   }
 #codebot{
   position:absolute;
-  top:90%;
+  top:75%;
   left:88%;
 }}
 /* .sky-2{
