@@ -329,7 +329,7 @@ function removeSecond(){
 }
 function thirdCommand(){
     document.getElementById('code1-4').innerHTML="moveForward()";
-    document.getElementById('code1-4').style.backgroundColor="red";
+    document.getElementById('code1-4').style.backgroundColor="lime";
 }
 
 function removeThird(){
@@ -357,7 +357,7 @@ function removeFirstTwo(){
 }
 function secondCommandTwo(){
     document.getElementById('code2-3').innerHTML="collectGem()";
-    document.getElementById('code2-3').style.backgroundColor="lime";
+    document.getElementById('code2-3').style.backgroundColor="red";
 }
 
 function removeSecondTwo(){
@@ -385,7 +385,7 @@ function removeFirstThree(){
 }
 function secondCommandThree(){
     document.getElementById('code3-3').innerHTML="moveForward()";
-    document.getElementById('code3-3').style.backgroundColor="red";
+    document.getElementById('code3-3').style.backgroundColor="lime";
 }
 
 function removeSecondThree(){
@@ -395,7 +395,7 @@ function removeSecondThree(){
 
 function thirdCommandTwo(){
     document.getElementById('code2-4').innerHTML="moveForward()";
-    document.getElementById('code2-4').style.backgroundColor="red";
+    document.getElementById('code2-4').style.backgroundColor="lime";
 }
 
 function removeThirdTwo(){

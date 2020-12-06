@@ -398,7 +398,7 @@ a.active,a.article, a.article:hover {
  }
  #thing1{
    /* margin-left:10%; */
-   background-color:red;
+   background-color: lime;
    padding-top: 10px;
  }
  #thing2{
@@ -418,7 +418,7 @@ a.active,a.article, a.article:hover {
 
 #thing4{
   /* margin-left:10%; */
-  background-color: lime;
+  background-color: red;
   padding-top: 15px;
   padding-left:10px;
 }

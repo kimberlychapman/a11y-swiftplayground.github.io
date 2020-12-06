@@ -310,35 +310,50 @@ function removeStatement(){
 }
 
 function firstCommand(){
-    document.getElementById('code1-2').innerHTML="isOnClosedSwitch{";
-    document.getElementById('code1-2').style.color="blue";
+    document.getElementById('code1-2').innerHTML="moveForward()";
+    document.getElementById('code1-2').style.color="black";
+    document.getElementById('code1-2').style.backgroundColor="lime";
+    document.getElementById('code1-2').style.border="2px black solid";
 }
 
 function removeFirst(){
-    document.getElementById('code1-2').innerHTML="Condition";
-    document.getElementById('code1-2').style.color="black";
+    document.getElementById('code1-2').innerHTML="Command";
+    document.getElementById('code1-2').style.backgroundColor="dimgray";
+    document.getElementById('code1-2').style.color="yellow";
+    document.getElementById('code1-2').style.border="2px yellow solid";
+
 }
 function secondCommand(){
-    document.getElementById('code1-3').innerHTML="toggleSwitch()";
-    document.getElementById('code1-3').style.backgroundColor="aqua";
+    document.getElementById('code1-3').innerHTML="moveForward()";
+    document.getElementById('code1-3').style.backgroundColor="lime";
+    document.getElementById('code1-3').style.border="2px black solid";
+    document.getElementById('code1-3').style.color="black";
 }
 
 function removeSecond(){
     document.getElementById('code1-3').innerHTML="Command";
-    document.getElementById('code1-3').style.backgroundColor="white";
+    document.getElementById('code1-3').style.backgroundColor="dimgray";
+    document.getElementById('code1-3').style.color="yellow";
+    document.getElementById('code1-3').style.border="2px yellow solid";
 }
 function thirdCommand(){
-    document.getElementById('code1-4').innerHTML="moveForward()";
-    document.getElementById('code1-4').style.backgroundColor="red";
+    document.getElementById('code1-4').innerHTML="turnLeft()";
+    document.getElementById('code1-4').style.backgroundColor="#8A2BE2";
+    document.getElementById('code1-4').style.border="2px black solid";
+    document.getElementById('code1-4').style.color="black";
 }
 
 function removeThird(){
     document.getElementById('code1-4').innerHTML="Command";
-    document.getElementById('code1-4').style.backgroundColor="white";
+    document.getElementById('code1-4').style.backgroundColor="dimgray";
+    document.getElementById('code1-4').style.color="yellow";
+    document.getElementById('code1-4').style.border="2px yellow solid";
 }
 function myStatementTwo(){
-    document.getElementById('code2-1').innerHTML="else if";
-    document.getElementById('code2-1').style.color="magenta";
+    document.getElementById('code1-4').innerHTML="moveForward()";
+    document.getElementById('code1-4').style.backgroundColor="lime";
+    document.getElementById('code1-4').style.border="2px black solid";
+    document.getElementById('code1-4').style.color="black";
 }
 
 function removeStatementTwo(){
@@ -347,22 +362,30 @@ function removeStatementTwo(){
 }
 
 function firstCommandTwo(){
-    document.getElementById('code2-2').innerHTML="isOnGem{";
-    document.getElementById('code2-2').style.color="DarkGreen";
+    document.getElementById('code2-2').innerHTML="moveForward()";
+    document.getElementById('code2-2').style.backgroundColor="lime";
+    document.getElementById('code2-2').style.border="2px black solid";
+    document.getElementById('code2-2').style.color="black";
 }
 
 function removeFirstTwo(){
-    document.getElementById('code2-2').innerHTML="Condition";
-    document.getElementById('code2-2').style.color="black";
+    document.getElementById('code2-2').innerHTML="Command";
+    document.getElementById('code2-2').style.backgroundColor="dimgray";
+    document.getElementById('code2-2').style.color="yellow";
+    document.getElementById('code2-2').style.border="2px yellow solid";
 }
 function secondCommandTwo(){
     document.getElementById('code2-3').innerHTML="collectGem()";
-    document.getElementById('code2-3').style.backgroundColor="lime";
+    document.getElementById('code2-3').style.backgroundColor="red";
+    document.getElementById('code2-3').style.border="2px black solid";
+    document.getElementById('code2-3').style.color="black"; 
 }
 
 function removeSecondTwo(){
     document.getElementById('code2-3').innerHTML="Command";
-    document.getElementById('code2-3').style.backgroundColor="white";
+    document.getElementById('code2-3').style.backgroundColor="dimgray";
+    document.getElementById('code2-3').style.color="yellow";
+    document.getElementById('code2-3').style.border="2px yellow solid";
 }
 function myStatementThree(){
     document.getElementById('code3-1').innerHTML="isOnClosedSwitch{";
@@ -395,12 +418,29 @@ function removeSecondThree(){
 
 function thirdCommandTwo(){
     document.getElementById('code2-4').innerHTML="moveForward()";
-    document.getElementById('code2-4').style.backgroundColor="red";
+    document.getElementById('code2-4').style.backgroundColor="lime";
+    document.getElementById('code2-4').style.color="black";
+    document.getElementById('code2-4').style.border="2px black solid";
 }
 
 function removeThirdTwo(){
     document.getElementById('code2-4').innerHTML="Command";
-    document.getElementById('code2-4').style.backgroundColor="white";
+    document.getElementById('code2-4').style.backgroundColor="dimgray";
+    document.getElementById('code2-4').style.color="yellow";
+    document.getElementById('code2-4').style.border="2px yellow solid";
+}
+function fourthCommandTwo(){
+    document.getElementById('code2-5').innerHTML="toggleSwitch()";
+    document.getElementById('code2-5').style.backgroundColor="aqua";
+    document.getElementById('code2-5').style.color="black";
+    document.getElementById('code2-5').style.border="2px black solid";
+}
+
+function removeFourthTwo(){
+    document.getElementById('code2-5').innerHTML="Command";
+    document.getElementById('code2-5').style.backgroundColor="dimgray";
+    document.getElementById('code2-5').style.color="yellow";
+    document.getElementById('code2-5').style.border="2px yellow solid";
 }
 
 // Drag and Drop Boxes

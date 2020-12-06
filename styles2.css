@@ -397,25 +397,25 @@ a.active,a.article, a.article:hover {
  }
  #thing1{
    /* margin-left:10%; */
-   background-color:red;
+   background-color: lime;
    padding-top: 10px;
  }
  #thing2{
   /* margin-left:10%; */
-  background-color:yellow;
+  background-color: #8A2BE2 ;
   padding-top: 15px;
   padding-left:10px;
 }
 #thing3{
   /* margin-left:10%; */
-  background-color: #8A2BE2;
+  background-color: yellow;
   padding-top: 15px;
   /* padding-left:10px; */
 }
 
 #thing4{
   /* margin-left:10%; */
-  background-color: lime;
+  background-color: red;
   padding-top: 15px;
   padding-left:10px;
 }

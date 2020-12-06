@@ -310,7 +310,7 @@ function removeFirst(){
 }
 function secondCommand(){
     document.getElementById('code1-3').innerHTML="moveForward()";
-    document.getElementById('code1-3').style.backgroundColor="red";
+    document.getElementById('code1-3').style.backgroundColor="lime";
 }
 
 function removeSecond(){
@@ -338,7 +338,7 @@ function removeFirstTwo(){
 }
 function secondCommandTwo(){
     document.getElementById('code2-3').innerHTML="moveForward()";
-    document.getElementById('code2-3').style.backgroundColor="red";
+    document.getElementById('code2-3').style.backgroundColor="lime";
 }
 
 function removeSecondTwo(){
@@ -366,7 +366,7 @@ function removeFirstThree(){
 }
 function secondCommandThree(){
     document.getElementById('code3-3').innerHTML="moveForward()";
-    document.getElementById('code3-3').style.backgroundColor="red";
+    document.getElementById('code3-3').style.backgroundColor="lime";
 }
 
 function removeSecondThree(){
