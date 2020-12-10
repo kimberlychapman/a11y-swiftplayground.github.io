@@ -121,21 +121,19 @@
                             <div class="sky-panel3"></div>
 <!-- Switches -->
                             <div id="open-switch1">
-                                <img id="myImage" src="img/open-portal.png" onclick="document.getElementById('myImage').src='img/closed-portal.png'" ondblclick="document.getElementById('myImage').src='img/open-portal.png'">
-                                <button id="if-switch" onclick="document.getElementById('toggle').play()">Sound Effect</button>  
-                            </div>
+                                <img id="myImage" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('myImage').src='img/closed-sp.png'" oncontextmenu="changeImage()">  
 
-                            <div id="closed-switch">
-                                <img id="myImage3" src="img/closed-portal.png">
-                                <button id="if-switch" onclick="document.getElementById('toggle').play()">Sound Effect</button>  
+                            </div>
+                            <div id="open-switch3">
+                                <img id="myImage3" src="img/closed-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('myImage3').src='img/portal-sp.png'" oncontextmenu="changeImage2()">
                             </div>
 
                             <div id="open-switch2">
-                                <img id="myImage2" src="img/open-portal.png" onclick="document.getElementById('myImage2').src='img/closed-portal.png'" ondblclick="document.getElementById('myImage2').src='img/open-portal.png'">
-                                <button id="if-switch" onclick="document.getElementById('toggle').play()">Sound Effect</button>  
+                                <img id="myImage2" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('myImage2').src='img/closed-sp.png'" oncontextmenu="changeImage3()">  
+                                
                             </div>
 <!-- Code Blocks -->
-                            <div class="if-1">
+                            <!-- <div class="if-1">
                                 <p>if</p>
                                 <div class="if-boxes">
                                     <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -144,8 +142,8 @@
                                 </div>
                                 <p class="bracket">}</p>
                                
-                            </div>
-                            <div class="if-2">
+                            </div> -->
+                            <!-- <div class="if-2">
                                 <p>if</p>
                                 <div class="if-boxes">
                                     <div class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -162,7 +160,7 @@
                                     <div class="col" id="col1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                 </div>
                                 <p class="bracket">}</p>
-                            </div>
+                            </div> -->
                         <!-- <div id="row5" ondblclick="remove(this.id)">
                             <div class=toggle_switch9>
                                 <img id="toggle9" src="img/toggleSwitch.png">
@@ -181,9 +179,14 @@
                             </div>
                         </div> -->
 <!-- Codebot -->
-                            <div id="codebot">
-                                <a href="presentation.html"><img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('add').play()" ondblclick="remove(this.id)"></a>
+                        <div class="icons">
+                            <div id="link">
+                                <a href="presentation.html"><img id="playground" src="img/swift-icon.png">
                             </div>
+                            <div id="codebot">
+                                <img id="hey-codebot" src="img/hey-siri.png" onclick="document.getElementById('add').play()" ondblclick="remove(this.id)"></a>
+                            </div>
+                        </div>
                             
                             
 <!-- Clear -->
@@ -199,11 +202,28 @@
 
                 <ul class="list-unstyled components">
                     <!-- <p>Dummy Heading</p> -->
-                    <!-- <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Loop Tracker</a>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">if Statement</a>
                         
                         <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
+                            <!-- <div class="if-1"> -->
+                            <li style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                            color:white;">if</li>
+                            <li class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                            <li class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                            <li class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                            <li style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                            color:white;">}</li>
+                                <!-- <p>if</p> -->
+                                <!-- <div class="if-boxes"> -->
+                                    <!-- <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+                                    <!-- <div class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+                                    <!-- <div class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></div> -->
+                                <!-- </div> -->
+                                <!-- <p class="bracket">}</p>
+                               
+                            </div> -->
+                            <!-- <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
                             </a></li>
                             <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
                             </a></li>
@@ -222,35 +242,35 @@
                             <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
                             </a></li>
                             <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
-                            </a></li>
+                            </a></li> -->
                         </ul>
-                    </li> -->
+                    </li> 
                     <li>
                        <!-- <a href="#">About</a> -->
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Run Code</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
-                            <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                            <h2 style="font-family: 'Trispace', sans-serif; font-size:14pt;
                             color:white;">if</h2>
                             <button id="code1-1" onclick=myStatement() ondblclick=removeStatement()>Condition</button>
                             <button id="code1-2" onclick=firstCommand() ondblclick=removeFirst()>Command</button>
                             <button id="code1-3" onclick=secondCommand() ondblclick=removeSecond()>Command</button>
-                            <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                            <h2 style="font-family: 'Trispace', sans-serif; font-size:14pt;
                             color:white;">&nbsp}</h2>
 
-                            <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                            <h2 style="font-family: 'Trispace', sans-serif; font-size:14pt;
                             color:white;">if</h2>
                             <button id="code2-1" onclick=myStatementTwo() ondblclick=removeStatementTwo()>Condition</button>
                             <button id="code2-2" onclick=firstCommandTwo() ondblclick=removeFirstTwo()>Command</button>
                             <button id="code2-3" onclick=secondCommandTwo() ondblclick=removeSecondTwo()>Command</button>
-                            <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                            <h2 style="font-family: 'Trispace', sans-serif; font-size:14pt;
                             color:white;">&nbsp}</h2>
 
-                            <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                            <h2 style="font-family: 'Trispace', sans-serif; font-size:14pt;
                             color:white;">if</h2>
                             <button id="code3-1" onclick=myStatementThree() ondblclick=removeStatementThree()>Condition</button>
                             <button id="code3-2" onclick=firstCommandThree() ondblclick=removeFirstThree()>Command</button>
                             <button id="code3-3" onclick=secondCommandThree() ondblclick=removeSecondThree()>Command</button>
-                            <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                            <h2 style="font-family: 'Trispace', sans-serif; font-size:14pt;
                             color:white;">&nbsp}</h2>
                              <!-- <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
                              color:white;">}</h2> -->
@@ -337,7 +357,7 @@
                 <!-- </a> -->
                 <!-- <a href="#">Contact</a> -->
             <!-- </div> -->
-            <button class="openbtn" onclick="openNav()">☰ Code</button>  
+            <button class="openbtn" onclick="openNav()">☰ Commands</button>  
             <!-- <h2>Collapsed Sidepanel</h2>
             <p>Click on the hamburger menu/bar icon to open the sidepanel.</p> -->
     <script>

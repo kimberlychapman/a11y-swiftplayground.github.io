@@ -403,6 +403,22 @@ function removeThirdTwo(){
     document.getElementById('code2-4').style.backgroundColor="white";
 }
 
+function changeImage4(){
+    document.getElementById("myImage4").src = "img/red-gem.png";
+}
+
+function changeImage5(){
+    document.getElementById("myImage5").src = "img/red-gem.png";
+}
+
+function changeThisImage(){
+    document.getElementById("myImage").src = "img/portal-sp.png";
+}
+
+function changeImage2(){
+    document.getElementById("myImage2").src = "img/portal-sp.png";
+}
+
 
     // // Variables for referencing the canvas and 2dcanvas context
     // var canvas,ctx;
