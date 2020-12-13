@@ -190,7 +190,9 @@ a.active,a.article, a.article:hover {
   background-color: black;
 }
 #loop-label{
-  color:white;
+  color:black;
+  font-family: 'Trispace', sans-serif;
+  font-size:12pt;
   /* margin-left:10px; */
 }
 
@@ -562,23 +564,30 @@ LEFT SIDE PANEL
 
 }
 #reset{
-  height:65px;
-  width:65px;
+  height:50px;
+  width:50px;
   position: absolute;
   bottom: 20px;
-  right:270px;
-  background-color:lime;
+  right:185px;
+  background-color: lightcyan;
   border-radius:20%;
 }
 #reset-button{
-  height:60px;
-  width:60px;
+  height:40px;
+  width:40px;
 }
-
+#playground:hover{
+-webkit-transform:scale(1.3);
+transform:scale(1.3);
+}
+#link:hover{
+  filter: contrast(1.4) saturate(1.8) sepia(.6);
+    -webkit-filter: contrast(1.4) saturate(1.8) sepia(.6);
+}
 #reset:hover,
 #clear:hover,
-#link:hover,
-#codebot:hover{
+#codebot:hover
+{
   -webkit-transform:scale(1.3);
 transform:scale(1.3);
 }
@@ -782,18 +791,6 @@ canvas.shake {
   }
 /* ********************************************************** Row 1 ***************************************************** */
 
-.collect_gem{
-  position: absolute;
-  top:0%;
-  left:47.5%;
-  height:15%;
-  /* width:5%;
-  border:solid 2px black; */
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction:row;
-}
 
 
 #red-sp1,
@@ -845,18 +842,8 @@ width:60px;
             transform: scale(1);
   }
 }
-.toggle_switch{
-  position: absolute;
-  top:0%;
-  left:75%;
-  height:15%;
-  width:5%;
-  /* border:solid 2px black; */
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction:row;
-}
+
+
 #portal-sp,
 #portal-sp3,
 #portal-sp4,
@@ -959,7 +946,92 @@ width:60px;
             transform: rotate(0deg);
   }
 }
-/* ********************************************************** Row 2 ***************************************************** */
+/*  */
+
+/* collect_gems  */
+
+.collect_gem{
+  position: absolute;
+  top:0%;
+  left:47.5%;
+  height:15%;
+  width:5%;
+  /* border:solid 2px black;  */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
+
+.collect_gem2{
+  position: absolute;
+  top:18%;
+  left:47.5%;
+  height:15%;
+  width:5%;
+  /* border:solid 2px black;  */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
+
+
+
+.collect_gem3{
+  position: absolute;
+  top:36%;
+  left:47.5%;
+  height:15%;
+  width:5%;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
+
+.collect_gem4{
+  position: absolute;
+  top:54%;
+  left:47.5%;
+  height:15%;
+  width:5%;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
+
+.collect_gem5{
+  position: absolute;
+  top:72%;
+  left:47.5%;
+  height:15%;
+  width:5%;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
+
+/*  */
+
+/* toggle_switches */
+.toggle_switch{
+  position: absolute;
+  top:0%;
+  left:75%;
+  height:15%;
+  width:5%;
+  /* border:solid 2px black; */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
 .toggle_switch3{
   position: absolute;
   top:18%;
@@ -972,23 +1044,6 @@ width:60px;
   justify-content: center;
   flex-direction:row;
 }
-
-
-
-.collect_gem2{
-  position: absolute;
-  top:18%;
-  left:47.5%;
-  height:15%;
-  width:5%;
-  /* border:solid 2px black; */
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction:row;
-}
-
-
 
 .toggle_switch4{
   position: absolute;
@@ -1003,27 +1058,10 @@ width:60px;
   flex-direction:row;
 }
 
-
-
-/* ********************************************************** Row 3 ***************************************************** */
 .toggle_switch5{
   position: absolute;
   top:36%;
   left:20.5%;
-  height:15%;
-  width:5%;
-  /* border:solid 2px black; */
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction:row;
-}
-
-
-.collect_gem3{
-  position: absolute;
-  top:36%;
-  left:47.5%;
   height:15%;
   width:5%;
   /* border:solid 2px black; */
@@ -1046,27 +1084,10 @@ width:60px;
   flex-direction:row;
 }
 
-
-
-/* ********************************************************** Row 4 ***************************************************** */
 .toggle_switch7{
   position: absolute;
   top:54%;
   left:20.5%;
-  height:15%;
-  width:5%;
-  /* border:solid 2px black; */
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction:row;
-}
-
-
-.collect_gem4{
-  position: absolute;
-  top:54%;
-  left:47.5%;
   height:15%;
   width:5%;
   /* border:solid 2px black; */
@@ -1089,25 +1110,10 @@ width:60px;
   flex-direction:row;
 }
 
-/* ********************************************************** Row 4 ***************************************************** */
 .toggle_switch9{
   position: absolute;
   top:72%;
   left:20.5%;
-  height:15%;
-  width:5%;
-  /* border:solid 2px black; */
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction:row;
-}
-
-
-.collect_gem5{
-  position: absolute;
-  top:72%;
-  left:47.5%;
   height:15%;
   width:5%;
   /* border:solid 2px black; */
@@ -1130,23 +1136,163 @@ width:60px;
   flex-direction:row;
 }
 
+/*  */
+
+/* loop-counts */
+
+#loop-count1{
+  position: absolute;
+  top:5%;
+  left:81.5%;
+  font-family: 'Trispace', sans-serif;
+  font-size:14pt;
+
+}
+.checkmark1{
+  position: absolute;
+  top:8.75%;
+  left:81.5%;
+  display:flex;
+  flex-direction:row;
+}
+input[type=checkbox]{
+  width:50px;
+  height:50px;
+  /* background-color: tan; */
+}
+
+#loop-count2{
+  position: absolute;
+  top:23%;
+  left:81.5%;
+  font-family: 'Trispace', sans-serif;
+  font-size:14pt;
+  color:black;
+
+}
+.checkmark2{
+  position: absolute;
+  top:27%;
+  left:81.5%;
+  display:flex;
+  flex-direction:row;
+}
+
+#loop-count3{
+  position: absolute;
+  top:41%;
+  left:81.5%;
+  font-family: 'Trispace', sans-serif;
+  font-size:14pt;
+  color:black;
+
+}
+.checkmark3{
+  position: absolute;
+  top:45%;
+  left:81.5%;
+  display:flex;
+  flex-direction:row;
+}
+
+#loop-count4{
+  position: absolute;
+  top:59%;
+  left:81.5%;
+  font-family: 'Trispace', sans-serif;
+  font-size:14pt;
+  color:black;
+
+}
+.checkmark4{
+  position: absolute;
+  top:63%;
+  left:81.5%;
+  display:flex;
+  flex-direction:row;
+}
+
+#loop-count5{
+  position: absolute;
+  top:77%;
+  left:81.5%;
+  font-family: 'Trispace', sans-serif;
+  font-size:14pt;
+  color:black;
+
+}
+.checkmark5{
+  position: absolute;
+  top:81%;
+  left:81.5%;
+  display:flex;
+  flex-direction:row;
+}
+#loop-count1:hover,
+#loop-count2:hover,
+#loop-count3:hover,
+#loop-count4:hover,
+#loop-count5:hover{
+  -webkit-transform:scale(1.3);
+  transform:scale(1.3);
+}
 
 
-/* ********************************************************************************************************************* */
-
+/* Code Blocks */
+#code1-1{
+  height:40px;
+  width:180px;
+  font-family:'Trispace', sans-serif;
+  font-size: 12pt;
+  color:black;
+  background-color: white;
+  margin-top:5px;
+  margin-bottom:20px;
+}
+#code1-2, #code1-3, #code2-2, #code2-3, #code3-1, #code3-2, #code3-3{
+  height:40px;
+  width:180px;
+  font-family:'Trispace', sans-serif;
+  font-size: 12pt;
+  color:black;
+  background-color: white;
+  margin-bottom:20px;
+}
+#code2-1{
+  height:40px;
+  width:180px;
+  font-family:'Trispace', sans-serif;
+  font-size: 12pt;
+  color:black;
+  background-color: white;
+}
+/*  */
+#playground, #hey-codebot{
+  height:60px;
+  width:60px;
+}
   #hey-codebot{
-    height:70px;
-    width:70px;
-    margin-left:80px;
+    /* height:70px;
+    width:70px; */
+    margin-left:30px;
   }
-  #playground{
+  /* #playground{
     height:70px;
     width:70px;
     margin-top:3px;
-  }
-  .icons{
+  } */
+  
+  #link{
     position:absolute;
-    left:81%;
+    left:1%;
+    top:90%;
+    /* border:black 2px solid; */
+    /* display: flex;
+    flex-direction: row; */
+  }
+  #codebot{
+    position:absolute;
+    left:12%;
     top:0.55%;
     display: flex;
     flex-direction: row;
@@ -1219,80 +1365,80 @@ button{
 
 
 /* ********************************************************************************************************* */   
-.sky-1{
-  position: absolute;
-  top:18%;
-  left:40px;
-  height:23%;
-  width:17%;
-  /* border: black 2px solid; */
-  display:block;
-  background-color: lightskyblue;
-  }
-  #windy{
-    /* height:50px;
-    width:80px; */
-    border: transparent 2px;
-    /* border-style: solid gray 2px; */
-    border-radius:40%;
-    font-family: 'Trispace', sans-serif;
-    font-size:13pt;
-    color: black;
-    /* margin-top:8px; */
-    background-color:transparent;
-    margin-left:39%;
-    font-weight: bolder;
-    margin-top:-60px;
-    position:absolute;
-    top:92.5%;
-    left:-12.5%;
-    /* text-decoration: hotpink underline wavy; */
-  
-  } 
+
   #cloud-sp{
     height:50px;
     width:70px;
   }
   #cloudy{
-    margin-left:-4px;
+    height:160px;
+    width:230px;
+    margin-left:2px;
     position:relative;
   }
-  .sky-2{
+  #mini-cloud{
+    height:110px;
+    width:170px;
+    margin-left:2px;
+    position:relative;
+  }
+  .sky-1{
     position: absolute;
-    top:42%;
-    left:40px;
-    height:23%;
-    width:17%;
+    top:11%;
+    left:70px;
+    height:15%;
+    width:10%;
     /* border: black 2px solid; */
     display:block;
     background-color: lightskyblue;
     }
-    .sky-3{
-      position: absolute;
-      top:65.5%;
-      left:40px;
-      height:23%;
-      width:17%;
-      /* border: black 2px solid; */
-      display:block;
-      background-color: lightskyblue;
-      }
-    .sky-4{
-      position: absolute;
-      top:18%;
-      left:82%;
-      height:23%;
-      width:17%;
-      /* border: black 2px solid; */
-      display:block;
-      background-color: lightskyblue;
-      }
+  .sky-2{
+    position: absolute;
+    top:30%;
+    left:70px;
+    height:15%;
+    width:10%;
+    /* border: black 2px solid; */
+    display:block;
+    background-color: lightskyblue;
+    }
+
+  .sky-3{
+    position: absolute;
+    top:49%;
+    left:70px;
+    height:15%;
+    width:10%;
+    /* border: black 2px solid; */
+    display:block;
+    background-color: lightskyblue;
+    }
+  .sky-8{
+    position: absolute;
+    top:68%;
+    left:70px;
+    height:15%;
+    width:10%;
+    /* border: black 2px solid; */
+    display:block;
+    background-color: lightskyblue;
+    }
+  .sky-4{
+    position: absolute;
+    top:11%;
+    left:89%;
+    height:15%;
+    width:10%;
+    /* border: black 2px solid; */
+    display:block;
+    background-color: lightskyblue;
+    }
   .sky-5{
     position: absolute;
-    top:42%;
-    left:82%;
-    height:23%;
-    width:17%;
+    top:30%;
+    left:89%;
+    height:15%;
+    width:10%;
     /* border: black 2px solid; */
     display:block;
     background-color: lightskyblue;
@@ -1300,20 +1446,33 @@ button{
 
   .sky-6{
     position: absolute;
-    top:65.5%;
-    left:82%;
-    height:23%;
-    width:17%;
+    top:49%;
+    left:89%;
+    height:15%;
+    width:10%;
     /* border: black 2px solid; */
     display:block;
     background-color: lightskyblue;
     }
+  .sky-7{
+    position: absolute;
+    top:68%;
+    left:89%;
+    height:15%;
+    width:10%;
+    /* border: black 2px solid; */
+    display:block;
+    background-color: lightskyblue;
+    }
+  
   .sky-1:hover,
   .sky-2:hover,
   .sky-3:hover,
   .sky-4:hover,
   .sky-5:hover,
-  .sky-6:hover
+  .sky-6:hover,
+  .sky-7:hover,
+  .sky-8:hover
     {
     -webkit-animation: bounce 0.7s ease-out;
             animation: bounce 0.7s ease-out;
@@ -1427,7 +1586,16 @@ button{
    .sky-3,
    .sky-4,
    .sky-5, 
-   .sky-6{
+   .sky-6,
+   .sky-7,
+   .sky-8{
+     display:none;
+   }
+   #loop-count1,
+   #loop-count2,
+   #loop-count3,
+   #loop-count4,
+   #loop-count5{
      display:none;
    }
 /* #hr-line,
@@ -1450,17 +1618,17 @@ border-right:lightskyblue solid 90px;
 }
 #link{
   position:fixed;
-  top:60px;
-  right:10px;
+  bottom:20px;
+  left:10px;
 }
 #playground, #hey-codebot{
   height:60px;
   width:60px;
 }
 #codebot{
-  position:fixed;
-  top:130px;
-  right:10px;
+  position: absolute;;
+  top:90%;
+  left:70px;
 }
 
    }

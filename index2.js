@@ -82,6 +82,45 @@ function switchPortals5(){
     document.getElementById("portal-sp10").src = "img/closed-sp.png";
 
 }
+
+function myStatement(){
+    document.getElementById('code1-1').innerHTML="moveForward()";
+    document.getElementById('code1-1').style.backgroundColor="lime";
+}
+
+function removeStatement(){
+    document.getElementById('code1-1').innerHTML="Command";
+    document.getElementById('code1-1').style.color="black";
+    document.getElementById('code1-1').style.backgroundColor="white";
+}
+
+function firstCommand(){
+    document.getElementById('code1-2').innerHTML="collectGem()";
+    document.getElementById('code1-2').style.backgroundColor="red";
+}
+
+function removeFirst(){
+    document.getElementById('code1-2').innerHTML="Command";
+    document.getElementById('code1-2').style.backgroundColor="white";
+}
+function secondCommand(){
+    document.getElementById('code1-3').innerHTML="moveForward()";
+    document.getElementById('code1-3').style.backgroundColor="lime";
+}
+
+function removeSecond(){
+    document.getElementById('code1-3').innerHTML="Command";
+    document.getElementById('code1-3').style.backgroundColor="white";
+}
+function thirdCommand(){
+    document.getElementById('code2-1').innerHTML="toggleSwitch()";
+    document.getElementById('code2-1').style.backgroundColor="aqua";
+}
+
+function removeThird(){
+    document.getElementById('code2-1').innerHTML="Command";
+    document.getElementById('code2-1').style.backgroundColor="white";
+}
 function resetImages(){
     document.getElementById("red-sp1").src = "img/red-sp.png";
     document.getElementById("red-sp2").src = "img/red-sp.png";

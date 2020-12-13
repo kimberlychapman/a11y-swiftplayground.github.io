@@ -129,6 +129,12 @@
                             <div class=toggle_switch>
                                 <img id="portal-sp" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="switchPortals1()"> 
                             </div>
+                            <div id="loop-count1">Loop</div>
+                            <div class="checkmark1">
+                               <input type="checkbox" name="check-box"><span id="loop-label"></span></li><a href="#">
+                                    <!-- <img class="loop" src="img/color-loop.png"> -->
+                                </a></li>
+                            </div>
                         </div>
                                 
 <!-- Row 2 -->
@@ -144,6 +150,13 @@
                             <div class=toggle_switch4>
                                 <img id="portal-sp4" src="img/portal-sp.png" onclick="document.getElementById('toggle').play() "ondblclick="switchPortals2()"> 
                             </div> 
+                            <div id="loop-count2">Loop</div>
+                            <div class="checkmark2">
+                               <input type="checkbox" name="check-box"><span id="loop-label"></span></li><a href="#">
+                                    <!-- <img class="loop" src="img/color-loop.png"> -->
+                                </a></li>
+                            </div>
+                            
                         </div>
 <!-- Row 3 -->
                         <div id="row3">
@@ -157,6 +170,13 @@
                             <div class=toggle_switch6>
                                 <img id="portal-sp6" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="switchPortals3()"> 
                             </div>
+                            <div id="loop-count3">Loop</div>
+                            <div class="checkmark3">
+                               <input type="checkbox" name="check-box"><span id="loop-label"></span></li><a href="#">
+                                    <!-- <img class="loop" src="img/color-loop.png"> -->
+                                </a></li>
+                            </div>
+                         
                         </div>
 <!-- Row 4 -->
                         <div id="row4">
@@ -169,6 +189,12 @@
                             <div class=toggle_switch8>
                                 <img id="portal-sp8" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="switchPortals4()"> 
                             </div> 
+                            <div id="loop-count4">Loop</div>
+                            <div class="checkmark4">
+                               <input type="checkbox" name="check-box"><span id="loop-label"></span></li><a href="#">
+                                    <!-- <img class="loop" src="img/color-loop.png"> -->
+                                </a></li>
+                            </div>
                         </div>
 <!-- Row 5  -->
                         <div id="row5">
@@ -181,35 +207,47 @@
                             <div class=toggle_switch10>
                                 <img id="portal-sp10" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="switchPortals5()"> 
                             </div>
+                             <div id="loop-count5">Loop</div>
+                            <div class="checkmark5">
+                               <input type="checkbox" name="check-box"><span id="loop-label"></span></li><a href="#">
+                                    <!-- <img class="loop" src="img/color-loop.png"> -->
+                                </a></li>
+                            </div>
                         </div>
 <!-- Codebot -->
-                            <div class="icons">
+                            <!-- <div class="icons"> -->
                                 <div id="link">
                                     <a href="presentation.html"><img id="playground" src="img/swift-icon.png">
                                 </div>
                                 <div id="codebot">
                                     <img id="hey-codebot" src="img/hey-siri.png" onclick="document.getElementById('add').play()" ondblclick="remove(this.id)"></a>
                                  </div>
-                               
-                            </div>
+<!--                                
+                            </div> -->
 <!-- Sky-boxes -->
                             <div class="sky-1">
-                                <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
+                                <img id="mini-cloud" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
                             </div>
                             <div class="sky-2">
-                                <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
+                                <img id="mini-cloud" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
                             </div>
                             <div class="sky-3">
-                                <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
-                            </div>
+                                <img id="mini-cloud" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
+                            </div> 
+                            <div class="sky-8">
+                                <img id="mini-cloud" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
+                            </div> 
                             <div class="sky-4">
-                                <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
+                                <img id="mini-cloud" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
                             </div>
                             <div class="sky-5">
-                                <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
+                                <img id="mini-cloud" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
                             </div>
                            <div class="sky-6">
-                            <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
+                                <img id="mini-cloud" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
+                            </div> 
+                            <div class="sky-7">
+                                <img id="mini-cloud" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
                             </div> 
                            
                             
@@ -228,10 +266,20 @@
                 <ul class="list-unstyled components">
                     <!-- <p>Dummy Heading</p> -->
                     <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Loop Tracker</a>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Loop</a>
                         
                         <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
+                            <div id="drop-container">
+                                <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <!-- <div id="closed-bracket">};</div> -->
+                                <!-- <div id="closed-bracket">}</div> -->
+                            </div>
+                            <!-- <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
+                            </a></li> -->
+                            <!-- <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
                             </a></li>
                             <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
                             </a></li>
@@ -248,9 +296,7 @@
                             <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
                             </a></li>
                             <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
-                            </a></li>
-                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
-                            </a></li>
+                            </a></li> -->
                         </ul>
                     </li>
                     <li>
@@ -266,14 +312,23 @@
                                       <!-- <input type="button" id="submit" value="Submit" onclick="writeValues(form)"> -->
                                     </form>
                                 </div>
-                            <div id="drop-container">
+                                <!-- <br> -->
+                                <h2 style="font-family: 'Trispace', sans-serif; font-size:14pt;
+                                color:white;">{</h2>
+                                <button id="code1-1" onclick=myStatement() ondblclick=removeStatement()>Command()</button>
+                                <button id="code1-2" onclick=firstCommand() ondblclick=removeFirst()>Command()</button>
+                                <button id="code1-3" onclick=secondCommand() ondblclick=removeSecond()>Command()</button>
+                                <button id="code2-1" onclick=thirdCommand() ondblclick=removeThird()>Command()</button>
+                                <h2 style="font-family: 'Trispace', sans-serif; font-size:14pt;
+                                color:white;">}</h2>
+                            <!-- <div id="drop-container">
                                 <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                 <div class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                 <div class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                 <div class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                                 <div id="closed-bracket">};</div>
                                 <div id="closed-bracket">}</div>
-                            </div>
+                            </div> -->
                         </ul>
                     </li>
                 </ul>
@@ -365,7 +420,7 @@
                 <!-- </a> -->
                 <!-- <a href="#">Contact</a> -->
             <!-- </div> -->
-            <button class="openbtn" onclick="openNav()">☰ Code</button>  
+            <button class="openbtn" onclick="openNav()">☰ Commands</button>  
             <!-- <h2>Collapsed Sidepanel</h2>
             <p>Click on the hamburger menu/bar icon to open the sidepanel.</p> -->
     <script>
