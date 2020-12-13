@@ -374,13 +374,9 @@ function removeSecondThree(){
     document.getElementById('code3-3').style.backgroundColor="white";
 }
 
-function changeImage(){
+function resetImages(){
     document.getElementById("myImage").src = "img/portal-sp.png";
-}
-function changeImage2(){
     document.getElementById("myImage3").src = "img/closed-sp.png";
-}
-function changeImage3(){
     document.getElementById("myImage2").src = "img/portal-sp.png";
 }
     // // Variables for referencing the canvas and 2dcanvas context

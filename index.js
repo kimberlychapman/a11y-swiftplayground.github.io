@@ -521,14 +521,19 @@ function removeSeventhBox(){
     document.getElementById('col8').style.border="2px solid black";
 }
 
-function changeBackRed(){
-    document.getElementById('red').src='img/red-gem.png';
-}
+// function changeBackRed(){
+//     document.getElementById('red').src='img/red-gem.png';
+// }
 function changePortals(){
     document.getElementById('red2').src='img/closed-sp.png';
     document.getElementById('red3').src='img/closed-sp.png';
 }
-function changeBackPortals(){
+// function changeBackPortals(){
+//     document.getElementById('red2').src='img/portal-sp.png';
+//     document.getElementById('red3').src='img/portal-sp.png';
+// }
+function resetImages(){
+    document.getElementById('red').src='img/red-gem.png';
     document.getElementById('red2').src='img/portal-sp.png';
     document.getElementById('red3').src='img/portal-sp.png';
 }

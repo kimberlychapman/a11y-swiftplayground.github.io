@@ -561,6 +561,21 @@ LEFT SIDE PANEL
   cursor:url('img/apple-cursor.png'), pointer;
 
 }
+#reset{
+  height:65px;
+  width:65px;
+  position: absolute;
+  bottom: 20px;
+  right:270px;
+  background-color:lime;
+  border-radius:20%;
+}
+#reset-button{
+  height:60px;
+  width:60px;
+}
+
+#reset:hover,
 #clear:hover,
 #link:hover,
 #codebot:hover{
@@ -781,7 +796,11 @@ canvas.shake {
 }
 
 
-#red-sp{
+#red-sp1,
+#red-sp2,
+#red-sp3,
+#red-sp4,
+#red-sp5{
 margin-top:3px;
 /* margin-left:-15px; */
 height:90px;
@@ -838,7 +857,16 @@ width:60px;
   justify-content: center;
   flex-direction:row;
 }
-#portal-sp{
+#portal-sp,
+#portal-sp3,
+#portal-sp4,
+#portal-sp5,
+#portal-sp6,
+#portal-sp7,
+#portal-sp8,
+#portal-sp9,
+#portal-sp10
+{
   height:100px;
   width:100px;
 }
@@ -1366,7 +1394,15 @@ button{
    {
      left:13%;
    }
-   #portal-sp{
+   #portal-sp,
+   #portal-sp3,
+   #portal-sp4,
+   #portal-sp5,
+   #portal-sp6,
+   #portal-sp7,
+   #portal-sp8,
+   #portal-sp9,
+   #portal-sp10{
      height:80px;
      width:80px;
    }
@@ -1378,7 +1414,11 @@ button{
    {
      left:44%;
    }
-   #red-sp{
+   #red-sp1,
+   #red-sp2,
+   #red-sp3,
+   #red-sp4,
+   #red-sp5{
     height:70px;
     width:50px;
   }

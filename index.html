@@ -138,11 +138,11 @@
                     <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
                 </div>
                 <div class="gem-box1">
-                    <img id="red" src="img/red-gem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('red').src='img/treasure.png'" oncontextmenu="changeBackRed()">
+                    <img id="red" src="img/red-gem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('red').src='img/treasure.png'">
                     <!-- <img id="red-sp" src="img/red-sp.png" onclick="document.getElementById('collect').play()"> -->
                 </div>
                 <div class="gem-box2">
-                    <img id="red2" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="changePortals()" oncontextmenu="changeBackPortals()"> 
+                    <img id="red2" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="changePortals()"> 
                 </div>
                 <div class="gem-box3">
                     <img id="red3" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('toggle').pause()">
@@ -176,10 +176,10 @@
 <!-- Codebot -->
                             <div class="icons">
                                 <div id="link">
-                                    <a href="presentation.html"><img id="playground" src="img/swift-icon.png">
+                                    <a href="presentation.html"><img id="playground" src="img/swift-icon.png"></a>
                                 </div>
                                 <div id="codebot">
-                                    <img id="hey-codebot" src="img/hey-siri.png" onclick="document.getElementById('add').play()" ondblclick="remove(this.id)"></a>
+                                    <img id="hey-codebot" src="img/hey-siri.png" onclick="document.getElementById('run-code').play()" ondblclick="document.getElementById('run-code').pause()">
                                 </div>
                             
                             </div>
@@ -191,6 +191,7 @@
      </div> -->
                             
 <!-- Clear -->
+    <button id="reset"><img id="reset-button" src="img/reset.png" onclick=resetImages()></button>
     <div id="clear"><img id="eraser" src="img/erase.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
     </div>
 <!-- Left Sidebar -->

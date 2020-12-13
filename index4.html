@@ -121,16 +121,16 @@
                             <div class="sky-panel3"></div> 
 <!-- Switches -->
                             <div id="open-switch1">
-                                <img id="myImage" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('myImage').src='img/closed-sp.png'" oncontextmenu="changeThisImage()">
+                                <img id="myImage" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('myImage').src='img/closed-sp.png'">
                             </div>
                             <div id="take-gem">
-                                <img id="myImage4" src="img/red-gem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('myImage4').src='img/treasure.png'" oncontextmenu="changeImage4()">
+                                <img id="myImage4" src="img/red-gem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('myImage4').src='img/treasure.png'">
                             </div>
                             <div id="open-switch2">
-                                <img id="myImage2" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('myImage2').src='img/closed-sp.png'" oncontextmenu="changeImage2()">
+                                <img id="myImage2" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('myImage2').src='img/closed-sp.png'">
                             </div>
                             <div id="take-gem2">
-                                <img id="myImage5" src="img/red-gem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('myImage5').src='img/treasure.png'" oncontextmenu="changeImage5()">
+                                <img id="myImage5" src="img/red-gem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('myImage5').src='img/treasure.png'">
                             </div>
                             <div class="sky-1">
                                 <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
@@ -205,6 +205,7 @@
                         </div>
                             
 <!-- Clear -->
+                        <button id="reset"><img id="reset-button" src="img/reset.png" onclick=resetImages()></button>
                         <div id="clear">
                             <img id="eraser" src="img/erase.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
                         </div>

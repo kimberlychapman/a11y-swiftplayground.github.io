@@ -120,66 +120,66 @@
                             <div class="sky-panel2"></div>
                             <div class="sky-panel3"></div>
 <!-- Row 1 -->
-                        <div id="row1" ondblclick="remove(this.id)">
+                        <div id="row1">
                             <div class="collect_gem">
                                
                                 <!-- <button id="collect1" onclick="document.getElementById('collect').play()">Sound Effect</button>  -->
-                                <img id="red-sp" src="img/red-sp.png" onclick="document.getElementById('collect').play()">
+                                <img id="red-sp1" src="img/red-sp.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('red-sp1').src='img/treasure.png'">
                             </div>
                             <div class=toggle_switch>
-                                <img id="portal-sp" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()"> 
+                                <img id="portal-sp" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="switchPortals1()"> 
                             </div>
                         </div>
                                 
 <!-- Row 2 -->
-                        <div id="row2" ondblclick="remove(this.id)">
+                        <div id="row2">
                             <div class=toggle_switch3>
-                                <img id="portal-sp" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()"> 
+                                <img id="portal-sp3" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()"> 
                             </div> 
                             <div class="collect_gem2">
                                 <!-- <img id="gemstone" src="img/collectGem.png"> -->
                                 <!-- <button id="collect2" onclick="document.getElementById('collect').play()">Sound Effect</button> -->
-                                <img id="red-sp" src="img/red-sp.png" onclick="document.getElementById('collect').play()">
+                                <img id="red-sp2" src="img/red-sp.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('red-sp2').src='img/treasure.png'">
                             </div>
                             <div class=toggle_switch4>
-                                <img id="portal-sp" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()"> 
+                                <img id="portal-sp4" src="img/portal-sp.png" onclick="document.getElementById('toggle').play() "ondblclick="switchPortals2()"> 
                             </div> 
                         </div>
 <!-- Row 3 -->
-                        <div id="row3" ondblclick="remove(this.id)">
+                        <div id="row3">
                             <div class=toggle_switch5>
-                                <img id="portal-sp" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()"> 
+                                <img id="portal-sp5" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()"> 
                             </div>
                             <div class="collect_gem3">
-                                <img id="red-sp" src="img/red-sp.png" onclick="document.getElementById('collect').play()">
+                                <img id="red-sp3" src="img/red-sp.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('red-sp3').src='img/treasure.png'">
                                 <!-- <button id="collect3" onclick="document.getElementById('collect').play()">Sound Effect</button>  -->
                             </div>
                             <div class=toggle_switch6>
-                                <img id="portal-sp" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()"> 
+                                <img id="portal-sp6" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="switchPortals3()"> 
                             </div>
                         </div>
 <!-- Row 4 -->
-                        <div id="row4" ondblclick="remove(this.id)">
+                        <div id="row4">
                             <div class=toggle_switch7>
-                                <img id="portal-sp" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()"> 
+                                <img id="portal-sp7" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()"> 
                             </div> 
                             <div class="collect_gem4">
-                                <img id="red-sp" src="img/red-sp.png" onclick="document.getElementById('collect').play()">
+                                <img id="red-sp4" src="img/red-sp.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('red-sp4').src='img/treasure.png'">
                             </div>
                             <div class=toggle_switch8>
-                                <img id="portal-sp" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()"> 
+                                <img id="portal-sp8" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="switchPortals4()"> 
                             </div> 
                         </div>
 <!-- Row 5  -->
-                        <div id="row5" ondblclick="remove(this.id)">
+                        <div id="row5">
                             <div class=toggle_switch9>
-                                <img id="portal-sp" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()"> 
+                                <img id="portal-sp9" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()"> 
                             </div> 
                             <div class="collect_gem5">
-                                <img id="red-sp" src="img/red-sp.png" onclick="document.getElementById('collect').play()">
+                                <img id="red-sp5" src="img/red-sp.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('red-sp5').src='img/treasure.png'">
                             </div>
                             <div class=toggle_switch10>
-                                <img id="portal-sp" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()"> 
+                                <img id="portal-sp10" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="switchPortals5()"> 
                             </div>
                         </div>
 <!-- Codebot -->
@@ -214,6 +214,7 @@
                            
                             
 <!-- Clear -->
+    <button id="reset"><img id="reset-button" src="img/reset.png" onclick=resetImages()></button>
     <div id="clear"><img id="eraser" src="img/erase.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
     </div>
 <!-- Left Sidebar -->

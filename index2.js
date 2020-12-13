@@ -58,6 +58,49 @@ function showImage10(){
     document.getElementById('loadingImage10').style.visibility=    document.getElementById('loadingImage10').style.visibility == 'visible'? 'hidden' : 'visible';
 }
 
+function switchPortals1(){
+    document.getElementById("portal-sp").src = "img/closed-sp.png";
+    document.getElementById("portal-sp3").src = "img/closed-sp.png";
+
+}
+function switchPortals2(){
+    document.getElementById("portal-sp4").src = "img/closed-sp.png";
+    document.getElementById("portal-sp5").src = "img/closed-sp.png";
+
+}
+function switchPortals3(){
+    document.getElementById("portal-sp6").src = "img/closed-sp.png";
+    document.getElementById("portal-sp7").src = "img/closed-sp.png";
+
+}
+function switchPortals4(){
+    document.getElementById("portal-sp8").src = "img/closed-sp.png";
+    document.getElementById("portal-sp9").src = "img/closed-sp.png";
+
+}
+function switchPortals5(){
+    document.getElementById("portal-sp10").src = "img/closed-sp.png";
+
+}
+function resetImages(){
+    document.getElementById("red-sp1").src = "img/red-sp.png";
+    document.getElementById("red-sp2").src = "img/red-sp.png";
+    document.getElementById("red-sp3").src = "img/red-sp.png";
+    document.getElementById("red-sp4").src = "img/red-sp.png";
+    document.getElementById("red-sp5").src = "img/red-sp.png";
+    document.getElementById("portal-sp").src = "img/portal-sp.png";
+    document.getElementById("portal-sp3").src = "img/portal-sp.png";
+    document.getElementById("portal-sp4").src = "img/portal-sp.png";
+    document.getElementById("portal-sp5").src = "img/portal-sp.png";
+    document.getElementById("portal-sp6").src = "img/portal-sp.png";
+    document.getElementById("portal-sp7").src = "img/portal-sp.png";
+    document.getElementById("portal-sp8").src = "img/portal-sp.png";
+    document.getElementById("portal-sp9").src = "img/portal-sp.png";
+    document.getElementById("portal-sp10").src = "img/portal-sp.png";
+
+    // document.getElementById("portal-sp10").src = "img/closed-sp.png";
+
+}
 
 function allowDrop(ev) {
     ev.preventDefault();
