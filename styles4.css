@@ -315,6 +315,7 @@ a.active,a.article, a.article:hover {
   #sidebarCollapse span {
       display: none;
   }
+    
 }
 /* ---------------------------------------------------
   RIGHT SIDE PANEL
@@ -1418,17 +1419,156 @@ button{
               transform: translateY(0);
     }
   }
+  @media (max-width: 768px) {
+    body{
+      background-color:lightskyblue;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+    .rightside{
+      width:270%;
+      height:800px;
+     }
 
-/* ********************************************************************************************************************* */
-/* @media (max-width: 1000px) {
-  .rightside {
-    height:900px;
-    width:150%;
-      
-  } */
-  body{
-    background-color: lightskyblue;
+     #cloudy{
+      height:155px;
+      width:285px;
+      margin-left:-3px;
+     }
+     .sky-1{
+       /* border:2px solid black; */
+       height:18%;
+       width:37%;
+       left:11%;
+     }
+     .sky-2{
+      /* border:2px solid black; */
+      height:18%;
+      width:37%;
+      left:53%;
+    }
+    .sky-3{
+      /* border:2px solid black; */
+      height:18%;
+      width:37%;
+      left:11%;
+      top:13%
+    }
+    .sky-4{
+     /* border:2px solid black; */
+     height:18%;
+     width:37%;
+     left:53%;
+     top:13%
+   }
+.sky-4:hover{-webkit-animation: bounce 0.7s ease-out;
+   animation: bounce 0.7s ease-out;
+}
+@keyframes bounce {
+0% {
+-webkit-transform: translateY(0);
+     transform: translateY(0);
+}
+25%, 45% {
+-webkit-transform: translateY(-15px);
+     transform: translateY(-15px);
+}
+50% {
+-webkit-transform: translateY(0);
+     transform: translateY(0);
+}
+70% {
+-webkit-transform: translateY(-8px);
+     transform: translateY(-8px);
+}
+80% {
+-webkit-transform: translateY(0);
+     transform: translateY(0);
+}
+90% {
+-webkit-transform: translateY(-8px);
+     transform: translateY(-8px);
+}
+100% {
+-webkit-transform: translateY(0);
+     transform: translateY(0);
+}
+}
+     /* .sky-1, */
+     /* .sky-2, */
+     /* .sky-3,
+     .sky-4{
+       display:none;
+     } */
+     #hr-line{
+      border-top: 350px lightskyblue solid;
+     }
+     .sky-panel{
+       width:80px;
+     }
+     #take-gem{
+       /* border:solid 2px black; */
+       height:40%;
+       width:9%;
+       top:32%;
+       left:34%;
+     }
+     #open-switch1{
+       left:11%;
+       /* border:solid 2px black; */
+       height:40%;
+       width:9%;
+       top:32%;
+     }
+     #open-switch2{
+      left:57.5%;
+      /* border:solid 2px black; */
+      height:40%;
+      width:9%;
+      top:32%;
+    }
+    #take-gem2{
+      /* border:solid 2px black; */
+      height:40%;
+      width:9%;
+      top:32%;
+      left:81.5%;
+    }
+     #myImage4, #myImage5{
+      height:100px;
+      width:60px;
+      margin-top:0%;
+      margin-left:3px;
+     /* .sky-panel2{
+       display:none;
+     } */
+    }
+
+    #myImage2, #myImage{
+      height:70px;
+      width:70px;
+      margin-top:0%;
+      /* margin-left:7px; */
   }
+  #codebot{
+    position:fixed;
+    top:5px;
+    margin-right:10px;
+  }
+  #link{
+    position:fixed;
+    top:5px; 
+  }
+  #hey-codebot,
+  #playground{
+    height:50px;
+    width:50px;
+  }
+  .icons{
+    left:65%;
+  }
+
+}
  
   
 
