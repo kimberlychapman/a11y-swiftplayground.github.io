@@ -116,9 +116,9 @@
                      
 <!-- Lines -->
                 <div id="vr-line"></div>
-                <div id="vr-line2"></div>
-                <div id="vr-line3"></div>
-                <div id="vr-line4"></div>
+                <!-- <div id="vr-line2"></div> -->
+                <!-- <div id="vr-line3"></div> -->
+                <!-- <div id="vr-line4"></div> -->
                 <div id="hr-line"></div>
                  <div id="hr-line2"></div>
                 <div id="hr-line3"></div>
@@ -126,104 +126,65 @@
 <!-- Boxes -->
                
                 <div class="rock-box1">
-                    <img id="rock" src="img/rock.png">
-                    <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">Sound Effect</span></button> 
+                    <img id="rock" src="img/rock.png" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">
                 </div> 
                 <div class="sky-1">
-                    <img id="cloudy" src="img/cloud-family.png">
-                    <button id="windy" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
+                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
                 </div>
                 <div class="rock-box2">
-                    <img id="rock" src="img/rock.png">
-                    <button id="crash" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">Sound Effect</span></button> 
+                    <img id="rock" src="img/rock.png" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">
                 </div> 
                 <div class="sky-2">
-                    <img id="cloudy" src="img/cloud-family.png">
-                    <button id="windy" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
+                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
                 </div>
                 <div class="gem-box1">
-                    <img id="red" src="img/red-gem.png">
-                    <button id="treasure" onclick="document.getElementById('collect').play()">Sound Effect</button>
+                    <img id="red" src="img/red-gem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('red').src='img/treasure.png'">
+                    <!-- <img id="red-sp" src="img/red-sp.png" onclick="document.getElementById('collect').play()"> -->
                 </div>
-                <div class="gem-box2">
-                    <img id="red2" src="img/open-portal.png">
-                    <button id="treasure2" onclick="document.getElementById('toggle').play()">Sound Effect</button>  
+                <div class="gem-second">
+                    <img id="red4" src="img/red-gem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('red4').src='img/treasure.png'">
+                </div>
+                <!-- <div class="gem-box2">
+                    <img id="red2" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="changePortals()"> 
+                </div> -->
+                <div class="blue-switch">
+                    <img id="red2" src="img/closed-sp.png" onclick="document.getElementById('toggle').play()"> 
                 </div>
                 <div class="gem-box3">
-                    <img id="red3" src="img/open-portal.png">
-                    <button id="treasure3" onclick="document.getElementById('toggle').play()">Sound Effect</button>  
+                    <img id="red3" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('red3').src='img/closed-sp.png'">
+
                 </div>
-                <div class="sky-3">
-                    <img id="cloudy" src="img/cloud-family.png">
-                    <button id="windy" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
-                </div>
-                <div class="sky-4">
-                    <img id="cloudy" src="img/cloud-family.png">
-                    <button id="windy" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
-                </div>
+                <!-- <div class="sky-3">
+                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
+                </div> -->
+                <!-- <div class="sky-4">
+                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
+                </div> -->
                 <div class="sky-5">
-                    <img id="cloudy" src="img/cloud-family.png">
-                    <button id="windy" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
+                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
                 </div>
                 <div class="sky-6">
-                    <img id="cloudy" src="img/cloud-family.png">
-                    <button id="windy" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button>
+                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
                 </div>
-                <div class="sky-7">
-                    <img id="cloudy" src="img/cloud-family.png">
-                    <!-- <button id="windy2" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button> -->
+                <div class="sky-7" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
                 </div>
-                <div class="sky-8">
-                    <!-- <img id="cloudy2" src="img/cloud-family.png"> -->
-                    <!-- <button id="windy" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">Sound Effect</button> -->
+                <div class="sky-8"></div>
+                <div class="sky-9">
+                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
+                </div>
+                <div class="sky-10">
+                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
                 </div>
                <!-- <div class="blank"></div> -->
-               
-                  
-                
-                      
-<!-- Code Blocks -->
-                            <div class="if-1">
-                               
-                                <div class="if-boxes"></div>
-                                    <div id="col2" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="firstBox()" ondblclick="removeFirstBox()"></div>
-                                    <div id="col3" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="secondBox()" ondblclick="removeSecondBox()"></div>
-                                    <div id="col4" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="thirdBox()" ondblclick="removeThirdBox()"></div>
-                                    <div id="col5" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="fourthBox()" ondblclick="removeFourthBox()"></div>
-                                    <div id="col6" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="fifthBox()" ondblclick="removeFifthBox()"></div>
-                                    <div id="col7" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="sixthBox()" ondblclick="removeSixthBox()"></div>
-                                    <div id="col8" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="seventhBox()" ondblclick="removeSeventhBox()"></div>
-                                </div>
-                                <!-- <p class="bracket">}</p> -->
-                               
-                            </div>
-                            <!-- <div class="if-2"> 
-                    
-                                <div class="if-boxes">
-                                    <div class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div class="col" id="col6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div class="col" id="col7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div class="col" id="col9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                </div>
-                                <p class="bracket">}</p>
-                            </div> -->
-                            <!-- <div class="if-3">
-                                <p>if</p>
-                                <div class="if-boxes">
-                                    <div class="col" id="col8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div class="col" id="col9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div class="col" id="col1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                </div>
-                                <p class="bracket">}</p>
-                            </div> -->
+
                     
 <!-- Codebot -->
                             <div class="icons">
                                 <div id="link">
-                                    <a href="presentation.html"><img id="playground" src="img/swift-icon.png">
+                                    <a href="presentation.html"><img id="playground" src="img/swift-icon.png"></a>
                                 </div>
                                 <div id="codebot">
-                                    <img id="hey-codebot" src="img/hey-siri.png" onclick="document.getElementById('add').play()" ondblclick="remove(this.id)"></a>
+                                    <img id="hey-codebot" src="img/hey-siri.png" onclick="document.getElementById('run-code').play()" ondblclick="document.getElementById('run-code').pause()">
                                 </div>
                             
                             </div>
@@ -235,6 +196,7 @@
      </div> -->
                             
 <!-- Clear -->
+    <button id="reset"><img id="reset-button" src="img/reset.png" onclick=resetImages()></button>
     <div id="clear"><img id="eraser" src="img/erase.png" input type="submit" value="Clear" id="clearbutton" onclick="clearCanvas(canvas,ctx);"></div>
     </div>
 <!-- Left Sidebar -->
@@ -247,32 +209,61 @@
 
                 <ul class="list-unstyled components">
                     <!-- <p>Dummy Heading</p> -->
-                    <!-- <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Loop Tracker</a> -->
-                        
-                        <!-- <ul class="collapse list-unstyled" id="homeSubmenu">
-                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
-                            </a></li>
-                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
-                            </a></li>
-                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
-                            </a></li>
-                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
-                            </a></li>
-                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
-                            </a></li>
-                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
-                            </a></li>
-                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
-                            </a></li>
-                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
-                            </a></li>
-                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
-                            </a></li>
-                            <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
-                            </a></li>
-                        </ul> -->
-                    <!-- </li> -->
+                    <li>
+                        <a href="#page2Submenu" data-toggle="collapse" aria-expanded="false"><span style="color:#00ace6;">function</span><br>collectOrToggle(){</a>
+                        <ul class="collapse list-unstyled" id="page2Submenu">
+                               <!-- <li style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                               color:white;">
+                                   <form action="PayslipServlet" method="get">
+                                        Number of Loops: <input type="text" name="lname" id="lname"><br/>
+                                        <input type="button" id="submit" value="Submit" onclick="writeValues(form)"><br>
+                                        for i in 1...<span id="answer"></span><br> -->
+                                      <!-- <input type="button" id="submit" value="Submit" onclick="writeValues(form)"> -->
+                                    <!-- </form>
+                                </li> -->
+                            <li class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                            <li class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                            <li class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                            
+                            <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                            color:white;">}</h2>
+                            <li class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                            <li class="col" id="col6" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                            <li class="col" id="col7" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                            <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                            color:white;">}</h2>
+
+                            <li class="col" id="col8" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                            <li class="col" id="col9" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                            <li class="col" id="col10" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                            <li class="col" id="col11" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                            <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                            color:white;">}</h2>
+                                 <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                                 color:white;">&nbsp }</h2>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Follow the Path</a>
+                          <ul class="collapse list-unstyled" id="homeSubmenu">
+                              <!-- <div class="if-boxes"></div> -->
+                            <li id="col2" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="firstBox()" ondblclick="removeFirstBox()"></li>
+                            <li id="col3" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="secondBox()" ondblclick="removeSecondBox()"></li>
+                            <li id="col4" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="thirdBox()" ondblclick="removeThirdBox()"></li>
+                            <li id="col5" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="fourthBox()" ondblclick="removeFourthBox()"></li>
+                            <li id="col6" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="fifthBox()" ondblclick="removeFifthBox()"></li>
+                            <li id="col7" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="sixthBox()" ondblclick="removeSixthBox()"></li>
+                            <li id="col8" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="seventhBox()" ondblclick="removeSeventhBox()"></li>
+                            <li id="col9" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="firstBox()" ondblclick="removeFirstBox()"></li>
+                            <li id="col10" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="secondBox()" ondblclick="removeSecondBox()"></li>
+                            <li id="col11" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="thirdBox()" ondblclick="removeThirdBox()"></li>
+                            <li id="col12" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="fourthBox()" ondblclick="removeFourthBox()"></li>
+                            <li id="col13" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="fifthBox()" ondblclick="removeFifthBox()"></li>
+                            <li id="col14" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="sixthBox()" ondblclick="removeSixthBox()"></li>
+                            <li id="col15" ondrop="drop(event)" ondragover="allowDrop(event)" oncontextmenu="seventhBox()" ondblclick="removeSeventhBox()"></li>
+                          </ul>
+                    </li>
+                    </li>
                     <li>
                        <!-- <a href="#">About</a> -->
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><span style="color:#00ace6;">function</span> findPath{</a>
@@ -356,13 +347,14 @@
                         <ul class="collapse list-unstyled" id="homeSubmenu2"> -->
                             <p class="command-header">Commands</p>
                             <div class="col" id="col10">
+                                <div class="thing" draggable="true" ondragstart="drag(event)" id="thing6" ondblclick="remove(this.id)">if</div>
+                                <div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" ondblclick="remove(this.id)">else</div>
                                 <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">moveForward()</div>
                                 <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">turnLeft()</div>
                                 <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)">turnRight()</div>
                                 <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)">collectGem()</div>
                                 <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)">toggleSwitch()</div>
-                                <div class="thing" draggable="true" ondragstart="drag(event)" id="thing10" ondblclick="remove(this.id)" oncontextmenu="newFunction()">&nbsp &nbsp &nbsp &nbsp &nbsp ?</div>
-                               
+                                <div class="thing" draggable="true" ondragstart="drag(event)" id="thing8" ondblclick="remove(this.id)" oncontextmenu="showFunction()">collectOrToggle()</div>
                             </div>
 
                         </ul>
