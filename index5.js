@@ -533,10 +533,57 @@ function changePortals(){
 //     document.getElementById('red3').src='img/portal-sp.png';
 // }
 function resetImages(){
-    document.getElementById('red').src='img/red-gem.png';
-    document.getElementById('red4').src='img/red-gem.png';
-    // document.getElementById('red2').src='img/portal-sp.png';
-    document.getElementById('red3').src='img/portal-sp.png';
+    // document.getElementById('loop1').innerHTML="0";
+    // document.getElementById('loop1').style.color="lime";
+    // document.getElementById('loop2').innerHTML="0";
+    // document.getElementById('loop2').style.color="lime";
+    // document.getElementById('loop3').innerHTML="0";
+    // document.getElementById('loop3').style.color="lime";
+    // document.getElementById('loop4').innerHTML="0";
+    // document.getElementById('loop4').style.color="lime";
+    document.getElementById("red_gem").src = "img/cover-up.png";
+    document.getElementById("red2").src = "img/cover-up.png";
+    document.getElementById("red3").src = "img/cover-up.png";
+    document.getElementById("red4").src = "img/cover-up.png";
+    document.getElementById('loop1-img').src='img/sky-cover.png';
+    document.getElementById('loop2-img').src='img/sky-cover.png';
+    document.getElementById('loop3-img').src='img/sky-cover.png';
+    document.getElementById('loop4-img').src='img/sky-cover.png';
+}
+
+function addTreasure1(){
+    document.getElementById('red_gem').src='img/treasure.png';
+    document.getElementById('loop1-img').src='img/collect-red.png';
+}
+function removeTreasure1(){
+    document.getElementById('red_gem').src='img/cover-up.png';
+    document.getElementById('loop1-img').src='img/sky-cover.png';
+}
+
+function addTreasure2(){
+    document.getElementById('red2').src='img/treasure.png';
+    document.getElementById('loop2-img').src='img/collect-red.png';
+}
+function removeTreasure2(){
+    document.getElementById('red2').src='img/cover-up.png';
+    document.getElementById('loop2-img').src='img/sky-cover.png';
+}
+
+function addTreasure3(){
+    document.getElementById('red3').src='img/treasure.png';
+    document.getElementById('loop3-img').src='img/collect-red.png';
+}
+function removeTreasure3(){
+    document.getElementById('red3').src='img/cover-up.png';
+    document.getElementById('loop3-img').src='img/sky-cover.png';
+}
+function addTreasure4(){
+    document.getElementById('red4').src='img/treasure.png';
+    document.getElementById('loop4-img').src='img/collect-red.png';
+}
+function removeTreasure4(){
+    document.getElementById('red4').src='img/cover-up.png';
+    document.getElementById('loop4-img').src='img/sky-cover.png';
 }
 
 function showFunction(){
@@ -544,6 +591,53 @@ function showFunction(){
     document.getElementById('thing8').style.border="2px solid black";
     document.getElementById('thing8').style.innerHTML="collectOrToggle()";
 }
+
+function loopCount1(){
+    document.getElementById('loop1').innerHTML="1";
+    document.getElementById('loop1').style.color="black";
+    document.getElementById("red_gem").src = "img/treasure.png";
+}
+function removeCount1(){
+    document.getElementById('loop1').innerHTML="0";
+    document.getElementById('loop1').style.color="lime";
+    document.getElementById("red_gem").src = "img/cover-up.png";
+}
+
+function loopCount2(){
+    document.getElementById('loop2').innerHTML="2";
+    document.getElementById('loop2').style.color="black";
+    document.getElementById("red2").src = "img/treasure.png";
+}
+function removeCount2(){
+    document.getElementById('loop2').innerHTML="0";
+    document.getElementById('loop2').style.color="lime";
+    document.getElementById("red2").src = "img/cover-up.png";
+}
+
+function loopCount3(){
+    document.getElementById('loop3').innerHTML="3";
+    document.getElementById('loop3').style.color="black";
+    document.getElementById("red3").src = "img/treasure.png";
+}
+function removeCount3(){
+    document.getElementById('loop3').innerHTML="0";
+    document.getElementById('loop3').style.color="lime";
+    document.getElementById("red3").src = "img/cover-up.png";
+}
+
+function loopCount4(){
+    document.getElementById('loop4').innerHTML="4";
+    document.getElementById('loop4').style.color="black";
+    document.getElementById("red4").src = "img/treasure.png";
+}
+function removeCount4(){
+    document.getElementById('loop4').innerHTML="0";
+    document.getElementById('loop4').style.color="lime";
+    document.getElementById("red4").src = "img/cover-up.png";
+}
+// function showTreasure(){
+//     document.getElementById('img-top').src='img/treasure.png';
+// }
     // // Variables for referencing the canvas and 2dcanvas context
     // var canvas,ctx;
 

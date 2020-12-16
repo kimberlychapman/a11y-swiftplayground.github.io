@@ -101,81 +101,63 @@
 <!-- Sktechpad & Co. -->
                 <div id="sketchpadapp">
                     <div class="rightside">
-                    <canvas id="sketchpad" height="1125" width="1500">
+                    <canvas id="sketchpad" height="1125" width="1550">
                     </canvas>
-     <!-- <div id="codebot">
-         <img id="hey-codebot" src="img/siri.png" onclick="document.getElementById('here').play()" ondblclick="document.getElementById('here').pause()">
-     </div> -->
-     <!-- <div class="pulldown1">
-         <a href="presentation.html"><img id="commands" src="img/swift.png"onclick="document.getElementById('add').play()"></a>
-  
-     </div> -->
-     <!-- <div class="pulldown2">
-         <img id="func" src="img/code-symbol.png" onclick="document.getElementById('run-code').play()" ondblclick="document.getElementById('run-code').pause()">
-     </div> -->
-                     
-<!-- Lines -->
+
                 <div id="vr-line"></div>
+                <div id="vr-line2"></div>
+                <div id="vr-line3"></div>
+                <div id="vr-line4"></div>
+                <div id="hr-line"></div>
+                <div id="hr-line2"></div>
+                <!-- <div id="hr-line3"></div> -->
+                <!-- <div id="hr-line3"></div> -->
                 <!-- <div id="vr-line2"></div> -->
                 <!-- <div id="vr-line3"></div> -->
                 <!-- <div id="vr-line4"></div> -->
-                <div id="hr-line"></div>
+                <!-- <div id="hr-line"></div>
                  <div id="hr-line2"></div>
-                <div id="hr-line3"></div>
+                <div id="hr-line3"></div> -->
+                <div class="sky-panel"></div>
+                <div class="sky-panel2"></div>
+                <div class="sky-panel3"></div>
+
+<!-- Loop Boxes -->
+            <div class="loop-boxes">
+                <!-- <h1 class="loop-title">Gems</h1> -->
+                <div id="loop5">Gems</div>
+                <div id="loop1" onclick=addTreasure1() ondblclick="removeTreasure1()"><img id="loop1-img" src="img/sky-cover.png"></div>
+                <div id="loop2" onclick=addTreasure2() ondblclick="removeTreasure2()"><img id="loop2-img" src="img/sky-cover.png"></div>
+                <div id="loop3" onclick=addTreasure3() ondblclick="removeTreasure3()"><img id="loop3-img" src="img/sky-cover.png"></div>
+                <div id="loop4" onclick=addTreasure4() ondblclick="removeTreasure4()"><img id="loop4-img" src="img/sky-cover.png"></div>
+             
+            </div>
+
                    
 <!-- Boxes -->
-               
-                <div class="rock-box1">
-                    <img id="rock" src="img/rock.png" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">
-                </div> 
-                <div class="sky-1">
-                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
-                </div>
-                <div class="rock-box2">
-                    <img id="rock" src="img/rock.png" onclick="document.getElementById('rock').play()" ondblclick="document.getElementById('rock').pause()">
-                </div> 
-                <div class="sky-2">
-                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
-                </div>
-                <div class="gem-box1">
-                    <img id="red" src="img/red-gem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('red').src='img/treasure.png'">
-                    <!-- <img id="red-sp" src="img/red-sp.png" onclick="document.getElementById('collect').play()"> -->
-                </div>
-                <div class="gem-second">
-                    <img id="red4" src="img/red-gem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('red4').src='img/treasure.png'">
-                </div>
-                <!-- <div class="gem-box2">
-                    <img id="red2" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="changePortals()"> 
-                </div> -->
-                <div class="blue-switch">
-                    <img id="red2" src="img/closed-sp.png" onclick="document.getElementById('toggle').play()"> 
-                </div>
-                <div class="gem-box3">
-                    <img id="red3" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('red3').src='img/closed-sp.png'">
+            <!-- <div class="test-box"></div> -->
+            <!-- <div class="test-box2"></div> -->
+            <!-- <div class="test-box3"></div> -->
+            <!-- <div class="test-box4"></div> -->
+            <!-- <div class="test-box5"></div> -->
+          
+            <div class="gem-box1" onclick="document.getElementById('collect').play()">
+                <img id="red_gem" src="img/cover-up.png">
+                <img class="img-top" src="img/red-gem.png">
+            </div>
+            <div class="gem-box2" onclick="document.getElementById('collect').play()">
+                <img id="red2" src="img/cover-up.png">
+                <img class="img-top" src="img/red-gem.png">
+            </div>
+            <div class="gem-box3" onclick="document.getElementById('collect').play()">
+                <img id="red3" src="img/cover-up.png">
+                <img class="img-top" src="img/red-gem.png">
+            </div>
+            <div class="gem-box4" onclick="document.getElementById('collect').play()">
+                <img id="red4" src="img/cover-up.png">
+                <img class="img-top2" src="img/red-gem.png">
+            </div>
 
-                </div>
-                <!-- <div class="sky-3">
-                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
-                </div> -->
-                <!-- <div class="sky-4">
-                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
-                </div> -->
-                <div class="sky-5">
-                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
-                </div>
-                <div class="sky-6">
-                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
-                </div>
-                <div class="sky-7" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
-                </div>
-                <div class="sky-8"></div>
-                <div class="sky-9">
-                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
-                </div>
-                <div class="sky-10">
-                    <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
-                </div>
-               <!-- <div class="blank"></div> -->
 
                     
 <!-- Codebot -->

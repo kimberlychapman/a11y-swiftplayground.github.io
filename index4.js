@@ -300,13 +300,13 @@ function removeStatement0(){
     document.getElementById('code1-0').style.fontSize="12pt";
 }
 function myStatement(){
-    document.getElementById('code1-1').innerHTML="else if";
-    document.getElementById('code1-1').style.color="magenta";
+    // document.getElementById('code1-1').innerHTML="else if";
+    document.getElementById('code1-1').style.color="yellow";
 }
 
 function removeStatement(){
-    document.getElementById('code1-1').innerHTML="if";
-    document.getElementById('code1-1').style.color="yellow";
+    // document.getElementById('code1-1').innerHTML="if";
+    document.getElementById('code1-1').style.color="dimgray";
 }
 
 function firstCommand(){
@@ -342,13 +342,13 @@ function myStatementTwo(){
 }
 
 function removeStatementTwo(){
-    document.getElementById('code2-1').innerHTML="if";
-    document.getElementById('code2-1').style.color="yellow";
+    document.getElementById('code2-1').innerHTML="else if";
+    document.getElementById('code2-1').style.color="dimgray";
 }
 
 function firstCommandTwo(){
     document.getElementById('code2-2').innerHTML="isOnGem{";
-    document.getElementById('code2-2').style.color="DarkGreen";
+    document.getElementById('code2-2').style.color="red";
 }
 
 function removeFirstTwo(){
@@ -420,13 +420,65 @@ function removeThirdTwo(){
 // }
 
 function resetImages(){
-    document.getElementById("myImage4").src = "img/red-gem.png";
-    document.getElementById("myImage5").src = "img/red-gem.png";
-    document.getElementById("myImage").src = "img/portal-sp.png";
-    document.getElementById("myImage2").src = "img/portal-sp.png";
+    document.getElementById("myImage4").src = "img/cover-up.png";
+    document.getElementById("myImage5").src = "img/cover-up.png";
+    document.getElementById("myImage").src = "img/cover-up.png";
+    document.getElementById("myImage2").src = "img/cover-up.png";
+    document.getElementById('loop1').innerHTML="0";
+    document.getElementById('loop1').style.color="lime";
+    document.getElementById('loop2').innerHTML="0";
+    document.getElementById('loop2').style.color="lime";
+    document.getElementById('loop3').innerHTML="0";
+    document.getElementById('loop3').style.color="lime";
+    document.getElementById('loop4').innerHTML="0";
+    document.getElementById('loop4').style.color="lime";
 }
 
+function loopCount1(){
+    document.getElementById('loop1').innerHTML="1";
+    document.getElementById('loop1').style.color="black";
+    document.getElementById('myImage').src='img/closed-portal.png';
+    
+    
+}
+function removeCount1(){
+    document.getElementById('loop1').innerHTML="0";
+    document.getElementById('loop1').style.color="lime";
+    document.getElementById('myImage').src='img/cover-up.png';
+}
 
+function loopCount2(){
+    document.getElementById('loop2').innerHTML="2";
+    document.getElementById('loop2').style.color="black";
+    document.getElementById("myImage4").src = "img/treasure.png";
+}
+function removeCount2(){
+    document.getElementById('loop2').innerHTML="0";
+    document.getElementById('loop2').style.color="lime";
+    document.getElementById("myImage4").src = "img/cover-up.png";
+}
+
+function loopCount3(){
+    document.getElementById('loop3').innerHTML="3";
+    document.getElementById('loop3').style.color="black";
+    document.getElementById('myImage2').src='img/closed-portal.png';
+}
+function removeCount3(){
+    document.getElementById('loop3').innerHTML="0";
+    document.getElementById('loop3').style.color="lime";
+    document.getElementById('myImage2').src='img/cover-up.png';
+}
+
+function loopCount4(){
+    document.getElementById('loop4').innerHTML="4";
+    document.getElementById('loop4').style.color="black";
+    document.getElementById("myImage5").src = "img/treasure.png";
+}
+function removeCount4(){
+    document.getElementById('loop4').innerHTML="0";
+    document.getElementById('loop4').style.color="lime";
+    document.getElementById("myImage5").src = "img/cover-up.png";
+}
     // // Variables for referencing the canvas and 2dcanvas context
     // var canvas,ctx;
 

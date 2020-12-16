@@ -152,6 +152,10 @@ font-style: normal;
   text-decoration: underline;
   text-decoration-color: #000;
 }
+.NO:hover{
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
 p:hover{
     text-decoration: underline;
     text-decoration-color: #000;

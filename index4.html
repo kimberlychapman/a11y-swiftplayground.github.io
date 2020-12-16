@@ -119,19 +119,102 @@
                             <div class="sky-panel"></div> 
                             <div class="sky-panel2"></div>
                             <div class="sky-panel3"></div> 
-<!-- Switches -->
-                            <div id="open-switch1">
+<!-- Drop Boxes -->
+                            <div class="command1">
+                                <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                            <div class="if-else">
+                                <div class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div id="x1">
+                                    <div class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <h2 class="if">}</h2>
+                                </div>
+                                <div class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div id="x1">
+                                    <div class="col" id="col6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <h2 class="if">}</h2>
+                                </div>
+                                <div id="loop1" onclick=loopCount1() ondblclick="removeCount1()"></div>
+                            </div>
+                            <div class="command2">
+                                <div class="col" id="col7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                            <div class="if-else2">
+                                <div class="col" id="col8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div id="x2">
+                                    <div class="col" id="col9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <h2 class="if">}</h2>
+                                </div>
+                                <div class="col" id="col10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div id="x2">
+                                    <div class="col" id="col11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <h2 class="if">}</h2>
+                                </div>
+                            </div>
+                            <div class="command3">
+                                <div class="col" id="col12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                            <div class="if-else3">
+                                <div class="col" id="col13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div id="x3">
+                                    <div class="col" id="col14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <h2 class="if">}</h2>
+                                </div>
+                                <div class="col" id="col15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div id="x3">
+                                    <div class="col" id="col16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <h2 class="if">}</h2>
+                                </div>
+                            </div>
+                            <div class="command4">
+                                <div class="col" id="col17" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                            </div>
+                            <div class="if-else4">
+                                <div class="col" id="col18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div id="x3">
+                                    <div class="col" id="col19" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <h2 class="if">}</h2>
+                                </div>
+                                <div class="col" id="col20" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                <div id="x3">
+                                    <div class="col" id="col21" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                    <h2 class="if">}</h2>
+                                </div>
+                            </div>
+                            <div id="loop2" onclick=loopCount2() ondblclick="removeCount2()"></div>
+                            <div id="loop3" onclick=loopCount3() ondblclick="removeCount3()"></div>
+                            <div id="loop4" onclick=loopCount4() ondblclick="removeCount4()"></div>
+                            <!-- <div class="total-loops">
+                                <h2 class="if">Total Loops:</h2>
+                                <div id="loop5" onclick=loopCount5() ondblclick="removeCount5()"></div>
+                            </div> -->
+                            
+<!-- Switches & Gems -->
+                            <!-- <div id="open-switch1">
                                 <img id="myImage" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('myImage').src='img/closed-sp.png'">
+                            </div> -->
+                            <div id="open-switch1" onclick="document.getElementById('toggle').play()">
+                                <img id="myImage" src="img/cover-up.png">
+                                <img class="img-top" src="img/portal-sp.png">
                             </div>
-                            <div id="take-gem">
-                                <img id="myImage4" src="img/red-gem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('myImage4').src='img/treasure.png'">
+                            <div id="take-gem" onclick="document.getElementById('collect').play()">
+                                <img id="myImage4" src="img/cover-up.png">
+                                <img class="img-top2" src="img/red-gem.png">
                             </div>
-                            <div id="open-switch2">
+                            <div id="open-switch2" onclick="document.getElementById('toggle').play()">
+                                <img id="myImage2" src="img/cover-up.png">
+                                <img class="img-top3" src="img/portal-sp.png">
+                            </div>
+                            <div id="take-gem2" onclick="document.getElementById('collect').play()">
+                                <img id="myImage5" src="img/cover-up.png">
+                                <img class="img-top4" src="img/red-gem.png">
+                            </div>
+                            <!-- <div id="open-switch2">
                                 <img id="myImage2" src="img/portal-sp.png" onclick="document.getElementById('toggle').play()" ondblclick="document.getElementById('myImage2').src='img/closed-sp.png'">
-                            </div>
-                            <div id="take-gem2">
+                            </div> -->
+                            <!-- <div id="take-gem2">
                                 <img id="myImage5" src="img/red-gem.png" onclick="document.getElementById('collect').play()" ondblclick="document.getElementById('myImage5').src='img/treasure.png'">
-                            </div>
+                            </div> -->
                             <div class="sky-1">
                                 <img id="cloudy" src="img/happy_clouds.png" onclick="document.getElementById('wind').play()" ondblclick="document.getElementById('wind').pause()">
                             </div>
@@ -146,53 +229,8 @@
                             </div>
                       
 <!-- Code Blocks -->
-                            <!-- <div class="if-1">
-                               
-                                <div class="if-boxes">
-                                    <div class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div class="col" id="col8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                </div>
-                                <p class="bracket">}</p>
-                               
-                            </div>
-                            <div class="if-2"> 
-                    
-                                <div class="if-boxes">
-                                    <div class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div class="col" id="col6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div class="col" id="col7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div class="col" id="col9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                </div>
-                                <p class="bracket">}</p>
-                            </div> -->
-                            <!-- <div class="if-3">
-                                <p>if</p>
-                                <div class="if-boxes">
-                                    <div class="col" id="col8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div class="col" id="col9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                    <div class="col" id="col1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                                </div>
-                                <p class="bracket">}</p>
-                            </div> -->
-                        <!-- <div id="row5" ondblclick="remove(this.id)">
-                            <div class=toggle_switch9>
-                                <img id="toggle9" src="img/toggleSwitch.png">
-                                <button id="switch9" onclick="document.getElementById('toggle').play()">Sound Effect</button>  
-                                <button id="sw" onclick="document.getElementById('toggle').play()"><img id="sp" src="img/speaker.png"></button> 
-                            </div> 
-                            <div class="collect_gem5">
-                                <img id="gemstone" src="img/collectGem.png">
-                                <button id="cg" onclick="document.getElementById('collect').play()"><img id="sp" src="img/speaker.png"></button> 
-                                <button id="collect5" onclick="document.getElementById('collect').play()">Sound Effect</button> 
-                            </div>
-                            <div class=toggle_switch10>
-                                <img id="toggle10" src="img/toggleSwitch.png">
-                                <button id="switch10" onclick="document.getElementById('toggle').play()">Sound Effect</button>  
-                                <button id="sw" onclick="document.getElementById('toggle').play()"><img id="sp" src="img/speaker.png"></button> 
-                            </div>
-                        </div> -->
+                     
+                         
 <!-- Codebot -->
                         <div class="icons">
                             <div id="link">
@@ -219,10 +257,10 @@
 
                 <ul class="list-unstyled components">
                     <!-- <p>Dummy Heading</p> -->
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Loop Tracker</a>
+                    <!-- <li class="active"> -->
+                        <!-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Loop Tracker</a> -->
                         
-                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <!-- <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
                             </a></li>
                             <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
@@ -243,10 +281,10 @@
                             </a></li>
                             <li><input type="checkbox" name="check-box"><span id="loop-label">Loop</span></li><a href="#"><img class="loop" src="img/color-loop.png">
                             </a></li>
-                        </ul>
-                    </li>
+                        </ul> -->
+                    <!-- </li> -->
                     <li>
-                        <a href="#page2Submenu" data-toggle="collapse" aria-expanded="false">Organize Code</a>
+                        <a href="#page2Submenu" data-toggle="collapse" aria-expanded="false">Run Code</a>
                         <ul class="collapse list-unstyled" id="page2Submenu">
                                <li style="font-family: 'Trispace', sans-serif; font-size:16pt;
                                color:white;">
@@ -257,7 +295,26 @@
                                       <!-- <input type="button" id="submit" value="Submit" onclick="writeValues(form)"> -->
                                     </form>
                                 </li>
-                            <li class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
+                                <button id="code1-4" onclick=thirdCommand() ondblclick=removeThird()>Command</button>
+                                <br>
+                                <br>
+                                <br>
+                                <button id="code1-1" onclick=myStatement() ondblclick=removeStatement()>if</button>
+                                <button id="code1-2" onclick=firstCommand() ondblclick=removeFirst()>Condition</button>
+                                <button id="code1-3" onclick=secondCommand() ondblclick=removeSecond()>Command</button>
+                             
+                                <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                                color:white;">&nbsp}</h2>
+    
+                                <button id="code2-1" onclick=myStatementTwo() ondblclick=removeStatementTwo()>else if</button>
+                                <button id="code2-2" onclick=firstCommandTwo() ondblclick=removeFirstTwo()>Condition</button>
+                                <button id="code2-3" onclick=secondCommandTwo() ondblclick=removeSecondTwo()>Command</button>
+                                <!-- <button id="code2-4" onclick=thirdCommandTwo() ondblclick=removeThirdTwo()>Command</button> -->
+                                <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                                color:white;">&nbsp}</h2>
+                                <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
+                                color:white;">}</h2>
+                            <!-- <li class="col" id="col2" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
                             <li class="col" id="col3" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
                             <li class="col" id="col4" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
                             <li class="col" id="col5" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
@@ -269,19 +326,19 @@
                             <li class="col" id="col8" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
                             <li class="col" id="col9" ondrop="drop(event)" ondragover="allowDrop(event)"></li>
                             <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
-                            color:white;">}</h2>
+                            color:white;">}</h2> -->
                         </ul>
                     </li>
-                    <li>
+                    <!-- <li> -->
                        <!-- <a href="#">About</a> -->
-                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Run Code</a>
+                        <!-- <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Run Code</a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
                             color:white;">for i in 1...</h2>
                             <button id="code1-0" onclick=myStatement0() ondblclick=removeStatement0()>number</button>
                             <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
-                            color:white;"></h2>
-                            <button id="code1-1" onclick=myStatement() ondblclick=removeStatement()>if</button>
+                            color:white;"></h2> -->
+                            <!-- <button id="code1-1" onclick=myStatement() ondblclick=removeStatement()>if</button>
                             <button id="code1-2" onclick=firstCommand() ondblclick=removeFirst()>Condition</button>
                             <button id="code1-3" onclick=secondCommand() ondblclick=removeSecond()>Command</button>
                             <button id="code1-4" onclick=thirdCommand() ondblclick=removeThird()>Command</button>
@@ -295,7 +352,7 @@
                             <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
                             color:white;">&nbsp}</h2>
                             <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
-                            color:white;">}</h2>
+                            color:white;">}</h2> -->
                             <!-- <h2 style="font-family: 'Trispace', sans-serif; font-size:16pt;
                             color:white;">if</h2>
                             <button id="code3-1" onclick=myStatementThree() ondblclick=removeStatementThree()>Condition</button>
@@ -323,8 +380,8 @@
                                 <div id="closed-bracket">};</div>
                                 <div id="closed-bracket">}</div>
                             </div> -->
-                        </ul>
-                    </li>
+                        <!-- </ul>
+                    </li> -->
                 </ul>
 
             </nav>
@@ -371,13 +428,13 @@
                         <ul class="collapse list-unstyled" id="homeSubmenu2"> -->
                             <div class="col" id="col10">
                                 <div class="thing" draggable="true" ondragstart="drag(event)" id="thing6" ondblclick="remove(this.id)">if</div>
-                                <div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" ondblclick="remove(this.id)">else</div>
+                                <div class="thing" draggable="true" ondragstart="drag(event)" id="thing7" ondblclick="remove(this.id)">else if</div>
                                 <div class="thing" draggable="true" ondragstart="drag(event)" id="thing1" ondblclick="remove(this.id)">
                                     <img class="move" src="img/moveForward().png">moveForward()</div>
                                 <div class="thing" draggable="true" ondragstart="drag(event)" id="thing2" ondblclick="remove(this.id)">
-                                    <img class="open-mini" src="img/open-mini.png">isOnClosedSwitch{</div>  
+                                    <img class="open-mini" src="img/open-mini.png">isOnClosedSwitch<span id="bigger-font">{</span></div>  
                                 <div class="thing" draggable="true" ondragstart="drag(event)" id="thing4" ondblclick="remove(this.id)"><img id="red" src="img/the-gem.png">collectGem()</div>
-                                <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)"><img src="img/the-switch.png">toggleSwitch()</div>
+                                <div class="thing" draggable="true" ondragstart="drag(event)" id="thing5" ondblclick="remove(this.id)"><img id ="blue" src="img/the-switch.png">toggleSwitch()</div>
                                 <div class="thing" draggable="true" ondragstart="drag(event)" id="thing3" ondblclick="remove(this.id)">
                                     <img class="closed-mini" src="img/red-gem.png">isOnGem{</div>  
                             </div>
